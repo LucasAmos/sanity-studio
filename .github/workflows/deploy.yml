@@ -109,4 +109,4 @@ jobs:
       - name: Cleanup PR preview
         run: yarn undeploy
         env:
-          SANITY_STUDIO_HOSTNAME: ${HOSTNAME}-pr-${{ github.event.pull_request.number }}
+          SANITY_STUDIO_HOSTNAME: ${STUDIO_HOSTNAME}-pr-${{ github.event.pull_request.number }}
