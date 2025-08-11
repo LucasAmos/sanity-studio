@@ -14,7 +14,6 @@ permissions:
 
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
@@ -51,14 +50,17 @@ jobs:
         id: deploy
         run: |
           if [ -z "${SANITY_STUDIO_HOSTNAME}" ]; then
+            echo "Called 3"
             echo "Error: SANITY_STUDIO_HOSTNAME is not set" >&2
             exit 1
           fi
 
           if [[ "$SANITY_ACTIVE_ENV" == "development" ]]; then
-            yarn deploy -- --yes --source-maps
+            echo "Called 4"
+            yarn deploy --yes --source-maps
           else
-            yarn deploy -- --yes
+            echo "Called 5"
+            yarn deploy --yes
           fi
 
           echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}.sanity.studio" >> $GITHUB_OUTPUT
@@ -105,6 +107,6 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Cleanup PR preview
-        run: npx sanity undeploy -- --yes
+        run: yarn undeploy
         env:
           SANITY_STUDIO_HOSTNAME: ${HOSTNAME}-pr-${{ github.event.pull_request.number }}
