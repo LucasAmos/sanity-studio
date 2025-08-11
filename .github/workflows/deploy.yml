@@ -40,8 +40,10 @@ jobs:
       - name: Set Studio hostname
         run: |
           if [ "${{ github.event_name }}" == "pull_request" ]; then
+            echo "Called 1"
             echo "SANITY_STUDIO_HOSTNAME=${HOSTNAME}-pr-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
           else
+            echo "Called 2"
             echo "SANITY_STUDIO_HOSTNAME=${HOSTNAME}" >> $GITHUB_ENV
           fi
 
