@@ -12,6 +12,7 @@
     "deploy": "sanity deploy",
     "deploy:dev": "SANITY_ACTIVE_ENV=development sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
+    "undeploy": "sanity undeploy --yes",
     "undeploy:dev": "SANITY_ACTIVE_ENV=development sanity undeploy --yes"
   },
   "keywords": [
