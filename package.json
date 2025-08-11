@@ -11,7 +11,8 @@
     "build:dev": "SANITY_ACTIVE_ENV=development sanity build",
     "deploy": "sanity deploy",
     "deploy:dev": "SANITY_ACTIVE_ENV=development sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "deploy-graphql": "sanity graphql deploy",
+    "undeploy:dev": "SANITY_ACTIVE_ENV=development sanity undeploy --yes"
   },
   "keywords": [
     "sanity"
