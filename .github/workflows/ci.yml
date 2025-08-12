@@ -29,7 +29,9 @@ jobs:
         with:
           cache: yarn
           node-version: 22
-      - run: yarn install --frozen-lockfile
+      - run: |
+          yarn add -g corepack@0.20.0
+          yarn install --frozen-lockfile
 
       - name: Typecheck
         run: yarn run typecheck

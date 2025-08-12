@@ -21,7 +21,6 @@ jobs:
     runs-on: ubuntu-22.04
     defaults:
       run:
-        shell: bash
         working-directory: ./studio
     environment:
       name: Preview
