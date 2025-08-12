@@ -80,7 +80,6 @@ jobs:
   validate-dataset:
     name: Validate dataset
     runs-on: ubuntu-22.04
-    if: (github.event_name == 'pull_request' && github.base_ref == 'main') || (github.ref == 'refs/heads/main')
 
     steps:
       - uses: actions/checkout@v4
