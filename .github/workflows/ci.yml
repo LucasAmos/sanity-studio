@@ -31,6 +31,7 @@ jobs:
           node-version: 22
       - run: |
           yarn add -g corepack@0.20.0
+          corepack enable
           yarn install --frozen-lockfile
 
       - name: Typecheck
