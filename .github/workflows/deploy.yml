@@ -1,12 +1,8 @@
 name: Deploy Sanity Studio
 
 on:
-  push:
-    branches:
-      - master
-      - development
   pull_request:
-    types: [opened, synchronize, reopened, closed]
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: read
@@ -23,10 +19,9 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-22.04
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
 
     environment:
-      name: ${{ github.ref == 'refs/heads/master' && 'Production' || github.ref == 'refs/heads/development' && 'Development' || 'Preview' }}
+      name: 'Preview'
       url: ${{ steps.deploy.outputs.STUDIO_URL }}
 
     steps:
@@ -38,31 +33,15 @@ jobs:
       - run: yarn install --frozen-lockfile
 
       - name: Set Studio hostname
-        run: |
-          if [ "${{ github.event_name }}" == "pull_request" ]; then
-            echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-pr-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
-          else
-            echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}" >> $GITHUB_ENV
-          fi
+        run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-pr-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
 
       - name: Build and deploy Sanity Studio
         id: deploy
         run: |
-          if [ -z "${SANITY_STUDIO_HOSTNAME}" ]; then
-            echo "Error: SANITY_STUDIO_HOSTNAME is not set" >&2
-            exit 1
-          fi
-
-          if [[ "$SANITY_ACTIVE_ENV" == "development" ]]; then
-            yarn deploy --yes --source-maps
-          else
-            yarn deploy --yes
-          fi
-
-          echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}.sanity.studio" >> $GITHUB_OUTPUT
+          - yarn deploy --yes --source-maps
+          - echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}.sanity.studio" >> $GITHUB_OUTPUT
 
       - name: Post preview link
-        if: github.event_name == 'pull_request' && github.event.action == 'opened'
         uses: actions/github-script@v7
         with:
           script: |
@@ -80,29 +59,3 @@ jobs:
             })
         env:
           STUDIO_URL: ${{ steps.deploy.outputs.STUDIO_URL }}
-
-  teardown:
-    name: Teardown
-    runs-on: ubuntu-22.04
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-
-    environment:
-      name: Preview
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: yarn
-
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Cleanup PR preview
-        run: yarn undeploy
-        env:
-          SANITY_STUDIO_HOSTNAME: ${STUDIO_HOSTNAME}-pr-${{ github.event.pull_request.number }}
