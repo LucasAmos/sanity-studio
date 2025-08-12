@@ -40,10 +40,8 @@ jobs:
       - name: Set Studio hostname
         run: |
           if [ "${{ github.event_name }}" == "pull_request" ]; then
-            echo "Called 1"
             echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-pr-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
           else
-            echo "Called 2"
             echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}" >> $GITHUB_ENV
           fi
 
@@ -51,16 +49,13 @@ jobs:
         id: deploy
         run: |
           if [ -z "${SANITY_STUDIO_HOSTNAME}" ]; then
-            echo "Called 3"
             echo "Error: SANITY_STUDIO_HOSTNAME is not set" >&2
             exit 1
           fi
 
           if [[ "$SANITY_ACTIVE_ENV" == "development" ]]; then
-            echo "Called 4"
             yarn deploy --yes --source-maps
           else
-            echo "Called 5"
             yarn deploy --yes
           fi
 
