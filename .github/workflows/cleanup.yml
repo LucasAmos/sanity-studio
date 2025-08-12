@@ -1,7 +1,6 @@
 name: Deploy Sanity Studio
 
 on:
-  push:
   pull_request:
     types: [closed]
 
@@ -13,7 +12,7 @@ env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
 concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  group: '${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-preview-cleanup'
   cancel-in-progress: true
 
 jobs:
