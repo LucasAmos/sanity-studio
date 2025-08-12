@@ -17,6 +17,7 @@ concurrency:
 env:
   SCHEMA_VALIDATION_REPORT: schema-report.txt
   DATASET_VALIDATION_REPORT: dataset-report.txt
+  SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
 
 jobs:
   typecheck:
@@ -34,6 +35,8 @@ jobs:
         run: yarn run typecheck
 
   validate-schema:
+    environment:
+      name: Production
     name: Validate Studio schema
     runs-on: ubuntu-22.04
     steps:
@@ -78,6 +81,8 @@ jobs:
             });
 
   validate-dataset:
+    environment:
+      name: Production
     name: Validate dataset
     runs-on: ubuntu-22.04
 
