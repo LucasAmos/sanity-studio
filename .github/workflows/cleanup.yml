@@ -1,4 +1,4 @@
-name: Teardown Sanity Studio
+name: Teardown Sanity Studio - PR
 
 on:
   pull_request:
