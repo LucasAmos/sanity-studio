@@ -12,14 +12,17 @@ env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
 concurrency:
-  group: '${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-preview-cleanup'
+  group: "${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-preview-cleanup"
   cancel-in-progress: true
 
 jobs:
   teardown:
     name: Teardown
     runs-on: ubuntu-22.04
-
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./studio
     environment:
       name: Preview
 

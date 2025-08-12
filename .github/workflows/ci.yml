@@ -107,8 +107,9 @@ jobs:
           } >> $GITHUB_STEP_SUMMARY
           exit $exit_code
         env:
-          ## GOTCHA: a deploy token does not have permission to read documents, use a separate
-          ## VIEWER token
+          ## GOTCHA: a deploy token does not have permission to read documents
+          ## and will succeed silenty as it will pull zero documents and validation
+          ## will always pass, use a separate VIEWER token
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN_VIEWER }}
 
       - name: Post dataset validation report

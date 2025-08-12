@@ -1,42 +1,20 @@
 {
-  "name": "lucasamosdev",
-  "private": true,
+  "name": "sanity-studio",
   "version": "1.0.0",
-  "main": "package.json",
-  "license": "UNLICENSED",
-  "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
-    "build:dev": "SANITY_ACTIVE_ENV=development sanity build",
-    "deploy": "sanity deploy",
-    "deploy:dev": "SANITY_ACTIVE_ENV=development sanity deploy",
-    "deploy-graphql": "sanity graphql deploy",
-    "typecheck": "tsc --noEmit",
-    "undeploy": "sanity undeploy --yes",
-    "undeploy:dev": "SANITY_ACTIVE_ENV=development sanity undeploy --yes"
-  },
-  "keywords": [
-    "sanity"
+  "main": "index.js",
+  "repository": "https://github.com/LucasAmos/sanity-studio.git",
+  "author": "Lucas Amos <9055266+LucasAmos@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "packageManager": "yarn@4.0.0",
+  "workspaces": [
+    "studio",
+    "apps/*"
   ],
   "dependencies": {
-    "@sanity/vision": "^4.3.0",
-    "react": "^19.1",
-    "react-dom": "^19.1",
-    "sanity": "^4.3.0",
-    "styled-components": "^6.1.18"
-  },
-  "devDependencies": {
+    "typescript": "^5.9.2",
     "@sanity/eslint-config-studio": "^5.0.2",
-    "@types/react": "^19.1",
     "eslint": "^9.28",
-    "prettier": "^3.5",
-    "typescript": "^5.8"
-  },
-  "prettier": {
-    "semi": false,
-    "printWidth": 100,
-    "bracketSpacing": false,
-    "singleQuote": true
+    "prettier": "^3.5"
   }
 }
