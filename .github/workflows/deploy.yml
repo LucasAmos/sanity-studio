@@ -12,15 +12,19 @@ env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
 concurrency:
-  group: '${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-preview-deploy'
+  group: "${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-preview-deploy"
 
 jobs:
   deploy:
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./studio
     name: Deploy
     runs-on: ubuntu-22.04
 
     environment:
-      name: 'Preview'
+      name: "Preview"
       url: ${{ steps.deploy.outputs.STUDIO_URL }}
 
     steps:
