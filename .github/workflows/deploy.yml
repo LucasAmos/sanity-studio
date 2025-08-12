@@ -1,4 +1,4 @@
-name: Deploy Sanity Studio
+name: Deploy Sanity Studio - PR
 
 on:
   pull_request:
