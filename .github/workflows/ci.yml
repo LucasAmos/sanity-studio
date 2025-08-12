@@ -110,7 +110,6 @@ jobs:
           {
             echo "## Dataset Validation Results"
             echo "\`\`\`"
-            echo project id: ${{env.SANITY_STUDIO_PROJECT_ID}}
             cat ${{ env.DATASET_VALIDATION_REPORT }}
             echo "\`\`\`"
           } >> $GITHUB_STEP_SUMMARY
