@@ -6,7 +6,6 @@
   "author": "Lucas Amos <9055266+LucasAmos@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
-  "packageManager": "yarn@4.0.0",
   "workspaces": [
     "apps/*"
   ]
