@@ -36,7 +36,7 @@ jobs:
 
   validate-schema:
     environment:
-      name: Production
+      name: ci
     name: Validate Studio schema
     runs-on: ubuntu-22.04
     steps:
@@ -82,7 +82,7 @@ jobs:
 
   validate-dataset:
     environment:
-      name: Production
+      name: ci
     name: Validate dataset
     runs-on: ubuntu-22.04
 
