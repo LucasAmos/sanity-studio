@@ -23,6 +23,9 @@ jobs:
   typecheck:
     name: Typecheck
     runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: ./studio
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -39,6 +42,9 @@ jobs:
       name: ci
     name: Validate Studio schema
     runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: ./studio
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -85,7 +91,9 @@ jobs:
       name: ci
     name: Validate dataset
     runs-on: ubuntu-22.04
-
+    defaults:
+      run:
+        working-directory: ./studio
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
