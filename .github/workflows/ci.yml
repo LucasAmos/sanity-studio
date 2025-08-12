@@ -16,7 +16,7 @@ concurrency:
 
 env:
   SCHEMA_VALIDATION_REPORT: schema-report.txt
-  DATASET_VALIDATION_REPORT: dataset-report.txt
+  DATASET_VALIDATION_REPORT: ./dataset-report.txt
   SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
 
 jobs:
