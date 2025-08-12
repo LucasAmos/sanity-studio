@@ -12,6 +12,7 @@ on:
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
+  SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-deploy
 
