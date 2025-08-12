@@ -1,4 +1,4 @@
-name: Deploy Sanity Studio
+name: Teardown Sanity Studio
 
 on:
   pull_request:
