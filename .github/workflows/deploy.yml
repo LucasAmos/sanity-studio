@@ -1,0 +1,60 @@
+name: Deploy Sanity Studio
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+env:
+  SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+  STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
+concurrency:
+  group: '${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-preview-deploy'
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-22.04
+
+    environment:
+      name: 'Preview'
+      url: ${{ steps.deploy.outputs.STUDIO_URL }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+
+      - name: Set Studio hostname
+        run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-pr-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+
+      - name: Build and deploy Sanity Studio
+        id: deploy
+        run: |
+          yarn deploy --yes --source-maps
+          echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}.sanity.studio" >> $GITHUB_OUTPUT
+
+      - name: Post preview link
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = [
+              '**🚀 Preview environment has been deployed!**',
+              `Visit [${process.env.STUDIO_URL}](${process.env.STUDIO_URL}) to see your changes.`,
+              "*This is a temporary environment that will be undeployed when this PR is merged or closed.*"
+            ].join('\n\n')
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body,
+            })
+        env:
+          STUDIO_URL: ${{ steps.deploy.outputs.STUDIO_URL }}
