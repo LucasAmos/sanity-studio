@@ -1,0 +1,38 @@
+name: Deploy Sanity Studio
+
+permissions:
+  contents: read
+  pull-requests: write
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - apps/**
+
+env:
+  SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+  STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
+  SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-apps
+
+jobs:
+  ## App must first be deployed via the CLI, then app.id must be addded
+  ## in the app's sanity.cli.ts file
+  ## GOTCHA: the token must be created at the organisation level with read and deploy
+  ## grants, a personal robot token will not suffice
+  app-test-1:
+    uses: ./.github/workflows/deploy-app.yml
+    secrets: inherit
+    with:
+      directory: apps/app-feedback
+      name: feedback
+  app-test-2:
+    uses: ./.github/workflows/deploy-app.yml
+    secrets: inherit
+    with:
+      directory: apps/app-test
+      name: test
