@@ -18,7 +18,7 @@ export function ExampleComponent() {
         <Flex align="center" direction="column" gap={5} marginY={4}>
           <Avatar size={3} src={user?.profileImage} />
           <Heading as="h1">
-            Welcome to your Sanity App test-1, {user?.name}!
+            Welcome to your Sanity App test-1.1, {user?.name}!
           </Heading>
           <Stack space={4}>
             <Text muted>
