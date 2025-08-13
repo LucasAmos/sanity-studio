@@ -4,6 +4,6 @@ export default defineCliConfig({
   app: {
     organizationId: "oRo3CJogR",
     entry: "./src/App.tsx",
-    id: "bqx7zg15qulg",
+    id: "qopkgg1svcze7p8dvc12o7y0",
   },
 });
