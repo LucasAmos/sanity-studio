@@ -26,8 +26,8 @@ jobs:
       name: Preview
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - run: corepack enable
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
