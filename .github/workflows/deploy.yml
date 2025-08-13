@@ -27,7 +27,6 @@ jobs:
         working-directory: ./studio
     environment:
       name: Development
-
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
@@ -55,7 +54,6 @@ jobs:
         working-directory: ./studio
     environment:
       name: Production
-
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
