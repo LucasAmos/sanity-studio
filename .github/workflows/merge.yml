@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: 22
           cache: yarn
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
 
       - name: Set Studio hostname
         run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-development" >> $GITHUB_ENV
@@ -59,7 +59,7 @@ jobs:
         with:
           node-version: 22
           cache: yarn
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
 
       - name: Set Studio hostname
         run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}" >> $GITHUB_ENV
