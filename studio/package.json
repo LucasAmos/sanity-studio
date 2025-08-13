@@ -1,5 +1,6 @@
 {
   "name": "lucasamosdev",
+  "packageManager": "yarn@4.9.2",
   "private": true,
   "version": "1.0.0",
   "main": "package.json",

@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: 22
           cache: yarn
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
 
       - name: Set Studio hostname
         run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-pr-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
