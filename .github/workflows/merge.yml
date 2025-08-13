@@ -95,6 +95,8 @@ jobs:
           cache: yarn
         if: ${{ steps.filter.outputs.apps == 'true' }}
       - run: yarn install --immutable
+        if: ${{ steps.filter.outputs.apps == 'true' }}
+
       - name: Deploy feedback app
         working-directory: ./apps/app-feedback
         if: ${{ steps.filter.outputs.feedback == 'true' }}
