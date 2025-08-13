@@ -82,9 +82,11 @@ jobs:
     uses: ./.github/workflows/deploy-app.yml
     secrets: inherit
     with:
+      directory: apps/app-feedback
       name: feedback
   app-test-2:
     uses: ./.github/workflows/deploy-app.yml
     secrets: inherit
     with:
+      directory: apps/app-test
       name: test
