@@ -13,6 +13,7 @@ env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
   SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-deploy
 
@@ -77,25 +78,10 @@ jobs:
   ## in the app's sanity.cli.ts file
   ## GOTCHA: the token must be created at the organisation level with read and deploy
   ## grants, a personal robot token will not suffice
-  deploy-apps:
-    name: Deploy applications
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-      - run: corepack enable
-      - uses: dorny/paths-filter@v3.0.2
-        id: changes
-        with:
-          filters: |
-            feedback:
-              - 'apps/app-feedback/**'
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: yarn
-      - name: Deploy feedback app
-        if: ${{ steps.changes.outputs.feedback == 'true' }}
-        uses: ./deploy-app.yml
-        with:
-          name: feedback
-          directory: ./apps/app-feedback
+  deploy-feedback-app:
+    uses: ./.github/workflows/deploy-app.yml
+    with:
+      directory: apps/app-feedback
+      name: feedback
+    secrets:
+      SANITY_AUTH_TOKEN: ${ SANITY_AUTH_TOKEN }
