@@ -17,10 +17,10 @@ export function ExampleComponent() {
       <Card padding={5} shadow={3} radius={3} marginY={5}>
         <Flex align="center" direction="column" gap={5} marginY={4}>
           <Avatar size={3} src={user?.profileImage} />
-          <Heading as="h1">Welcome to your Sanity App, {user?.name}!</Heading>
+          <Heading as="h1">Welcome to your Sanity App 2, {user?.name}!</Heading>
           <Stack space={4}>
             <Text muted>
-              This is an example component 6, rendered with Sanity UI and the{" "}
+              This is an example component, rendered with Sanity UI and the{" "}
               <code>useCurrentUser</code> hook from the Sanity App SDK. You can
               import and use any Sanity UI components and App SDK hooks anywhere
               in this application.
