@@ -86,7 +86,7 @@ jobs:
         with:
           filters: |
             apps:
-              - './apps/*'
+              - './apps/**'
             feedback:
               - './apps/app-feedback/*'
       - uses: actions/setup-node@v4
