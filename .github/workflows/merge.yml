@@ -75,6 +75,8 @@ jobs:
 
   ## App must first be deployed via the CLI, then app.id must be addded
   ## in the app's sanity.cli.ts file
+  ## GOTCHA: the token must be created at the organisation level with read and deploy
+  ## grants, a personal robot token will not suffice
   deploy-apps:
     name: Deploy applications
     runs-on: ubuntu-22.04
