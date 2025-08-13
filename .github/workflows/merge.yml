@@ -82,22 +82,22 @@ jobs:
       - uses: actions/checkout@v4
       - run: corepack enable
       - uses: dorny/paths-filter@v3.0.2
-        id: filter
+        id: changes
         with:
           filters: |
             apps:
-              - './apps/**'
+              - 'apps/**'
             feedback:
-              - './apps/app-feedback/*'
+              - 'apps/app-feedback/*'
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: yarn
-        if: ${{ steps.filter.outputs.apps == 'true' }}
+        if: ${{ steps.changes.outputs.apps == 'true' }}
       - run: yarn install --immutable
-        if: ${{ steps.filter.outputs.apps == 'true' }}
+        if: ${{ steps.changes.outputs.apps == 'true' }}
 
       - name: Deploy feedback app
         working-directory: ./apps/app-feedback
-        if: ${{ steps.filter.outputs.feedback == 'true' }}
+        if: ${{ steps.changes.outputs.feedback == 'true' }}
         run: yarn deploy
