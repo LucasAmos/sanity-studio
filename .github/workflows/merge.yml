@@ -10,7 +10,6 @@ on:
       - master
 
 env:
-  SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
   SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
 
@@ -80,8 +79,7 @@ jobs:
   ## grants, a personal robot token will not suffice
   deploy-feedback-app:
     uses: ./.github/workflows/deploy-app.yml
+    secrets: inherit
     with:
       directory: apps/app-feedback
       name: feedback
-    secrets:
-      SANITY_AUTH_TOKEN: ${ SANITY_AUTH_TOKEN }
