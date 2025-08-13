@@ -1,4 +1,4 @@
-name: Deploy Sanity Studio
+name: Deploy Sanity Apps
 
 permissions:
   contents: read
