@@ -8,7 +8,8 @@ on:
   push:
     branches:
       - master
-
+    paths-ignore:
+      - apps/**
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}

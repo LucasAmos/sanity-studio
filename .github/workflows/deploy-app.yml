@@ -30,7 +30,7 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
         if: ${{ steps.changes.outputs.app == 'true' }}
-      - name: ${{ inputs.name }}
+      - name: Deploy ${{ inputs.name }} app
         if: ${{ steps.changes.outputs.app == 'true' }}
         working-directory: ${{ inputs.directory }}
         run: yarn deploy
