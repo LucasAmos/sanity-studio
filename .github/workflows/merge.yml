@@ -78,9 +78,13 @@ jobs:
   ## in the app's sanity.cli.ts file
   ## GOTCHA: the token must be created at the organisation level with read and deploy
   ## grants, a personal robot token will not suffice
-  app:
+  app-test-1:
     uses: ./.github/workflows/deploy-app.yml
     secrets: inherit
     with:
-      directory: apps/app-feedback
       name: feedback
+  app-test-2:
+    uses: ./.github/workflows/deploy-app.yml
+    secrets: inherit
+    with:
+      name: test

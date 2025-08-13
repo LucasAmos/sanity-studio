@@ -1,14 +1,12 @@
 on:
   workflow_call:
     inputs:
-      directory:
-        required: true
-        type: string
       name:
         required: true
         type: string
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
@@ -19,7 +17,7 @@ jobs:
         with:
           filters: |
             app:
-              - '${{ inputs.directory }}/**'
+              - 'apps/${{ inputs.name }}/**'
       - run: corepack enable
       - uses: actions/setup-node@v4
         if: ${{ steps.changes.outputs.app == 'true' }}
@@ -30,5 +28,5 @@ jobs:
         if: ${{ steps.changes.outputs.app == 'true' }}
       - name: ${{ inputs.name }}
         if: ${{ steps.changes.outputs.app == 'true' }}
-        working-directory: ${{ inputs.directory }}
+        working-directory: apps/${{ inputs.name }}
         run: yarn deploy
