@@ -85,12 +85,15 @@ jobs:
         id: filter
         with:
           filters: |
+            apps:
+              - './apps/*'
             feedback:
               - './apps/app-feedback/*'
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: yarn
+        if: ${{ steps.filter.outputs.apps == 'true' }}
       - run: yarn install --immutable
       - name: Deploy feedback app
         working-directory: ./apps/app-feedback
