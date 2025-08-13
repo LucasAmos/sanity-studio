@@ -87,7 +87,12 @@ jobs:
           filters: |
             feedback:
               - './apps/app-feedback/*'
-      - name: Deploy feedbkack app
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+      - run: yarn install --immutable
+      - name: Deploy feedback app
         working-directory: ./apps/app-feedback
         if: ${{ steps.filter.outputs.feedback == 'true' }}
         run: yarn deploy
