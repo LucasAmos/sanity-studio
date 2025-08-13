@@ -17,7 +17,7 @@ export function ExampleComponent() {
       <Card padding={5} shadow={3} radius={3} marginY={5}>
         <Flex align="center" direction="column" gap={5} marginY={4}>
           <Avatar size={3} src={user?.profileImage} />
-          <Heading as="h1">Welcome to your Sanity App 4, {user?.name}!</Heading>
+          <Heading as="h1">Welcome to your Sanity App 7, {user?.name}!</Heading>
           <Stack space={4}>
             <Text muted>
               This is an example component, rendered with Sanity UI and the{" "}

@@ -7,9 +7,10 @@ on:
       name:
         required: true
         type: string
-
+env:
+  SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
 jobs:
-  deploy_app:
+  deploy:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4

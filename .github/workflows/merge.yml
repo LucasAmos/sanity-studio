@@ -10,6 +10,7 @@ on:
       - master
 
 env:
+  SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
   SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
 
@@ -77,7 +78,7 @@ jobs:
   ## in the app's sanity.cli.ts file
   ## GOTCHA: the token must be created at the organisation level with read and deploy
   ## grants, a personal robot token will not suffice
-  deploy-feedback-app:
+  app:
     uses: ./.github/workflows/deploy-app.yml
     secrets: inherit
     with:
