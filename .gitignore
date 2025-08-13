@@ -28,3 +28,6 @@
 *.local
 
 **/node_modules
+/.yarn
+/apps/**/.sanity
+/apps/**/dist

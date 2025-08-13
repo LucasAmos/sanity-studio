@@ -79,6 +79,7 @@ jobs:
     name: Deploy applications
     runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3.0.2
         id: filter
         with:
