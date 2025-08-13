@@ -20,7 +20,7 @@ export function ExampleComponent() {
           <Heading as="h1">Welcome to your Sanity App, {user?.name}!</Heading>
           <Stack space={4}>
             <Text muted>
-              This is an example component 3, rendered with Sanity UI and the{" "}
+              This is an example component 4, rendered with Sanity UI and the{" "}
               <code>useCurrentUser</code> hook from the Sanity App SDK. You can
               import and use any Sanity UI components and App SDK hooks anywhere
               in this application.
