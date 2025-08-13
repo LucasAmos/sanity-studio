@@ -1,0 +1,34 @@
+on:
+  workflow_call:
+    inputs:
+      directory:
+        required: true
+        type: string
+      name:
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3.0.2
+        id: changes
+        with:
+          filters: |
+            app:
+              - '${{ inputs.directory }}/**'
+      - run: corepack enable
+        if: ${{ steps.changes.outputs.app == 'true' }}
+      - uses: actions/setup-node@v4
+        if: ${{ steps.changes.outputs.app == 'true' }}
+        with:
+          node-version: 22
+          cache: yarn
+      - run: yarn install --immutable
+        if: ${{ steps.changes.outputs.app == 'true' }}
+      - name: Test ${{ inputs.name }} app
+        if: ${{ steps.changes.outputs.app == 'true' }}
+        working-directory: ${{ inputs.directory }}
+        run: yarn test
