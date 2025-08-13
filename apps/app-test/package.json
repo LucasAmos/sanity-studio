@@ -8,7 +8,8 @@
     "dev": "sanity dev",
     "build": "sanity build",
     "deploy": "sanity deploy",
-    "start": "sanity start"
+    "start": "sanity start",
+    "test": "jest"
   },
   "keywords": [
     "sanity"
@@ -22,7 +23,9 @@
     "styled-components": "^6.1.17"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/react": "^19",
+    "jest": "^30.0.5",
     "sanity": "^4",
     "typescript": "^5.1.6"
   }
