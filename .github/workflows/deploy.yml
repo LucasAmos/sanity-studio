@@ -39,6 +39,9 @@ jobs:
       - name: Set Studio hostname
         run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-development" >> $GITHUB_ENV
 
+      - name: Set SANITY_STUDIO_DATASET
+        run: echo "SANITY_STUDIO_DATASET=${SANITY_STUDIO_DATASET}" >> $GITHUB_ENV
+
       - name: Build and deploy Sanity Studio
         id: deploy
         run: |
@@ -66,6 +69,9 @@ jobs:
 
       - name: Set Studio hostname
         run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}" >> $GITHUB_ENV
+
+      - name: Set SANITY_STUDIO_DATASET
+        run: echo "SANITY_STUDIO_DATASET=${SANITY_STUDIO_DATASET}" >> $GITHUB_ENV
 
       - name: Build and deploy Sanity Studio
         id: deploy
