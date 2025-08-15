@@ -30,3 +30,4 @@
 **/node_modules
 /apps/**/dist
 /.yarn
+/studio/dist
