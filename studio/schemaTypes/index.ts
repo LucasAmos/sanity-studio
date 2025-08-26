@@ -1,2 +1,3 @@
 import book from './book'
-export const schemaTypes = [book]
+import category from './category'
+export const schemaTypes = [book, category]
