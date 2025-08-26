@@ -9,11 +9,30 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'author',
       title: 'Author',
       type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'startDate',
+      title: 'Start date',
+      type: 'date',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'finishDate',
+      title: 'Finish date',
+      type: 'date',
+    }),
+    defineField({
+      name: 'category',
+      title: 'Category',
+      type: 'reference',
+      to: [{type: 'category'}],
     }),
   ],
 })

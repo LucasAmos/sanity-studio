@@ -1,6 +1,6 @@
 {
   "name": "lucasamosdev",
-  "packageManager": "yarn@4.9.2",
+  "packageManager": "yarn@4.9.4",
   "private": true,
   "version": "1.0.0",
   "main": "package.json",
@@ -13,18 +13,21 @@
     "deploy": "sanity deploy",
     "deploy:dev": "SANITY_ACTIVE_ENV=development sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
+    "schema:extract": "sanity schema extract",
     "typecheck": "tsc --noEmit",
     "undeploy": "sanity undeploy --yes",
-    "undeploy:dev": "SANITY_ACTIVE_ENV=development sanity undeploy --yes"
+    "undeploy:dev": "SANITY_ACTIVE_ENV=development sanity undeploy --yes",
+    "validate:schema": "sanity schema validate",
+    "validate:documents": "sanity documents validate --yes --level info"
   },
   "keywords": [
     "sanity"
   ],
   "dependencies": {
-    "@sanity/vision": "^4.3.0",
+    "@sanity/vision": "^4.4.0",
     "react": "^19.1",
     "react-dom": "^19.1",
-    "sanity": "^4.3.0",
+    "sanity": "^4.4.0",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
