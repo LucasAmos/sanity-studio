@@ -31,3 +31,6 @@
 /apps/**/dist
 /.yarn
 /studio/dist
+studio/schema.json
+studio/.yarn/install-state.gz
+studio/.yarn/install-state.gz

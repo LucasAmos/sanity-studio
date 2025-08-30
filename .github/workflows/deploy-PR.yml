@@ -32,6 +32,9 @@ jobs:
       - uses: actions/checkout@v4
       - run: corepack enable
 
+      - name: SANITY_STUDIO_DATASET
+        run: echo "${{ vars.SANITY_STUDIO_DATASET }}"
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
