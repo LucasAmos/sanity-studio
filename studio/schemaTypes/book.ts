@@ -40,6 +40,7 @@ export default defineType({
       title: 'Estimated date',
       type: 'boolean',
       initialValue: false,
+      validation: (rule) => rule.required(),
     }),
   ],
 })
