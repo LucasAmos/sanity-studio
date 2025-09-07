@@ -37,7 +37,7 @@ export default defineType({
     }),
     defineField({
       name: 'estimated',
-      title: 'Estimate date',
+      title: 'Estimated date',
       type: 'boolean',
       initialValue: false,
     }),
