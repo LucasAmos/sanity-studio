@@ -35,5 +35,11 @@ export default defineType({
       type: 'reference',
       to: [{type: 'category'}],
     }),
+    defineField({
+      name: 'estimated',
+      title: 'Estimate date',
+      type: 'boolean',
+      initialValue: false,
+    }),
   ],
 })
