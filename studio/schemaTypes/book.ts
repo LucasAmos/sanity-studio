@@ -48,7 +48,7 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'audiobok',
+      name: 'audiobook',
       title: 'Audiobook?',
       type: 'boolean',
     }),
