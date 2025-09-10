@@ -50,6 +50,7 @@ export default defineType({
     defineField({
       name: 'audiobok',
       title: 'Audiobook?',
+      initialValue: false,
       type: 'boolean',
     }),
   ],
