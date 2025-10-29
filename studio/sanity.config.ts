@@ -3,6 +3,7 @@ import {structureTool} from 'sanity/structure'
 import {presentationTool} from 'sanity/presentation'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
+import {resolve} from './presentation/resolve'
 
 export default defineConfig({
   name: 'default',
@@ -15,6 +16,7 @@ export default defineConfig({
     structureTool(),
     visionTool(),
     presentationTool({
+      resolve,
       previewUrl: {
         initial: process.env.SANITY_STUDIO_PREVIEW_ORIGIN,
         preview: '/',
