@@ -1,7 +1,6 @@
 {
-  "packageManager": "yarn@4.10.3",
+  "version": "0.0.0",
   "name": "sanity-studio",
-  "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/LucasAmos/sanity-studio.git",
   "author": "Lucas Amos <9055266+LucasAmos@users.noreply.github.com>",
@@ -12,7 +11,7 @@
     "apps/*"
   ],
   "scripts": {
-    "release": "yarn workspace @lucasamos/lucasamosdev release && yarn release-it"
+    "release": "yarn workspace @lucasamos/sanity-studio release && yarn release-it --ci"
   },
   "devDependencies": {
     "@release-it-plugins/workspaces": "^5.0.3",

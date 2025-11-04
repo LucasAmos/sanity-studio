@@ -1,9 +1,68 @@
 {
   "$schema": "https://unpkg.com/release-it@19/schema/release-it.json",
-  "git": {
-    "commitMessage": "chore: release v${version}"
+  "git": false,
+  "npm": {
+    "publish": true,
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com"
+    }
   },
-  "github": {
-    "release": true
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "gitRawCommitsOpts": {
+        "path": "."
+      },
+      "infile": "CHANGELOG.md",
+      "path": ".",
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "section": "Features",
+            "type": "feat"
+          },
+          {
+            "section": "Bug Fixes",
+            "type": "fix"
+          },
+          {
+            "section": "Tests",
+            "type": "test"
+          },
+          {
+            "section": "Chores",
+            "type": "chore"
+          },
+          {
+            "section": "Documentation",
+            "type": "docs"
+          },
+          {
+            "section": "Performance Improvements",
+            "type": "perf"
+          },
+          {
+            "section": "Code Refactoring",
+            "type": "refactor"
+          },
+          {
+            "section": "Code Style Changes",
+            "type": "style"
+          },
+          {
+            "section": "Build Changes",
+            "type": "build"
+          },
+          {
+            "section": "Continuous Integration",
+            "type": "ci"
+          },
+          {
+            "section": "Reverts",
+            "type": "revert"
+          }
+        ]
+      }
+    }
   }
 }
