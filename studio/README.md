@@ -1,1 +1,1 @@
-# Sanity Studio
+# Sanity Studio lucasamos.dev
