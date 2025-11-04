@@ -1,9 +1,18 @@
 {
-  "name": "lucasamosdev",
-  "packageManager": "yarn@4.9.4",
-  "private": true,
-  "version": "1.0.0",
-  "main": "package.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucasamos/sanity-studio.git"
+  },
+  "name": "@lucasamos/lucasamosdev",
+  "files": [
+    "./schema.json"
+  ],
+  "exports": {
+    ".": "./schema.json"
+  },
+  "packageManager": "yarn@4.10.3",
+  "version": "1.0.2",
+  "main": "./schema.json",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity dev",
@@ -18,7 +27,8 @@
     "undeploy": "sanity undeploy --yes",
     "undeploy:dev": "SANITY_ACTIVE_ENV=development sanity undeploy --yes",
     "validate:schema": "sanity schema validate",
-    "validate:documents": "sanity documents validate --yes --level info"
+    "validate:documents": "sanity documents validate --yes --level info",
+    "release": "release-it"
   },
   "keywords": [
     "sanity"
@@ -42,5 +52,8 @@
     "printWidth": 100,
     "bracketSpacing": false,
     "singleQuote": true
+  },
+  "hooks": {
+    "after:bump": "yarn --mode update-lockfile"
   }
 }

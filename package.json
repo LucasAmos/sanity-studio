@@ -1,5 +1,5 @@
 {
-  "packageManager": "yarn@4.9.4",
+  "packageManager": "yarn@4.10.3",
   "name": "sanity-studio",
   "version": "1.0.0",
   "main": "index.js",
@@ -8,6 +8,15 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
+    "studio",
     "apps/*"
-  ]
+  ],
+  "scripts": {
+    "release": "yarn workspace @lucasamos/lucasamosdev release && yarn release-it"
+  },
+  "devDependencies": {
+    "@release-it-plugins/workspaces": "^5.0.3",
+    "@release-it/conventional-changelog": "^10.0.1",
+    "release-it": "^19.0.5"
+  }
 }
