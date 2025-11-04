@@ -1973,7 +1973,7 @@
     "@lezer/common" "^1.0.0"
 
 "@lucasamos/sanity-studio@file:/home/runner/work/sanity-studio/sanity-studio/studio":
-  version "1.0.0"
+  version "1.0.1"
   resolved "file:studio"
   dependencies:
     "@sanity/vision" "^4.4.0"

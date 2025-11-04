@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/LucasAmos/sanity-studio/compare/1.0.0...1.0.1) (2025-11-04)
+
+### Bug Fixes
+
+* **release:** release ([2b94058](https://github.com/LucasAmos/sanity-studio/commit/2b94058200de59e17e894e3ab6b99d6067112d78))
+
+### Documentation
+
+* **studio:** docs ([600f2ff](https://github.com/LucasAmos/sanity-studio/commit/600f2ff3d4b5e95b14e9ff2d9ec5438a4c7f8588))
+
 ## [1.0.0](https://github.com/LucasAmos/sanity-studio/compare/0.1.0...1.0.0) (2025-11-04)
 
 ### ⚠ BREAKING CHANGES
