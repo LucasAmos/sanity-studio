@@ -1,7 +1,7 @@
 {
   "name": "app-test",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
