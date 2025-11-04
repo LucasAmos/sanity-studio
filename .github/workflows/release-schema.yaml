@@ -35,10 +35,9 @@ jobs:
       - name: corepack enable
         run: corepack enable
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: yarn
 
       - name: yarn install
         run: yarn install --immutable
