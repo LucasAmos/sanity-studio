@@ -1,13 +1,25 @@
 {
   "$schema": "https://unpkg.com/release-it@19/schema/release-it.json",
   "git": {
-    "commitMessage": "chore: release v${version}"
-  },
-  "github": {
+    "commitMessage": "chore: release v${version}",
+    "commitsPath": ".",
+    "push": true,
+    "requireCommits": true,
+    "requireCleanWorkingDir": false,
+    "requireCommitsFail": false,
+    "tagName": "${version}",
     "release": true
   },
+  "github": {
+    "release": true,
+    "releaseName": "${version}",
+    "tokenRef": "GITHUB_TOKEN",
+    "comments": { "submit": true }
+  },
   "npm": false,
-
+  "hooks": {
+    "after:bump": "yarn --mode update-lockfile"
+  },
   "plugins": {
     "@release-it-plugins/workspaces": {
       "skipChecks": true,

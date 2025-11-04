@@ -1,17 +1,16 @@
 {
+  "version": "0.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/lucasamos/sanity-studio.git"
   },
-  "name": "@lucasamos/lucasamosdev",
+  "name": "@lucasamos/sanity-studio",
   "files": [
     "./schema.json"
   ],
   "exports": {
     ".": "./schema.json"
   },
-  "packageManager": "yarn@4.10.3",
-  "version": "1.0.2",
   "main": "./schema.json",
   "license": "UNLICENSED",
   "scripts": {
@@ -28,7 +27,7 @@
     "undeploy:dev": "SANITY_ACTIVE_ENV=development sanity undeploy --yes",
     "validate:schema": "sanity schema validate",
     "validate:documents": "sanity documents validate --yes --level info",
-    "release": "release-it"
+    "release": "release-it --ci"
   },
   "keywords": [
     "sanity"
@@ -45,6 +44,7 @@
     "@types/react": "^19.1",
     "eslint": "^9.28",
     "prettier": "^3.5",
+    "release-it": "^19.0.5",
     "typescript": "^5.8"
   },
   "prettier": {
