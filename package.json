@@ -1,6 +1,5 @@
 {
   "version": "0.1.0",
-  "packageManager": "yarn@4.9.4",
   "name": "sanity-studio",
   "main": "index.js",
   "repository": "https://github.com/LucasAmos/sanity-studio.git",
