@@ -9,9 +9,6 @@
   },
   "plugins": {
     "@release-it/conventional-changelog": {
-      "gitRawCommitsOpts": {
-        "path": "."
-      },
       "infile": false,
       "preset": {
         "name": "conventionalcommits",
