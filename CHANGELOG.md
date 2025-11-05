@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://github.com/LucasAmos/sanity-studio/compare/1.0.1...1.1.0) (2025-11-05)
+
+### Features
+
+* **release:** release ([d5acae4](https://github.com/LucasAmos/sanity-studio/commit/d5acae48b06d0ef576b0d132f9058e418d4ffe17))
+
+### Chores
+
+* release v1.1.0 ([7a26204](https://github.com/LucasAmos/sanity-studio/commit/7a26204f89c8f6aa7c013e9017d3878ac5c454c9))
+
+### Continuous Integration
+
+* **release:** skip ci builds ([13b9b14](https://github.com/LucasAmos/sanity-studio/commit/13b9b1466c4152aa4c8fbf1b50b3767b3bf5a14a))
+
 ## [1.1.0](https://github.com/LucasAmos/sanity-studio/compare/1.0.1...1.1.0) (2025-11-04)
 
 ### Features
