@@ -20,6 +20,18 @@ env:
   SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
 
 jobs:
+  commitlint:
+    name: Lint commit messages
+    runs-on: ubuntu-22.04
+    environment:
+      name: ci
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Lint commits
+        uses: wagoid/commitlint-github-action@b948419dd99f3fd78a6548d48f94e3df7f6bf3ed
+
   typecheck:
     name: Typecheck
     runs-on: ubuntu-22.04
