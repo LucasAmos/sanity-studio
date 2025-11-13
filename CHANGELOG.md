@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.1](https://github.com/LucasAmos/sanity-studio/compare/1.1.0...1.1.1) (2025-11-13)
+
+### Continuous Integration
+
+* **studio:** commit linting ([8dff84a](https://github.com/LucasAmos/sanity-studio/commit/8dff84a76916a4d1ea140982c176c44369d38a8a))
+
 ## [1.1.0](https://github.com/LucasAmos/sanity-studio/compare/1.0.1...1.1.0) (2025-11-05)
 
 ### Features
