@@ -20,13 +20,13 @@
     "@sanity/ui": "^2",
     "react": "^19",
     "react-dom": "^19",
-    "styled-components": "^6.1.17"
+    "styled-components": "^6.2.0"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/react": "^19",
     "jest": "^30.0.5",
-    "sanity": "^4.4.0",
+    "sanity": "^4.22.0",
     "typescript": "^5.1.6"
   }
 }
