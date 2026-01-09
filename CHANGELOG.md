@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.2](https://github.com/LucasAmos/sanity-studio/compare/1.1.1...1.1.2) (2026-01-09)
+
+### Chores
+
+* **deps:** upgrade deps ([28b33a1](https://github.com/LucasAmos/sanity-studio/commit/28b33a17451933277ea22589627f426dbc2d2756))
+
+### Continuous Integration
+
+* **dependabot:** add config ([48bf9e4](https://github.com/LucasAmos/sanity-studio/commit/48bf9e4483170947922df55a51a8dbc0f8cc4a58))
+
 ## [1.1.1](https://github.com/LucasAmos/sanity-studio/compare/1.1.0...1.1.1) (2025-11-13)
 
 ### Continuous Integration
