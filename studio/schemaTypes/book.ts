@@ -33,8 +33,12 @@ export default defineType({
           console.log('**res', res)
 
           if (res[0]?._id === context.document?._id) {
+            // if the reference of document linked to the alias is the same as
+            // this document then that is allowed
             return true
           }
+
+          // this can probably be removed and just return false
 
           if (res.length > 0) {
             return {message: 'Slug can only be use once'} as ValidationError
