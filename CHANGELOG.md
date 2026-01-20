@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.4](https://github.com/LucasAmos/sanity-studio/compare/1.1.3...1.1.4) (2026-01-20)
+
+### Chores
+
+* **dependabot:** update ([3264a55](https://github.com/LucasAmos/sanity-studio/commit/3264a556f7f44b56f58cdb383d718bbe26496b12))
+
 ## [1.1.3](https://github.com/LucasAmos/sanity-studio/compare/1.1.2...1.1.3) (2026-01-20)
 
 ### Chores
