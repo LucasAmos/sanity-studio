@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.3](https://github.com/LucasAmos/sanity-studio/compare/1.1.2...1.1.3) (2026-01-20)
+
+### Chores
+
+* **deps:** upgrade dependencies ([85e6ada](https://github.com/LucasAmos/sanity-studio/commit/85e6ada01321d0bb3ed60cae87d1e2ead7a46cc4))
+
 ## [1.1.2](https://github.com/LucasAmos/sanity-studio/compare/1.1.1...1.1.2) (2026-01-09)
 
 ### Chores
