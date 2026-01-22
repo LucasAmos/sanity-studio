@@ -3776,14 +3776,14 @@
     object-inspect "^1.13.4"
 
 "@sanity/sdk-react@^2":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@sanity/sdk-react/-/sdk-react-2.5.0.tgz#9001b03d3b4936a0c7abcbac18aa56e85fadba19"
-  integrity sha512-F5q7j7yWGs2GtX6Kwr+WYUvJm3agR1Jjw2e7PVjnk5NXGXGFaCHOJjrBjN7xQhivXWMMty69eyvnnCfwZSbZmw==
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/sdk-react/-/sdk-react-2.6.0.tgz#52c2a4dff4ca4a10fce28cfb9043a9d0dad14a04"
+  integrity sha512-rGg4en7wv91yljgiVtlxhXw42QXIGgeJUK/vZ2SDs+3aOeQzNF9QXHfCitcYLYSF4VjIjRVy9/ThttTkPZfpTg==
   dependencies:
     "@sanity/client" "^7.12.0"
     "@sanity/message-protocol" "^0.18.0"
-    "@sanity/sdk" "2.5.0"
-    "@sanity/types" "^3.83.0"
+    "@sanity/sdk" "2.6.0"
+    "@sanity/types" "^5.2.0"
     "@types/lodash-es" "^4.17.12"
     groq "3.88.1-typegen-experimental.0"
     lodash-es "^4.17.21"
@@ -3811,10 +3811,10 @@
     rxjs "^7.8.2"
     zustand "^5.0.4"
 
-"@sanity/sdk@2.5.0", "@sanity/sdk@^2":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@sanity/sdk/-/sdk-2.5.0.tgz#fcf89924765e1f09b17e3fea77630937983e6575"
-  integrity sha512-ytqPSOQaT5Tnr1777xW7xBDtvv1b6wyac/pz7eo499SQ9ixUmeSrHJs6hvt4D/Hj5DIahViSYcqLbdww0IOD0g==
+"@sanity/sdk@2.6.0", "@sanity/sdk@^2":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/sdk/-/sdk-2.6.0.tgz#533b8559d8cb2e7ae1a2dbaa5b9745de09e2024b"
+  integrity sha512-j6RNzwmXL9K0SjMDnlC1LAJN8ZExrGpGnp/Iyb8+qndz/E+5yTeZq4HHZzAmXMvu5A9t/empaXD2DBKIPFgP3g==
   dependencies:
     "@sanity/bifur-client" "^0.4.1"
     "@sanity/client" "^7.12.0"
@@ -3824,7 +3824,7 @@
     "@sanity/json-match" "^1.0.5"
     "@sanity/message-protocol" "^0.18.0"
     "@sanity/mutate" "^0.12.4"
-    "@sanity/types" "^3.83.0"
+    "@sanity/types" "^5.2.0"
     groq "3.88.1-typegen-experimental.0"
     groq-js "^1.19.0"
     lodash-es "^4.17.21"
@@ -3874,7 +3874,7 @@
     "@sanity/client" "^7.13.2"
     "@sanity/media-library-types" "^1.0.1"
 
-"@sanity/types@5.5.0", "@sanity/types@^5.0.0", "@sanity/types@^5.0.1", "@sanity/types@^5.3.1":
+"@sanity/types@5.5.0", "@sanity/types@^5.0.0", "@sanity/types@^5.0.1", "@sanity/types@^5.2.0", "@sanity/types@^5.3.1":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@sanity/types/-/types-5.5.0.tgz#62f57301404b776d7e623f5200af7c7673be0fba"
   integrity sha512-FIobNdhR0VsH8MDplVfFPKESieBogR+pEDzyc4FDvmGjZmIL39GATndkxVAcUXuORVPFZqrHvBYe4OquOEZYpQ==
@@ -9876,10 +9876,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^3.5, prettier@^3.7.3, prettier@^3.7.4:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.8.0.tgz#f72cf71505133f40cfa2ef77a2668cdc558fcd69"
-  integrity sha512-yEPsovQfpxYfgWNhCfECjG5AQaO+K3dp6XERmOepyPDVqcJm+bjyCVO3pmU+nAPe0N5dDvekfGezt/EIiRe1TA==
+prettier@^3.7.3, prettier@^3.7.4, prettier@^3.8:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.8.1.tgz#edf48977cf991558f4fcbd8a3ba6015ba2a3a173"
+  integrity sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==
 
 pretty-format@30.2.0, pretty-format@^30.0.0:
   version "30.2.0"
