@@ -1202,7 +1202,7 @@
     "@codemirror/view" "^6.35.0"
     crelt "^1.0.5"
 
-"@codemirror/search@^6.0.0", "@codemirror/search@^6.5.11":
+"@codemirror/search@^6.0.0", "@codemirror/search@^6.6.0":
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/@codemirror/search/-/search-6.6.0.tgz#3b83a1e35391e1575a83a3b485e3f95263ddaa0b"
   integrity sha512-koFuNXcDvyyotWcgOnZGmY7LZqEOXZaaxD/j6n18TCLx2/9HieZJ5H6hs1g8FiRxBD0DNfs0nXn17g872RmYdw==
@@ -1211,7 +1211,7 @@
     "@codemirror/view" "^6.37.0"
     crelt "^1.0.5"
 
-"@codemirror/state@^6.0.0", "@codemirror/state@^6.1.1", "@codemirror/state@^6.4.0", "@codemirror/state@^6.5.0", "@codemirror/state@^6.5.3":
+"@codemirror/state@^6.0.0", "@codemirror/state@^6.1.1", "@codemirror/state@^6.4.0", "@codemirror/state@^6.5.0", "@codemirror/state@^6.5.4":
   version "6.5.4"
   resolved "https://registry.yarnpkg.com/@codemirror/state/-/state-6.5.4.tgz#f5be4b8c0d2310180d5f15a9f641c21ca69faf19"
   integrity sha512-8y7xqG/hpB53l25CIoit9/ngxdfoG+fx+V3SHBrinnhOtLvKHRyAJJuHzkWrR4YXXLX8eXBsejgAAxHUOdW1yw==
@@ -1228,7 +1228,7 @@
     "@codemirror/view" "^6.0.0"
     "@lezer/highlight" "^1.0.0"
 
-"@codemirror/view@^6.0.0", "@codemirror/view@^6.17.0", "@codemirror/view@^6.23.0", "@codemirror/view@^6.27.0", "@codemirror/view@^6.35.0", "@codemirror/view@^6.37.0", "@codemirror/view@^6.39.9":
+"@codemirror/view@^6.0.0", "@codemirror/view@^6.17.0", "@codemirror/view@^6.23.0", "@codemirror/view@^6.27.0", "@codemirror/view@^6.35.0", "@codemirror/view@^6.37.0", "@codemirror/view@^6.39.11":
   version "6.39.11"
   resolved "https://registry.yarnpkg.com/@codemirror/view/-/view-6.39.11.tgz#200aebef2074bfbbb7a3d5f0644c1b560d876b39"
   integrity sha512-bWdeR8gWM87l4DB/kYSF9A+dVackzDb/V56Tq7QVrQ7rn86W0rgZFtlL3g3pem6AeGcb9NQNoy3ao4WpW4h5tQ==
@@ -3776,14 +3776,14 @@
     object-inspect "^1.13.4"
 
 "@sanity/sdk-react@^2":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@sanity/sdk-react/-/sdk-react-2.5.0.tgz#9001b03d3b4936a0c7abcbac18aa56e85fadba19"
-  integrity sha512-F5q7j7yWGs2GtX6Kwr+WYUvJm3agR1Jjw2e7PVjnk5NXGXGFaCHOJjrBjN7xQhivXWMMty69eyvnnCfwZSbZmw==
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/sdk-react/-/sdk-react-2.6.0.tgz#52c2a4dff4ca4a10fce28cfb9043a9d0dad14a04"
+  integrity sha512-rGg4en7wv91yljgiVtlxhXw42QXIGgeJUK/vZ2SDs+3aOeQzNF9QXHfCitcYLYSF4VjIjRVy9/ThttTkPZfpTg==
   dependencies:
     "@sanity/client" "^7.12.0"
     "@sanity/message-protocol" "^0.18.0"
-    "@sanity/sdk" "2.5.0"
-    "@sanity/types" "^3.83.0"
+    "@sanity/sdk" "2.6.0"
+    "@sanity/types" "^5.2.0"
     "@types/lodash-es" "^4.17.12"
     groq "3.88.1-typegen-experimental.0"
     lodash-es "^4.17.21"
@@ -3811,10 +3811,10 @@
     rxjs "^7.8.2"
     zustand "^5.0.4"
 
-"@sanity/sdk@2.5.0", "@sanity/sdk@^2":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@sanity/sdk/-/sdk-2.5.0.tgz#fcf89924765e1f09b17e3fea77630937983e6575"
-  integrity sha512-ytqPSOQaT5Tnr1777xW7xBDtvv1b6wyac/pz7eo499SQ9ixUmeSrHJs6hvt4D/Hj5DIahViSYcqLbdww0IOD0g==
+"@sanity/sdk@2.6.0", "@sanity/sdk@^2":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/sdk/-/sdk-2.6.0.tgz#533b8559d8cb2e7ae1a2dbaa5b9745de09e2024b"
+  integrity sha512-j6RNzwmXL9K0SjMDnlC1LAJN8ZExrGpGnp/Iyb8+qndz/E+5yTeZq4HHZzAmXMvu5A9t/empaXD2DBKIPFgP3g==
   dependencies:
     "@sanity/bifur-client" "^0.4.1"
     "@sanity/client" "^7.12.0"
@@ -3824,7 +3824,7 @@
     "@sanity/json-match" "^1.0.5"
     "@sanity/message-protocol" "^0.18.0"
     "@sanity/mutate" "^0.12.4"
-    "@sanity/types" "^3.83.0"
+    "@sanity/types" "^5.2.0"
     groq "3.88.1-typegen-experimental.0"
     groq-js "^1.19.0"
     lodash-es "^4.17.21"
@@ -3874,10 +3874,18 @@
     "@sanity/client" "^7.13.2"
     "@sanity/media-library-types" "^1.0.1"
 
-"@sanity/types@5.5.0", "@sanity/types@^5.0.0", "@sanity/types@^5.0.1", "@sanity/types@^5.3.1":
+"@sanity/types@5.5.0":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@sanity/types/-/types-5.5.0.tgz#62f57301404b776d7e623f5200af7c7673be0fba"
   integrity sha512-FIobNdhR0VsH8MDplVfFPKESieBogR+pEDzyc4FDvmGjZmIL39GATndkxVAcUXuORVPFZqrHvBYe4OquOEZYpQ==
+  dependencies:
+    "@sanity/client" "^7.14.0"
+    "@sanity/media-library-types" "^1.2.0"
+
+"@sanity/types@^5.0.0", "@sanity/types@^5.0.1", "@sanity/types@^5.2.0", "@sanity/types@^5.3.1":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/types/-/types-5.6.0.tgz#83914d22d80edadd2c88bf276f88cde38d6a7162"
+  integrity sha512-O1d2PZGA5HAhRL0RO9Hgsf4HY2O2f7cdqlHfgre43rm8Pi3w3YnnbNvKhML892inR+td85rCrNPsomSeRpZ9OA==
   dependencies:
     "@sanity/client" "^7.14.0"
     "@sanity/media-library-types" "^1.2.0"
@@ -3944,18 +3952,18 @@
     "@types/uuid" "^8.0.0"
     uuid "^8.0.0"
 
-"@sanity/vision@^5.2.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-5.5.0.tgz#1d3b2258fed27623b8a45b5ef729cafaa7a99d4b"
-  integrity sha512-+xmYtJss/sDub4QLGmetjLYe98RJ0cX8+A3rG7BhGkRVR8Y4YFIDkuuvENwHLXAXx3kuQ5/tLfSyMeu1xy/SPg==
+"@sanity/vision@^5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-5.6.0.tgz#60387645d143f68b585c2ca7b9969dbe75ddca18"
+  integrity sha512-wtiwt9vK6FuLvIqMP2HUDSLgD0bjvdqcg+fvqxCF3C5VJiMP9k9w363YslSntrR3elyw2PGIn7eiSLG7Mqb/EQ==
   dependencies:
     "@codemirror/autocomplete" "^6.20.0"
     "@codemirror/commands" "^6.10.1"
     "@codemirror/lang-javascript" "^6.2.4"
     "@codemirror/language" "^6.12.1"
-    "@codemirror/search" "^6.5.11"
-    "@codemirror/state" "^6.5.3"
-    "@codemirror/view" "^6.39.9"
+    "@codemirror/search" "^6.6.0"
+    "@codemirror/state" "^6.5.4"
+    "@codemirror/view" "^6.39.11"
     "@juggle/resize-observer" "^3.4.0"
     "@lezer/highlight" "^1.2.3"
     "@rexxars/react-json-inspector" "^9.0.1"
@@ -9876,10 +9884,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^3.5, prettier@^3.7.3, prettier@^3.7.4:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.8.0.tgz#f72cf71505133f40cfa2ef77a2668cdc558fcd69"
-  integrity sha512-yEPsovQfpxYfgWNhCfECjG5AQaO+K3dp6XERmOepyPDVqcJm+bjyCVO3pmU+nAPe0N5dDvekfGezt/EIiRe1TA==
+prettier@^3.7.3, prettier@^3.7.4, prettier@^3.8:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.8.1.tgz#edf48977cf991558f4fcbd8a3ba6015ba2a3a173"
+  integrity sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==
 
 pretty-format@30.2.0, pretty-format@^30.0.0:
   version "30.2.0"
