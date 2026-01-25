@@ -118,6 +118,7 @@ jobs:
       - run: yarn install --immutable
 
       - name: Validate dataset
+        if: github.actor != 'dependabot[bot]'
         id: validate
         run: |
           npx sanity documents validate --yes --level info >> ${{ env.DATASET_VALIDATION_REPORT }}
