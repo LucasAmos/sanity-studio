@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.5](https://github.com/LucasAmos/sanity-studio/compare/1.1.4...1.1.5) (2026-01-25)
+
+### Chores
+
+* **studio:** fix package number ([2172250](https://github.com/LucasAmos/sanity-studio/commit/21722502fd3df4fb3daea231daad5e209f031f8e))
+
 ## [1.1.4](https://github.com/LucasAmos/sanity-studio/compare/1.1.3...1.1.4) (2026-01-20)
 
 ### Chores
