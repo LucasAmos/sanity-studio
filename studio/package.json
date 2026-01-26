@@ -20,7 +20,6 @@
     "build:dev": "SANITY_ACTIVE_ENV=development sanity build",
     "deploy": "sanity deploy",
     "deploy:dev": "SANITY_ACTIVE_ENV=development sanity deploy",
-    "deploy:local": "SANITY_ACTIVE_ENV=development sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "schema:extract": "sanity schema extract --enforce-required-fields",
     "typecheck": "tsc --noEmit",
