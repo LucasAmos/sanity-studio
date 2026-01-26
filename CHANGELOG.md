@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.0](https://github.com/LucasAmos/sanity-studio/compare/1.1.5...1.2.0) (2026-01-26)
+
+### Features
+
+* **schema:** add rewrite type ([a689192](https://github.com/LucasAmos/sanity-studio/commit/a689192d4f39c330eb0189486fd958a74a2f30cf))
+
+### Chores
+
+* **packages:** bump ([801e856](https://github.com/LucasAmos/sanity-studio/commit/801e85618b4e6671e3955cb4912bdfabd191d4b9))
+
 ## [1.1.5](https://github.com/LucasAmos/sanity-studio/compare/1.1.4...1.1.5) (2026-01-25)
 
 ### Chores
