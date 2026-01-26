@@ -1697,9 +1697,9 @@
     levn "^0.4.1"
 
 "@exodus/bytes@^1.6.0":
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@exodus/bytes/-/bytes-1.9.0.tgz#1644554c4103d956bf90196ae961ced85f99c972"
-  integrity sha512-lagqsvnk09NKogQaN/XrtlWeUF8SRhT12odMvbTIIaVObqzwAogL6jhR4DAp0gPuKoM1AOVrKUshJpRdpMFrww==
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/@exodus/bytes/-/bytes-1.10.0.tgz#5d5f5b90152a65c1a58079e427f9e7a6e951165a"
+  integrity sha512-tf8YdcbirXdPnJ+Nd4UN1EXnz+IP2DI45YVEr3vvzcVTOyrApkmIB4zvOQVd3XPr7RXnfBtAx+PXImXOIU0Ajg==
 
 "@fastify/busboy@^2.0.0":
   version "2.1.1"
@@ -2792,9 +2792,9 @@
     xstate "^5.25.0"
 
 "@portabletext/editor@^4.3.1":
-  version "4.3.3"
-  resolved "https://registry.yarnpkg.com/@portabletext/editor/-/editor-4.3.3.tgz#67bccb5f0899791da65e26bbe8fa9b9d39ba67e8"
-  integrity sha512-MK98ylbMGMfQbcwIjD3LnjuQ9i5iN9LdseBLHZ3KHQbBHlZjdFZQ1kkP8NeD/0KtJgLYkDVX0HCYTwRDwCRAPg==
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/@portabletext/editor/-/editor-4.3.4.tgz#f5aa951a73b4d25422b68e789a3154d102465f3a"
+  integrity sha512-ZQfhQ6mr0OBFpo/o9s4ByP8HjXzQB9Bn4QsNt/NGIYhYOpqc6ecGSk04q+/NLg60x2aoEYQqE6PH/PzCtiVY4Q==
   dependencies:
     "@portabletext/block-tools" "^5.0.0"
     "@portabletext/keyboard-shortcuts" "^2.1.2"
@@ -2842,10 +2842,10 @@
     remeda "^2.32.0"
     xstate "^5.25.0"
 
-"@portabletext/plugin-character-pair-decorator@^5.0.18":
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/@portabletext/plugin-character-pair-decorator/-/plugin-character-pair-decorator-5.0.18.tgz#7be58d451a7d40ae765ac1556321d3e9040ef91d"
-  integrity sha512-Id9ALHq2kYUxDIXN6Ol3q1uf/H3REqNmgAYCgvIpxqKBu2AY31omL/yhxydbCcgn7z9KVPixBTAfcSjfJF+oiQ==
+"@portabletext/plugin-character-pair-decorator@^5.0.19":
+  version "5.0.19"
+  resolved "https://registry.yarnpkg.com/@portabletext/plugin-character-pair-decorator/-/plugin-character-pair-decorator-5.0.19.tgz#5e4a803f1532ac9a8d90d30bad8e1e6880ae5665"
+  integrity sha512-0aKxt4hiL1VORbz1stw7igPyO4ckuJXla2nf1c+BipfOmZ+8HLroKbobP0wD5Y/Szotj9TRhc4z9XLutn0qydQ==
   dependencies:
     "@xstate/react" "^6.0.0"
     remeda "^2.32.0"
@@ -2860,10 +2860,10 @@
     react-compiler-runtime "^1.0.0"
     xstate "^5.25.0"
 
-"@portabletext/plugin-input-rule@^2.0.18":
-  version "2.0.18"
-  resolved "https://registry.yarnpkg.com/@portabletext/plugin-input-rule/-/plugin-input-rule-2.0.18.tgz#3a2f10c21ba90aa439a04ce803db0e2f2ea7aaad"
-  integrity sha512-AhTChH7jIcv1gfhPj7Stj27WpX44xiCdNPDykgBOt6FH+I4FhgXkv8R2tw1o7Rh7ogu0HbjUiurKz7z72R995Q==
+"@portabletext/plugin-input-rule@^2.0.19":
+  version "2.0.19"
+  resolved "https://registry.yarnpkg.com/@portabletext/plugin-input-rule/-/plugin-input-rule-2.0.19.tgz#7c6ec0d35d34d50ee6889978b7e4ec6f39b6a4fb"
+  integrity sha512-oFVm6kK39z0s80tREQeHM1mvNoPXaCo16iOL0Qy7VnvR1H7MenA830wqDCnwQzat4C/sjuNwhl7EaMEJFVtqYw==
   dependencies:
     "@xstate/react" "^6.0.0"
     xstate "^5.25.0"
@@ -2878,12 +2878,12 @@
     react-compiler-runtime "^1.0.0"
 
 "@portabletext/plugin-markdown-shortcuts@^5.0.16":
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/@portabletext/plugin-markdown-shortcuts/-/plugin-markdown-shortcuts-5.0.18.tgz#293834215c704690f9506935d13724c33efa6e07"
-  integrity sha512-wy1/UAXeD/1VRhrPvvMiX1FLGaSyTzbPODmNTWsle+pD0IkBjJhYCxtpEFW7coJ9MckEb9calrNVIE0TlDSNng==
+  version "5.0.19"
+  resolved "https://registry.yarnpkg.com/@portabletext/plugin-markdown-shortcuts/-/plugin-markdown-shortcuts-5.0.19.tgz#da679d5ceea23ef0df5f84bcf7fa2d2072f9f335"
+  integrity sha512-JgP4F2o7bl1ilQPlhfhpk2gHf719jiC1Dt3/0Rb1YHQIkoAD1PVZUS6T++f6mmoeQWwBMOk8NSYg7nopSEbd9A==
   dependencies:
-    "@portabletext/plugin-character-pair-decorator" "^5.0.18"
-    "@portabletext/plugin-input-rule" "^2.0.18"
+    "@portabletext/plugin-character-pair-decorator" "^5.0.19"
+    "@portabletext/plugin-input-rule" "^2.0.19"
 
 "@portabletext/plugin-one-line@^3.0.34":
   version "3.0.36"
@@ -2893,9 +2893,9 @@
     react-compiler-runtime "^1.0.0"
 
 "@portabletext/plugin-one-line@^4.0.16":
-  version "4.0.18"
-  resolved "https://registry.yarnpkg.com/@portabletext/plugin-one-line/-/plugin-one-line-4.0.18.tgz#c2ac900dfec1546362e5a7d38d6d32704ee4d777"
-  integrity sha512-cNZK6XX9LcJT0zDXuzcDZpcW/wEgH2rDyOHbO5p3x7GWeWW/FCS3H+BlDvjaSImGn5eq4zsTrVBEI72xOQ3yvQ==
+  version "4.0.19"
+  resolved "https://registry.yarnpkg.com/@portabletext/plugin-one-line/-/plugin-one-line-4.0.19.tgz#4c87dc71348f5a259098182ebd18b0e6c4c9def6"
+  integrity sha512-KcUYvuGPKmuAeb87yqBq57UFmfrzy5VYc9NOuuEuFTDkiB/05WbP43aox4PNm+pj3vJdFqB14+tu4eNoumhK5Q==
 
 "@portabletext/plugin-typography@^4.0.34":
   version "4.0.36"
@@ -2906,11 +2906,11 @@
     react-compiler-runtime "^1.0.0"
 
 "@portabletext/plugin-typography@^5.0.16":
-  version "5.0.18"
-  resolved "https://registry.yarnpkg.com/@portabletext/plugin-typography/-/plugin-typography-5.0.18.tgz#0c5c7c95b2ac4fb7bf2f48ce454caa56a0bb200c"
-  integrity sha512-J1t69gYqdr65cu6Z1AnvdiBn29XhZ77UDosUan6iFwxqhNCJ4vppZh0IYos+Wgq7lJ0idHnvybqKPreLcuD7IQ==
+  version "5.0.19"
+  resolved "https://registry.yarnpkg.com/@portabletext/plugin-typography/-/plugin-typography-5.0.19.tgz#79560dd58d3a43d84f9ac7418c658ea3d9337ac8"
+  integrity sha512-5KEX0O9hJ/5+/giSP0H3hUaFoZ0tm6K/ed24wgYOuo97HD7+F7bQ2i3FsxZuCdE2uh6J/hfoc+wXpI14xo99Sg==
   dependencies:
-    "@portabletext/plugin-input-rule" "^2.0.18"
+    "@portabletext/plugin-input-rule" "^2.0.19"
 
 "@portabletext/react@^6.0.0", "@portabletext/react@^6.0.2":
   version "6.0.2"
@@ -4472,10 +4472,15 @@
     "@typescript-eslint/types" "8.53.1"
     "@typescript-eslint/visitor-keys" "8.53.1"
 
-"@typescript-eslint/tsconfig-utils@8.53.1", "@typescript-eslint/tsconfig-utils@^8.53.1":
+"@typescript-eslint/tsconfig-utils@8.53.1":
   version "8.53.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.53.1.tgz#efe80b8d019cd49e5a1cf46c2eb0cd2733076424"
   integrity sha512-qfvLXS6F6b1y43pnf0pPbXJ+YoXIC7HKg0UGZ27uMIemKMKA6XH2DTxsEDdpdN29D+vHV07x/pnlPNVLhdhWiA==
+
+"@typescript-eslint/tsconfig-utils@^8.53.1":
+  version "8.54.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/tsconfig-utils/-/tsconfig-utils-8.54.0.tgz#71dd7ba1674bd48b172fc4c85b2f734b0eae3dbc"
+  integrity sha512-dRgOyT2hPk/JwxNMZDsIXDgyl9axdJI3ogZ2XWhBPsnZUv+hPesa5iuhdYt2gzwA9t8RE5ytOJ6xB0moV0Ujvw==
 
 "@typescript-eslint/type-utils@8.53.1":
   version "8.53.1"
@@ -4488,10 +4493,15 @@
     debug "^4.4.3"
     ts-api-utils "^2.4.0"
 
-"@typescript-eslint/types@8.53.1", "@typescript-eslint/types@^8.53.1":
+"@typescript-eslint/types@8.53.1":
   version "8.53.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-8.53.1.tgz#101f203f0807a63216cceceedb815fabe21d5793"
   integrity sha512-jr/swrr2aRmUAUjW5/zQHbMaui//vQlsZcJKijZf3M26bnmLj8LyZUpj8/Rd6uzaek06OWsqdofN/Thenm5O8A==
+
+"@typescript-eslint/types@^8.53.1":
+  version "8.54.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/types/-/types-8.54.0.tgz#c12d41f67a2e15a8a96fbc5f2d07b17331130889"
+  integrity sha512-PDUI9R1BVjqu7AUDsRBbKMtwmjWcn4J3le+5LpcFgWULN3LvHC5rkc9gCVxbrsrGmO1jfPybN5s6h4Jy+OnkAA==
 
 "@typescript-eslint/typescript-estree@8.53.1":
   version "8.53.1"
@@ -6222,9 +6232,9 @@ ejs@^3.1.10:
     jake "^10.8.5"
 
 electron-to-chromium@^1.5.263:
-  version "1.5.278"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.278.tgz#807a5e321f012a41bfd64e653f35993c9af95493"
-  integrity sha512-dQ0tM1svDRQOwxnXxm+twlGTjr9Upvt8UFWAgmLsxEzFQxhbti4VwxmMjsDxVC51Zo84swW7FVCXEV+VAkhuPw==
+  version "1.5.279"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.279.tgz#67dfdeb22fd81412d0d18d1d9b2c749e9b8945cb"
+  integrity sha512-0bblUU5UNdOt5G7XqGiJtpZMONma6WAfq9vsFmtn9x1+joAObr6x1chfqyxFSDCAFwFhCQDrqeAr6MYdpwJ9Hg==
 
 emittery@^0.13.1:
   version "0.13.1"
@@ -6991,13 +7001,13 @@ form-data@^4.0.5:
     hasown "^2.0.2"
     mime-types "^2.1.12"
 
-framer-motion@^12.29.0:
-  version "12.29.0"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.29.0.tgz#f031407c6025f96e9425de3da039b73c368b4153"
-  integrity sha512-1gEFGXHYV2BD42ZPTFmSU9buehppU+bCuOnHU0AD18DKh9j4DuTx47MvqY5ax+NNWRtK32qIcJf1UxKo1WwjWg==
+framer-motion@^12.29.2:
+  version "12.29.2"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.29.2.tgz#462d5ff8f9a21803794add0fd5e703de17ed6946"
+  integrity sha512-lSNRzBJk4wuIy0emYQ/nfZ7eWhqud2umPKw2QAQki6uKhZPKm2hRQHeQoHTG9MIvfobb+A/LbEWPJU794ZUKrg==
   dependencies:
-    motion-dom "^12.29.0"
-    motion-utils "^12.27.2"
+    motion-dom "^12.29.2"
+    motion-utils "^12.29.2"
     tslib "^2.4.0"
 
 from2@^2.1.0:
@@ -8856,9 +8866,9 @@ lru-cache@^10.0.1, lru-cache@^10.2.0, lru-cache@^10.4.3:
   integrity sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==
 
 lru-cache@^11.0.0, lru-cache@^11.2.4:
-  version "11.2.4"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-11.2.4.tgz#ecb523ebb0e6f4d837c807ad1abaea8e0619770d"
-  integrity sha512-B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==
+  version "11.2.5"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-11.2.5.tgz#6811ae01652ae5d749948cdd80bcc22218c6744f"
+  integrity sha512-vFrFJkWtJvJnD5hg+hJvVE8Lh/TcMzKnTgCWmtBipwI5yLX/iX+5UB2tfuyODF5E7k9xEzMdYgGqaSb1c0c5Yw==
 
 lru-cache@^5.1.1:
   version "5.1.1"
@@ -9158,24 +9168,24 @@ module-alias@^2.2.3:
   resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.3.tgz#ec2e85c68973bda6ab71ce7c93b763ec96053221"
   integrity sha512-23g5BFj4zdQL/b6tor7Ji+QY4pEfNH784BMslY9Qb0UnJWRAt+lQGLYmRaM0KDBwIG23ffEBELhZDP2rhi9f/Q==
 
-motion-dom@^12.29.0:
-  version "12.29.0"
-  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.29.0.tgz#93ba293d15df5edc9f3fd43225a5b59c26997a5c"
-  integrity sha512-3eiz9bb32yvY8Q6XNM4AwkSOBPgU//EIKTZwsSWgA9uzbPBhZJeScCVcBuwwYVqhfamewpv7ZNmVKTGp5qnzkA==
+motion-dom@^12.29.2:
+  version "12.29.2"
+  resolved "https://registry.yarnpkg.com/motion-dom/-/motion-dom-12.29.2.tgz#0949409df0e776b9d56d57faeea1ff10228904a0"
+  integrity sha512-/k+NuycVV8pykxyiTCoFzIVLA95Nb1BFIVvfSu9L50/6K6qNeAYtkxXILy/LRutt7AzaYDc2myj0wkCVVYAPPA==
   dependencies:
-    motion-utils "^12.27.2"
+    motion-utils "^12.29.2"
 
-motion-utils@^12.27.2:
-  version "12.27.2"
-  resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-12.27.2.tgz#cd3038236ae2dc3d643bdb272ed831fd6d8ab616"
-  integrity sha512-B55gcoL85Mcdt2IEStY5EEAsrMSVE2sI14xQ/uAdPL+mfQxhKKFaEag9JmfxedJOR4vZpBGoPeC/Gm13I/4g5Q==
+motion-utils@^12.29.2:
+  version "12.29.2"
+  resolved "https://registry.yarnpkg.com/motion-utils/-/motion-utils-12.29.2.tgz#8fdd28babe042c2456b078ab33b32daa3bf5938b"
+  integrity sha512-G3kc34H2cX2gI63RqU+cZq+zWRRPSsNIOjpdl9TN4AQwC4sgwYPl/Q/Obf/d53nOm569T0fYK+tcoSV50BWx8A==
 
 motion@^12.23.24, motion@^12.23.25, motion@^12.26.2:
-  version "12.29.0"
-  resolved "https://registry.yarnpkg.com/motion/-/motion-12.29.0.tgz#aaa343bdaba687312b6196af248d5c04cbc5b8e7"
-  integrity sha512-rjB5CP2N9S2ESAyEFnAFMgTec6X8yvfxLNcz8n12gPq3M48R7ZbBeVYkDOTj8SPMwfvGIFI801SiPSr1+HCr9g==
+  version "12.29.2"
+  resolved "https://registry.yarnpkg.com/motion/-/motion-12.29.2.tgz#e820aaf7fb7424bb69cf45c7b641a777a96b2be0"
+  integrity sha512-jMpHdAzEDF1QQ055cB+1lOBLdJ6ialVWl6QQzpJI2OvmHequ7zFVHM2mx0HNAy+Tu4omUlApfC+4vnkX0geEOg==
   dependencies:
-    framer-motion "^12.29.0"
+    framer-motion "^12.29.2"
     tslib "^2.4.0"
 
 ms@2.0.0:

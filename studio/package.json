@@ -28,7 +28,8 @@
     "undeploy:local": "SANITY_ACTIVE_ENV=development sanity undeploy --yes",
     "validate:schema": "sanity schema validate",
     "validate:documents": "sanity documents validate --yes --level info",
-    "release": "release-it --ci"
+    "release": "release-it --ci",
+    "release:dry-run": "release-it --ci --dry-run"
   },
   "keywords": [
     "sanity"
