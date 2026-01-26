@@ -11,7 +11,8 @@
     "apps/*"
   ],
   "scripts": {
-    "release": "yarn workspace @lucasamos/sanity-studio release && yarn release-it --ci"
+    "release": "yarn workspace @lucasamos/sanity-studio release && yarn release-it --ci",
+    "release:dry-run": "yarn workspace @lucasamos/sanity-studio release:dry-run && yarn release-it --ci --dry-run"
   },
   "devDependencies": {
     "@release-it-plugins/workspaces": "^5.0.3",
