@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1](https://github.com/LucasAmos/sanity-studio/compare/1.2.0...1.2.1) (2026-01-29)
+
+### Continuous Integration
+
+* **pr:** dependabot ([57b46d5](https://github.com/LucasAmos/sanity-studio/commit/57b46d5fd40968f60c81e18fdbaa0037d3cd50df))
+
 ## [1.2.0](https://github.com/LucasAmos/sanity-studio/compare/1.1.5...1.2.0) (2026-01-26)
 
 ### Features
