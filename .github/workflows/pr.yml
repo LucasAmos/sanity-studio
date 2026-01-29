@@ -1,0 +1,40 @@
+name: PR trigger
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+env:
+  SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+  STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
+  SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
+
+concurrency:
+  group: "main-trigger"
+
+jobs:
+  dependabot:
+    name: Dependabot
+    if: github.actor == 'dependabot[bot]'
+    uses: "./.github/workflows/dependabot.yml"
+    secrets: inherit
+    with:
+      STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
+      SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
+  deploy-pr:
+    name: Deploy ephemeral studio
+    if: github.actor != 'dependabot[bot]'
+    uses: "./.github/workflows/pr-deploy.yml"
+    secrets: inherit
+    with:
+      STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
+      SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
+  ci:
+    name: CI checks
+    if: github.actor != 'dependabot[bot]'
+    uses: "./.github/workflows/ci.yml"
+    secrets: inherit
