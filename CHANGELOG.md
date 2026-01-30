@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.2](https://github.com/LucasAmos/sanity-studio/compare/1.2.1...1.2.2) (2026-01-30)
+
+### Chores
+
+* **deps:** bump the all group with 4 updates ([58fd47d](https://github.com/LucasAmos/sanity-studio/commit/58fd47d5bce6e16820df4cd749aac47aa5465d79))
+
 ## [1.2.1](https://github.com/LucasAmos/sanity-studio/compare/1.2.0...1.2.1) (2026-01-29)
 
 ### Continuous Integration
