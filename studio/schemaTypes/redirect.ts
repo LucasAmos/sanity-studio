@@ -23,6 +23,7 @@ export default defineType({
       name: 'type',
       title: 'Type',
       type: 'number',
+      validation: (rule) => rule.required(),
       options: {
         list: [
           {title: 'Permanent', value: 301},
