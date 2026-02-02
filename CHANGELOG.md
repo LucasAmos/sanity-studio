@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.0](https://github.com/LucasAmos/sanity-studio/compare/1.2.2...1.3.0) (2026-02-02)
+
+### Features
+
+* **schema:** redirect ([866083b](https://github.com/LucasAmos/sanity-studio/commit/866083b640eff382edeada9bcdf6ef253fcb9d8b))
+
 ## [1.2.2](https://github.com/LucasAmos/sanity-studio/compare/1.2.1...1.2.2) (2026-01-30)
 
 ### Chores
