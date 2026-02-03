@@ -23,7 +23,8 @@ jobs:
     uses: "./.github/workflows/job-deploy-studio.yml"
     secrets: inherit
     with:
-      STUDIO_HOSTNAME: development
+      ENVIRONMENT: Development
+      STUDIO_HOSTNAME: "${{ vars.STUDIO_HOSTNAME }}-development"
       STUDIO_TITLE: development
 
   deploy-production-studio:
@@ -32,5 +33,6 @@ jobs:
     uses: "./.github/workflows/job-deploy-studio.yml"
     secrets: inherit
     with:
-      STUDIO_HOSTNAME: production
+      ENVIRONMENT: Production
+      STUDIO_HOSTNAME: "${{ vars.STUDIO_HOSTNAME }}-production"
       STUDIO_TITLE: production

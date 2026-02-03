@@ -9,6 +9,9 @@ on:
       STUDIO_TITLE:
         required: true
         type: string
+      ENVIRONMENT:
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -30,7 +33,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     environment:
-      name: Development
+      name: ${{inputs.ENVIRONMENT}}
       url: ${{ steps.deploy.outputs.STUDIO_URL }}
 
     steps:
