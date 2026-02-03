@@ -24,7 +24,7 @@ jobs:
     secrets: inherit
     with:
       STUDIO_HOSTNAME: development
-      SANITY_STUDIO_TITLE: development
+      STUDIO_TITLE: development
 
   deploy-production-studio:
     needs: [deploy-development-studio]
@@ -33,4 +33,4 @@ jobs:
     secrets: inherit
     with:
       STUDIO_HOSTNAME: production
-      SANITY_STUDIO_TITLE: production
+      STUDIO_TITLE: production
