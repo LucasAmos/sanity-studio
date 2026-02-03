@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/LucasAmos/sanity-studio/compare/1.3.1...1.3.2) (2026-02-03)
+
+### Continuous Integration
+
+* **workflows:** refactor ([841d222](https://github.com/LucasAmos/sanity-studio/commit/841d222e9cd6ee34e6e658d132e2253c59a2ba6b))
+* **workflows:** refactor ([df8cfd8](https://github.com/LucasAmos/sanity-studio/commit/df8cfd81c0fa9d1d24df78148ea733daa9035494))
+
 ## [1.3.1](https://github.com/LucasAmos/sanity-studio/compare/1.3.0...1.3.1) (2026-02-03)
 
 ### Continuous Integration
