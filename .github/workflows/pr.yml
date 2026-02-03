@@ -24,15 +24,14 @@ jobs:
     secrets: inherit
     with:
       STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
-      SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
-  deploy-pr:
+  deploy-studio:
     name: Deploy ephemeral studio
     if: github.actor != 'dependabot[bot]'
-    uses: "./.github/workflows/pr-deploy.yml"
+    uses: "./.github/workflows/deploy-studio.yml"
     secrets: inherit
     with:
-      STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
-      SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
+      STUDIO_HOSTNAME: "${{ vars.STUDIO_HOSTNAME }}-pr-${{ github.event.pull_request.number }}"
+      SANITY_STUDIO_TITLE: "ephemeral-pr-${{ github.event.pull_request.number }}"
   ci:
     name: CI checks
     if: github.actor != 'dependabot[bot]'
