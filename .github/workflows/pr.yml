@@ -28,7 +28,7 @@ jobs:
   deploy-pr:
     name: Deploy ephemeral studio
     if: github.actor != 'dependabot[bot]'
-    uses: "./.github/workflows/pr-deploy.yml"
+    uses: "./.github/workflows/deploy-studio.yml"
     secrets: inherit
     with:
       STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
