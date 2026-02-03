@@ -7,7 +7,7 @@ import {resolve} from './presentation/resolve'
 
 export default defineConfig({
   name: 'default',
-  title: process.env.SANITY_STUDIO_DATASET,
+  title: process.env.SANITY_STUDIO_TITLE,
 
   projectId: process.env.SANITY_STUDIO_PROJECT_ID!,
   dataset: process.env.SANITY_STUDIO_DATASET!,

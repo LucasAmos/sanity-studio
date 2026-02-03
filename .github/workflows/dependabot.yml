@@ -6,9 +6,6 @@ on:
       STUDIO_HOSTNAME:
         required: true
         type: string
-      SANITY_STUDIO_DATASET:
-        required: true
-        type: string
 
 permissions:
   contents: read
@@ -17,7 +14,6 @@ permissions:
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ inputs.STUDIO_HOSTNAME }}
-  SANITY_STUDIO_DATASET: ${{ inputs.SANITY_STUDIO_DATASET }}
 
 concurrency:
   group: "dependabot"
@@ -37,9 +33,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
-
-      - name: SANITY_STUDIO_DATASET
-        run: echo "${{ vars.SANITY_STUDIO_DATASET }}"
 
       - uses: actions/setup-node@v4
         with:

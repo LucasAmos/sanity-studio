@@ -6,7 +6,7 @@ on:
       STUDIO_HOSTNAME:
         required: true
         type: string
-      SANITY_STUDIO_DATASET:
+      SANITY_STUDIO_TITLE:
         required: true
         type: string
 
@@ -17,10 +17,9 @@ permissions:
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ inputs.STUDIO_HOSTNAME }}
-  SANITY_STUDIO_DATASET: ${{ inputs.SANITY_STUDIO_DATASET }}
 
 concurrency:
-  group: "${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-preview-deploy"
+  group: "${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-deploy-studio"
 
 jobs:
   deploy:
@@ -38,20 +37,21 @@ jobs:
       - uses: actions/checkout@v4
       - run: corepack enable
 
-      - name: SANITY_STUDIO_DATASET
-        run: echo "${{ vars.SANITY_STUDIO_DATASET }}"
-
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: yarn
       - run: yarn install --immutable
 
       - name: Set Studio hostname
-        run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-pr-${{ github.event.pull_request.number }}" >> $GITHUB_ENV
+        run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}" >> $GITHUB_ENV
 
       - name: Build and deploy Sanity Studio
         id: deploy
+        env:
+          SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
+          SANITY_STUDIO_TITLE: ${{inputs.SANITY_STUDIO_TITLE}}
+
         run: |
           yarn deploy --yes --source-maps
           echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}.sanity.studio" >> $GITHUB_OUTPUT
