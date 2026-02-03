@@ -29,6 +29,7 @@ jobs:
     uses: "./.github/workflows/job-deploy-studio.yml"
     secrets: inherit
     with:
+      ENVIRONMENT: Development
       STUDIO_HOSTNAME: "${{ vars.STUDIO_HOSTNAME }}-pr-${{ github.event.pull_request.number }}"
       STUDIO_TITLE: "ephemeral-pr-${{ github.event.pull_request.number }}"
   ci:
