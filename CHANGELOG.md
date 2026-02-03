@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.4](https://github.com/LucasAmos/sanity-studio/compare/1.3.3...1.3.4) (2026-02-03)
+
+### Continuous Integration
+
+* **workflows:** envs ([fe5aca7](https://github.com/LucasAmos/sanity-studio/commit/fe5aca74b34ebefa0cabc1b4465dd487e5ee2fde))
+
 ## [1.3.3](https://github.com/LucasAmos/sanity-studio/compare/1.3.2...1.3.3) (2026-02-03)
 
 ### Continuous Integration
