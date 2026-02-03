@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v4
         if: ${{ steps.changes.outputs.app == 'true' }}
         with:
-          node-version: 22
+          node-version: 24
           cache: yarn
       - run: yarn install --immutable
         if: ${{ steps.changes.outputs.app == 'true' }}

@@ -30,7 +30,7 @@ jobs:
     secrets: inherit
     with:
       STUDIO_HOSTNAME: "${{ vars.STUDIO_HOSTNAME }}-pr-${{ github.event.pull_request.number }}"
-      SANITY_STUDIO_TITLE: "ephemeral-pr-${{ github.event.pull_request.number }}"
+      STUDIO_TITLE: "ephemeral-pr-${{ github.event.pull_request.number }}"
   ci:
     name: CI checks
     if: github.actor != 'dependabot[bot]'

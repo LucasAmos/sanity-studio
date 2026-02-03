@@ -6,7 +6,7 @@ on:
       STUDIO_HOSTNAME:
         required: true
         type: string
-      SANITY_STUDIO_TITLE:
+      STUDIO_TITLE:
         required: true
         type: string
 
@@ -16,6 +16,7 @@ permissions:
 
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+  STUDIO_HOSTNAME: ${{ inputs.STUDIO_HOSTNAME }}
 
 concurrency:
   group: "${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-deploy-studio"
@@ -46,11 +47,12 @@ jobs:
         id: deploy
         env:
           SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
-          SANITY_STUDIO_TITLE: ${{inputs.SANITY_STUDIO_TITLE}}
+          SANITY_STUDIO_TITLE: ${{inputs.STUDIO_TITLE}}
+          SANITY_STUDIO_HOSTNAME: ${{inputs.STUDIO_HOSTNAME}}
 
         run: |
           yarn deploy --yes --source-maps
-          echo "STUDIO_URL=https://${{inputs.STUDIO_HOSTNAME}}.sanity.studio" >> $GITHUB_OUTPUT
+          echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}.sanity.studio" >> $GITHUB_OUTPUT
 
       - name: Post preview link
         uses: actions/github-script@v7
