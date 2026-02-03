@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.3](https://github.com/LucasAmos/sanity-studio/compare/1.3.2...1.3.3) (2026-02-03)
+
+### Continuous Integration
+
+* **workflow:** only comment on PR ([3f3c0ed](https://github.com/LucasAmos/sanity-studio/commit/3f3c0ed051e0ba9b8defd3e31c208231e2a39275))
+
 ## [1.3.2](https://github.com/LucasAmos/sanity-studio/compare/1.3.1...1.3.2) (2026-02-03)
 
 ### Continuous Integration
