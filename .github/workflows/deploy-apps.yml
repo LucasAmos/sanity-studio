@@ -25,13 +25,13 @@ jobs:
   ## GOTCHA: the token must be created at the organisation level with read and deploy
   ## grants, a personal robot token will not suffice
   app-test-1:
-    uses: ./.github/workflows/deploy-app.yml
+    uses: ./.github/workflows/job-deploy-app.yml
     secrets: inherit
     with:
       directory: apps/app-feedback
       name: feedback
   app-test-2:
-    uses: ./.github/workflows/deploy-app.yml
+    uses: ./.github/workflows/job-deploy-app.yml
     secrets: inherit
     with:
       directory: apps/app-test

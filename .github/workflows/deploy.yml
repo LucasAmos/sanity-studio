@@ -18,62 +18,19 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-deploy
 
 jobs:
-  deploy-development:
-    name: Deploy development
-    runs-on: ubuntu-22.04
-    defaults:
-      run:
-        working-directory: ./studio
-    environment:
-      name: Development
-    steps:
-      - uses: actions/checkout@v4
-      - run: corepack enable
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: yarn
-      - run: yarn install --immutable
+  deploy-development-studio:
+    name: Deploy development studio
+    uses: "./.github/workflows/job-deploy-studio.yml"
+    secrets: inherit
+    with:
+      STUDIO_HOSTNAME: development
+      SANITY_STUDIO_TITLE: development
 
-      - name: Set Studio hostname
-        run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}-development" >> $GITHUB_ENV
-
-      - name: Build and deploy Sanity Studio
-        id: deploy
-        env:
-          SANITY_STUDIO_DATASET: development
-          SANITY_STUDIO_TITLE: development
-        run: |
-          yarn deploy --yes --source-maps
-          echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}-development.sanity.studio" >> $GITHUB_OUTPUT
-
-  deploy-production:
-    name: Deploy production
-    needs: [deploy-development]
-    runs-on: ubuntu-22.04
-    defaults:
-      run:
-        working-directory: ./studio
-    environment:
-      name: Production
-    steps:
-      - uses: actions/checkout@v4
-      - run: corepack enable
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: yarn
-      - run: yarn install --immutable
-
-      - name: Set Studio hostname
-        run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}" >> $GITHUB_ENV
-
-      - name: Build and deploy Sanity Studio
-        id: deploy
-        env:
-          SANITY_STUDIO_DATASET: production
-          SANITY_STUDIO_TITLE: production
-        run: |
-          yarn deploy --yes
-          echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}.sanity.studio" >> $GITHUB_OUTPUT
+  deploy-production-studio:
+    needs: [deploy-development-studio]
+    name: Deploy production studio
+    uses: "./.github/workflows/job-deploy-studio.yml"
+    secrets: inherit
+    with:
+      STUDIO_HOSTNAME: production
+      SANITY_STUDIO_TITLE: production
