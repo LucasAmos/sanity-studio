@@ -16,7 +16,6 @@ permissions:
 
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-  STUDIO_HOSTNAME: ${{ inputs.STUDIO_HOSTNAME }}
 
 concurrency:
   group: "${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-deploy-studio"
@@ -43,9 +42,6 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
 
-      - name: Set Studio hostname
-        run: echo "SANITY_STUDIO_HOSTNAME=${STUDIO_HOSTNAME}" >> $GITHUB_ENV
-
       - name: Build and deploy Sanity Studio
         id: deploy
         env:
@@ -54,7 +50,7 @@ jobs:
 
         run: |
           yarn deploy --yes --source-maps
-          echo "STUDIO_URL=https://${SANITY_STUDIO_HOSTNAME}.sanity.studio" >> $GITHUB_OUTPUT
+          echo "STUDIO_URL=https://${{inputs.STUDIO_HOSTNAME}}.sanity.studio" >> $GITHUB_OUTPUT
 
       - name: Post preview link
         uses: actions/github-script@v7

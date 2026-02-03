@@ -11,7 +11,6 @@ permissions:
 env:
   SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
   STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
-  SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
 
 concurrency:
   group: "main-trigger"
@@ -20,14 +19,14 @@ jobs:
   dependabot:
     name: Dependabot
     if: github.actor == 'dependabot[bot]'
-    uses: "./.github/workflows/dependabot.yml"
+    uses: "./.github/workflows/job-dependabot.yml"
     secrets: inherit
     with:
       STUDIO_HOSTNAME: ${{ vars.STUDIO_HOSTNAME }}
   deploy-studio:
     name: Deploy ephemeral studio
     if: github.actor != 'dependabot[bot]'
-    uses: "./.github/workflows/deploy-studio.yml"
+    uses: "./.github/workflows/job-deploy-studio.yml"
     secrets: inherit
     with:
       STUDIO_HOSTNAME: "${{ vars.STUDIO_HOSTNAME }}-pr-${{ github.event.pull_request.number }}"
