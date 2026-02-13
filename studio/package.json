@@ -35,13 +35,13 @@
     "sanity"
   ],
   "dependencies": {
-    "@release-it/conventional-changelog": "^10.0.1",
-    "@sanity/vision": "^5.7.0",
+    "@release-it/conventional-changelog": "^10.0.5",
+    "@sanity/vision": "^5.9.0",
     "react": "^19.2",
     "react-dom": "^19.2",
     "release-it": "^19.0.5",
     "sanity": "^5.2.0",
-    "styled-components": "^6.1.18"
+    "styled-components": "^6.3.9"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^5.0.2",
