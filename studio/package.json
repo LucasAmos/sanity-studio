@@ -29,7 +29,8 @@
     "validate:schema": "sanity schema validate",
     "validate:documents": "sanity documents validate --yes --level info",
     "release": "release-it --ci",
-    "release:dry-run": "release-it --ci --dry-run"
+    "release:dry-run": "release-it --ci --dry-run",
+    "test:watch": "vitest"
   },
   "keywords": [
     "sanity"
@@ -49,7 +50,8 @@
     "eslint": "^9.28",
     "prettier": "^3.5",
     "release-it": "^19.0.5",
-    "typescript": "^5.8"
+    "typescript": "^5.8",
+    "vitest": "^4.0.18"
   },
   "prettier": {
     "semi": false,
