@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.5](https://github.com/LucasAmos/sanity-studio/compare/1.3.4...1.3.5) (2026-02-14)
+
+### Chores
+
+* **deps:** bump the all group across 1 directory with 6 updates ([64425d4](https://github.com/LucasAmos/sanity-studio/commit/64425d42dce3deb88d778bd22b77af3d40c7a925))
+
 ## [1.3.4](https://github.com/LucasAmos/sanity-studio/compare/1.3.3...1.3.4) (2026-02-03)
 
 ### Continuous Integration
