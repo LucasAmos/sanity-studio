@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.0](https://github.com/LucasAmos/sanity-studio/compare/1.3.5...1.4.0) (2026-02-14)
+
+### Features
+
+* **studio:** author validation ([30c20dd](https://github.com/LucasAmos/sanity-studio/commit/30c20dd4bd56f2eae67fbee8f5fbaf04325719c4))
+
+### Chores
+
+* **yarn:** upgrade ([5f3e503](https://github.com/LucasAmos/sanity-studio/commit/5f3e503a27c335b40026aa1a5c4674af66f156a5))
+
 ## [1.3.5](https://github.com/LucasAmos/sanity-studio/compare/1.3.4...1.3.5) (2026-02-14)
 
 ### Chores
