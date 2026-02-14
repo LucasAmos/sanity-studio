@@ -30,7 +30,8 @@
     "validate:documents": "sanity documents validate --yes --level info",
     "release": "release-it --ci",
     "release:dry-run": "release-it --ci --dry-run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test": "vitest run"
   },
   "keywords": [
     "sanity"

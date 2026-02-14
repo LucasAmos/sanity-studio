@@ -166,3 +166,23 @@ jobs:
     with:
       directory: apps/app-test
       name: test
+
+  test-studio:
+    environment:
+      name: ci
+    name: Test studio
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: ./studio
+    steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          cache: npm
+          node-version: 24
+      - run: yarn install --immutable
+
+      - name: Run tests
+        run: yarn test

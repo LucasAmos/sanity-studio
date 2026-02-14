@@ -11,6 +11,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-22.04
+    name: ${{inputs.name}}
     steps:
       - uses: actions/checkout@v4
       - uses: dorny/paths-filter@v3.0.2
