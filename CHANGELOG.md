@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.1](https://github.com/LucasAmos/sanity-studio/compare/1.4.0...1.4.1) (2026-02-14)
+
+### Continuous Integration
+
+* **tests:** run tests ([6fcef35](https://github.com/LucasAmos/sanity-studio/commit/6fcef35eea2efc3b5d60cd170c607c52a52490b1))
+
 ## [1.4.0](https://github.com/LucasAmos/sanity-studio/compare/1.3.5...1.4.0) (2026-02-14)
 
 ### Features
