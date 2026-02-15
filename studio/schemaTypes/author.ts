@@ -34,6 +34,14 @@ export default defineType({
   title: 'Author',
   type: 'document',
   fields: [
+    {
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'name',
+      },
+    },
     defineField({
       name: 'name',
       title: 'Name',
