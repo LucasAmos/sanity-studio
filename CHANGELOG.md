@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.4.2](https://github.com/LucasAmos/sanity-studio/compare/1.4.1...1.4.2) (2026-02-15)
+
+### Tests
+
+* **author:** refactor ([7a8fdc5](https://github.com/LucasAmos/sanity-studio/commit/7a8fdc52a7b66a0fcbf1911f5b47c63f7290b616))
+
+### Chores
+
+* **deps:** upgrade ([a2ea102](https://github.com/LucasAmos/sanity-studio/commit/a2ea1023ee3a029adb8361dc54be54887b4e59ba))
+* **yarn:** pin yarn ([6d12f8e](https://github.com/LucasAmos/sanity-studio/commit/6d12f8ee463a1f9a0cf011b77417b50fd9725fe8))
+
 ## [1.4.1](https://github.com/LucasAmos/sanity-studio/compare/1.4.0...1.4.1) (2026-02-14)
 
 ### Continuous Integration
