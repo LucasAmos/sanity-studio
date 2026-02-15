@@ -26,7 +26,7 @@ describe('uniqueValidation', () => {
 
   it('should return true when no existing author with that name', async () => {
     mockClient.fetch.mockResolvedValue([])
-    const validator = uniqueValidation(mockRule)
+    uniqueValidation(mockRule)
     const customFn = mockRule.custom.mock.calls[0][0]
 
     const result = await customFn('New Author', mockContext)
@@ -35,7 +35,7 @@ describe('uniqueValidation', () => {
 
   it('should return true when same document ID', async () => {
     mockClient.fetch.mockResolvedValue([{_id: 'doc-1'}])
-    const validator = uniqueValidation(mockRule)
+    uniqueValidation(mockRule)
     const customFn = mockRule.custom.mock.calls[0][0]
 
     const result = await customFn('Existing Author', mockContext)
@@ -44,7 +44,7 @@ describe('uniqueValidation', () => {
 
   it('should return error when author already exists', async () => {
     mockClient.fetch.mockResolvedValue([{_id: 'doc-2'}])
-    const validator = uniqueValidation(mockRule)
+    uniqueValidation(mockRule)
     const customFn = mockRule.custom.mock.calls[0][0]
 
     const result = await customFn('Existing Author', mockContext)
@@ -53,7 +53,7 @@ describe('uniqueValidation', () => {
 
   it('should call client.fetch with correct parameters', async () => {
     mockClient.fetch.mockResolvedValue([])
-    const validator = uniqueValidation(mockRule)
+    uniqueValidation(mockRule)
     const customFn = mockRule.custom.mock.calls[0][0]
 
     await customFn('Test Author', mockContext)
