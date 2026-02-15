@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.5.0](https://github.com/LucasAmos/sanity-studio/compare/1.4.2...1.5.0) (2026-02-15)
+
+### Features
+
+* **author:** add slug ([d8ef1ec](https://github.com/LucasAmos/sanity-studio/commit/d8ef1ece877504b68a8a73cc9eec32f9c26263f4))
+
 ## [1.4.2](https://github.com/LucasAmos/sanity-studio/compare/1.4.1...1.4.2) (2026-02-15)
 
 ### Tests
