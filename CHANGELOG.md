@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.1](https://github.com/LucasAmos/sanity-studio/compare/1.6.0...1.6.1) (2026-02-15)
+
+### Chores
+
+* **migration:** typing refactor ([079c783](https://github.com/LucasAmos/sanity-studio/commit/079c783b3fdaa64b15bc54cb2dcff0958efc93ac))
+
 ## [1.6.0](https://github.com/LucasAmos/sanity-studio/compare/1.5.1...1.6.0) (2026-02-15)
 
 ### Features
