@@ -10,7 +10,7 @@ export default defineMigration({
 
   async *migrate(documents, context) {
     for await (const document of documents()) {
-      const name = typeof document.name === 'string' ? document.name : ''
+      const name = document['name'] as string
       const slug =
         name
           .toLowerCase()
