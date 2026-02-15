@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.0](https://github.com/LucasAmos/sanity-studio/compare/1.5.1...1.6.0) (2026-02-15)
+
+### Features
+
+* **author:** make slug required ([7b39e53](https://github.com/LucasAmos/sanity-studio/commit/7b39e5383577814572237a0ba6f69ec7a6dd1dce))
+
 ## [1.5.1](https://github.com/LucasAmos/sanity-studio/compare/1.5.0...1.5.1) (2026-02-15)
 
 ### Chores
