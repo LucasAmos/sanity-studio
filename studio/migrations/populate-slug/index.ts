@@ -10,13 +10,14 @@ export default defineMigration({
 
   async *migrate(documents, context) {
     for await (const document of documents()) {
-      const slug = document.name
-        ?.toLowerCase()
-        .trim()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/\s+/g, '-')
-        .replace(/-+/g, '-')
-
+      const name = typeof document.name === 'string' ? document.name : ''
+      const slug =
+        name
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-')
+          .replace(/-+/g, '-') || ''
       yield patch(document._id, [at('slug', set({current: slug}))])
     }
   },
