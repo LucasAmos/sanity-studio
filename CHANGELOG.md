@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.5.1](https://github.com/LucasAmos/sanity-studio/compare/1.5.0...1.5.1) (2026-02-15)
+
+### Chores
+
+* **migration:** author slug ([bb8847e](https://github.com/LucasAmos/sanity-studio/commit/bb8847ef7cd4d992f110bab1640de6b41d37d72a))
+
 ## [1.5.0](https://github.com/LucasAmos/sanity-studio/compare/1.4.2...1.5.0) (2026-02-15)
 
 ### Features
