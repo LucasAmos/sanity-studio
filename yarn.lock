@@ -3422,7 +3422,7 @@ __metadata:
   dependencies:
     "@release-it/conventional-changelog": "npm:^10.0.5"
     "@sanity/eslint-config-studio": "npm:^5.0.2"
-    "@sanity/vision": "npm:^5.9.0"
+    "@sanity/vision": "npm:^5.10.0"
     "@types/react": "npm:^19.2"
     eslint: "npm:^9.28"
     prettier: "npm:^3.5"
@@ -3430,7 +3430,7 @@ __metadata:
     react-dom: "npm:^19.2"
     release-it: "npm:^19.0.5"
     sanity: "npm:^5.2.0"
-    styled-components: "npm:^6.3.9"
+    styled-components: "npm:^6.3.10"
     typescript: "npm:^5.8"
     vitest: "npm:^4.0.18"
   languageName: unknown
@@ -5441,9 +5441,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/vision@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "@sanity/vision@npm:5.9.0"
+"@sanity/vision@npm:^5.10.0":
+  version: 5.10.0
+  resolution: "@sanity/vision@npm:5.10.0"
   dependencies:
     "@codemirror/autocomplete": "npm:^6.20.0"
     "@codemirror/commands": "npm:^6.10.1"
@@ -5473,7 +5473,7 @@ __metadata:
     react: ^19.2.2
     sanity: ^4.0.0-0 || ^5.0.0-0
     styled-components: ^6.1.15
-  checksum: 10c0/eff62d6aaf50ba51c9b6dc79ef46d63d63f31ea4a400cd97ec99469cd6d6a7f8f166c941d1def9d135aead94bae11273970f21e4d97aace7d93ae203c63948ec
+  checksum: 10c0/dd59ff4016b8ecec272480f99e2d60a4c965cfa048b60a925de8ef49843f79976b8365b7e230dc2eee18698b887527df67d7076139686f8faad384e7c43e2f80
   languageName: node
   linkType: hard
 
@@ -6717,7 +6717,7 @@ __metadata:
     react: "npm:^19"
     react-dom: "npm:^19"
     sanity: "npm:^4.4.0"
-    styled-components: "npm:^6.3.9"
+    styled-components: "npm:^6.3.10"
     typescript: "npm:^5.1.6"
   languageName: unknown
   linkType: soft
@@ -6735,7 +6735,7 @@ __metadata:
     react: "npm:^19"
     react-dom: "npm:^19"
     sanity: "npm:^4"
-    styled-components: "npm:^6.3.9"
+    styled-components: "npm:^6.3.10"
     typescript: "npm:^5.1.6"
   languageName: unknown
   linkType: soft
@@ -16527,9 +16527,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^6.3.9":
-  version: 6.3.9
-  resolution: "styled-components@npm:6.3.9"
+"styled-components@npm:^6.3.10":
+  version: 6.3.10
+  resolution: "styled-components@npm:6.3.10"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.4.0"
     "@emotion/unitless": "npm:0.10.0"
@@ -16546,7 +16546,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/3c9c71255442e95fdb1feeba40fab615cd810836262b3637ef71aa9c5193d3b5d98d172d20a133a9d58c95512e29a4a6c5543e554835319a539212c28e380656
+  checksum: 10c0/60f60669ef22be0d6dcc800702c4cfb4527f37c35429bc130aef3335943d1552aad8c444c5c48b8d36963190b92acbb592c70cafc6efcc1a192b100d271e0e76
   languageName: node
   linkType: hard
 
