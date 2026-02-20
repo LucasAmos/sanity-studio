@@ -2413,7 +2413,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.39.2, @eslint/js@npm:^9.39.2":
+"@eslint/js@npm:9.39.3":
+  version: 9.39.3
+  resolution: "@eslint/js@npm:9.39.3"
+  checksum: 10c0/df1c70d6681c8daf4a3c86dfac159fcd98a73c4620c4fbe2be6caab1f30a34c7de0ad88ab0e81162376d2cde1a2eed1c32eff5f917ca369870930a51f8e818f1
+  languageName: node
+  linkType: hard
+
+"@eslint/js@npm:^9.39.2":
   version: 9.39.2
   resolution: "@eslint/js@npm:9.39.2"
   checksum: 10c0/00f51c52b04ac79faebfaa65a9652b2093b9c924e945479f1f3945473f78aee83cbc76c8d70bbffbf06f7024626575b16d97b66eab16182e1d0d39daff2f26f5
@@ -3422,15 +3429,15 @@ __metadata:
   dependencies:
     "@release-it/conventional-changelog": "npm:^10.0.5"
     "@sanity/eslint-config-studio": "npm:^5.0.2"
-    "@sanity/vision": "npm:^5.9.0"
+    "@sanity/vision": "npm:^5.11.0"
     "@types/react": "npm:^19.2"
-    eslint: "npm:^9.28"
+    eslint: "npm:^9.39"
     prettier: "npm:^3.5"
     react: "npm:^19.2"
     react-dom: "npm:^19.2"
     release-it: "npm:^19.0.5"
     sanity: "npm:^5.2.0"
-    styled-components: "npm:^6.3.9"
+    styled-components: "npm:^6.3.11"
     typescript: "npm:^5.8"
     vitest: "npm:^4.0.18"
   languageName: unknown
@@ -5206,12 +5213,12 @@ __metadata:
   linkType: hard
 
 "@sanity/sdk-react@npm:^2":
-  version: 2.7.0
-  resolution: "@sanity/sdk-react@npm:2.7.0"
+  version: 2.8.0
+  resolution: "@sanity/sdk-react@npm:2.8.0"
   dependencies:
     "@sanity/client": "npm:^7.14.1"
     "@sanity/message-protocol": "npm:^0.18.0"
-    "@sanity/sdk": "npm:2.7.0"
+    "@sanity/sdk": "npm:2.8.0"
     "@sanity/types": "npm:^5.2.0"
     "@types/lodash-es": "npm:^4.17.12"
     groq: "npm:3.88.1-typegen-experimental.0"
@@ -5222,7 +5229,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0 || ^19.0.0
     react-dom: ^18.0.0 || ^19.0.0
-  checksum: 10c0/5ef2ebfc247722c2d5452c567da06fc07a2dbd957c4dc472ac7f05208e9d58d50ef3902425c13139e9d547107a016baadf03b28c383b2eec6f262f01ec68807e
+  checksum: 10c0/f6abd46bf7f8d738a8a96130b0a414240e9f3356e593cd5a1a8067c691dfe45f437ad8fb212ec31728c0d679d0de5325f5753994f9076589109309be7edf6d46
   languageName: node
   linkType: hard
 
@@ -5248,9 +5255,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/sdk@npm:2.7.0, @sanity/sdk@npm:^2":
-  version: 2.7.0
-  resolution: "@sanity/sdk@npm:2.7.0"
+"@sanity/sdk@npm:2.8.0, @sanity/sdk@npm:^2":
+  version: 2.8.0
+  resolution: "@sanity/sdk@npm:2.8.0"
   dependencies:
     "@sanity/bifur-client": "npm:^0.4.1"
     "@sanity/client": "npm:^7.14.1"
@@ -5268,7 +5275,7 @@ __metadata:
     reselect: "npm:^5.1.1"
     rxjs: "npm:^7.8.2"
     zustand: "npm:^5.0.4"
-  checksum: 10c0/96a977dd26e97d83292c7cf60c68d4eba59c72f612e5191d6ecf9f8574b76e7bd0025d883744845e33fc679cd8917f6b31b52022b5dbe471dc5aaa6e14515c12
+  checksum: 10c0/9037a5faa5fa9a5be03f1123601256299613ae7d4b47bd0c482fb1277e3d47ddac4274198c49772fe55c7d9bb1c7bb342d9933e8045e5640142443f2965f8692
   languageName: node
   linkType: hard
 
@@ -5441,9 +5448,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/vision@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "@sanity/vision@npm:5.9.0"
+"@sanity/vision@npm:^5.11.0":
+  version: 5.11.0
+  resolution: "@sanity/vision@npm:5.11.0"
   dependencies:
     "@codemirror/autocomplete": "npm:^6.20.0"
     "@codemirror/commands": "npm:^6.10.1"
@@ -5473,7 +5480,7 @@ __metadata:
     react: ^19.2.2
     sanity: ^4.0.0-0 || ^5.0.0-0
     styled-components: ^6.1.15
-  checksum: 10c0/eff62d6aaf50ba51c9b6dc79ef46d63d63f31ea4a400cd97ec99469cd6d6a7f8f166c941d1def9d135aead94bae11273970f21e4d97aace7d93ae203c63948ec
+  checksum: 10c0/ca67eb60c8d67df47b51951948f10fbfd67bc7e69c589aa4b3d3e18ef03da00426c3f44608cd242ba6cf961675a37e19182f41449cfe7ea61be38bef081b189c
   languageName: node
   linkType: hard
 
@@ -6717,7 +6724,7 @@ __metadata:
     react: "npm:^19"
     react-dom: "npm:^19"
     sanity: "npm:^4.4.0"
-    styled-components: "npm:^6.3.9"
+    styled-components: "npm:^6.3.11"
     typescript: "npm:^5.1.6"
   languageName: unknown
   linkType: soft
@@ -6735,7 +6742,7 @@ __metadata:
     react: "npm:^19"
     react-dom: "npm:^19"
     sanity: "npm:^4"
-    styled-components: "npm:^6.3.9"
+    styled-components: "npm:^6.3.11"
     typescript: "npm:^5.1.6"
   languageName: unknown
   linkType: soft
@@ -9557,9 +9564,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^9.28":
-  version: 9.39.2
-  resolution: "eslint@npm:9.39.2"
+"eslint@npm:^9.39":
+  version: 9.39.3
+  resolution: "eslint@npm:9.39.3"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
@@ -9567,7 +9574,7 @@ __metadata:
     "@eslint/config-helpers": "npm:^0.4.2"
     "@eslint/core": "npm:^0.17.0"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:9.39.2"
+    "@eslint/js": "npm:9.39.3"
     "@eslint/plugin-kit": "npm:^0.4.1"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
@@ -9602,7 +9609,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/bb88ca8fd16bb7e1ac3e13804c54d41c583214460c0faa7b3e7c574e69c5600c7122295500fb4b0c06067831111db740931e98da1340329527658e1cf80073d3
+  checksum: 10c0/5e5dbf84d4f604f5d2d7a58c5c3fcdde30a01b8973ff3caeca8b2bacc16066717cedb4385ce52db1a2746d0b621770d4d4227cc7f44982b0b03818be2c31538d
   languageName: node
   linkType: hard
 
@@ -16527,9 +16534,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^6.3.9":
-  version: 6.3.9
-  resolution: "styled-components@npm:6.3.9"
+"styled-components@npm:^6.3.11":
+  version: 6.3.11
+  resolution: "styled-components@npm:6.3.11"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.4.0"
     "@emotion/unitless": "npm:0.10.0"
@@ -16546,7 +16553,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10c0/3c9c71255442e95fdb1feeba40fab615cd810836262b3637ef71aa9c5193d3b5d98d172d20a133a9d58c95512e29a4a6c5543e554835319a539212c28e380656
+  checksum: 10c0/26e9e6205b9cebb3db56cd1ffcd43d8b7cb0d2801cdd6cea7d361b11ac32a8de24a88279e6138816c6d922099dccd6a08a0a6aeacf08f2281095151169640595
   languageName: node
   linkType: hard
 
