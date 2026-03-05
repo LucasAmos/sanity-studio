@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.6.2](https://github.com/LucasAmos/sanity-studio/compare/1.6.1...1.6.2) (2026-03-05)
+
+### Chores
+
+* **deps:** upgrade deps ([1e9cdfc](https://github.com/LucasAmos/sanity-studio/commit/1e9cdfcb7d42b1478e6823e37e1cef386342bc1a))
+
 ## [1.6.1](https://github.com/LucasAmos/sanity-studio/compare/1.6.0...1.6.1) (2026-02-15)
 
 ### Chores
