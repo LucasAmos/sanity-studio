@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.0](https://github.com/LucasAmos/sanity-studio/compare/1.6.2...1.7.0) (2026-03-06)
+
+### Features
+
+* **rewrite:** remove rewrite ([9792ebe](https://github.com/LucasAmos/sanity-studio/commit/9792ebe297a575f193f7961ca88ad367606ef036))
+
 ## [1.6.2](https://github.com/LucasAmos/sanity-studio/compare/1.6.1...1.6.2) (2026-03-05)
 
 ### Chores
