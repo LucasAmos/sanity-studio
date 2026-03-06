@@ -18,7 +18,7 @@ export const uniqueValidation = (rule: StringRule) => {
     )
 
     if (res[0]?._id === context.document?._id) {
-      // if the reference of document linked to the rewrite is the same as
+      // if the reference of document linked to the name is the same as
       // this document then that is allowed
       return true
     }
