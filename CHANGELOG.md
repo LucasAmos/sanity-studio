@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.1](https://github.com/LucasAmos/sanity-studio/compare/1.7.0...1.7.1) (2026-03-06)
+
+### Chores
+
+* **schema:** remove redirect ([ff23efa](https://github.com/LucasAmos/sanity-studio/commit/ff23efa1d807391bf01522b1dce5b29dbb0633eb))
+
 ## [1.7.0](https://github.com/LucasAmos/sanity-studio/compare/1.6.2...1.7.0) (2026-03-06)
 
 ### Features
