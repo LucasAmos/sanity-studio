@@ -47,3 +47,9 @@ export default defineType({
 }
  * 
  */
+
+/**
+ * Footer should have option to hide breadcrumbs, leave footer in layout and display
+ * breadcrumbs at the bottom of each page
+ */
+
