@@ -1,5 +1,6 @@
 import {defineField, defineType, StringRule} from 'sanity'
 import groq from 'groq'
+import {UserIcon} from '@sanity/icons'
 
 export const uniqueValidation = (rule: StringRule) => {
   return rule.custom(async (value, context) => {
@@ -33,6 +34,7 @@ export default defineType({
   name: 'author',
   title: 'Author',
   type: 'document',
+  icon: UserIcon,
   fields: [
     {
       title: 'Slug',

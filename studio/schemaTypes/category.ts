@@ -1,10 +1,13 @@
 import {defineField, defineType} from 'sanity'
-import groq from 'groq'
+import {TagIcon} from '@sanity/icons'
+// Use this if no icon is required
+const NoIcon = () => null
 
 export default defineType({
   name: 'category',
   title: 'Category',
   type: 'document',
+  icon: TagIcon,
   fields: [
     defineField({
       name: 'name',
