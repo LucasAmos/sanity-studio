@@ -1,4 +1,5 @@
-import {defineField, defineType} from 'sanity'
+import {defineField, defineType,defineArrayMember} from 'sanity'
+import { richTextField } from '../fields/richtext'
 
 
 import { InfoOutlineIcon } from '@sanity/icons'
@@ -23,11 +24,6 @@ export default defineType({
       type: 'string',
       validation: (rule) => rule.required(),
     }),
-    defineField({
-      name: 'text',
-      title: 'Text',
-      type: 'text',
-      validation: (rule) => rule.required(),
-    }),
+  {...richTextField, initialValue: ""}
   ],
 })
