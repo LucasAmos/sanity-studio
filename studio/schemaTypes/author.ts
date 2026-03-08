@@ -1,55 +1,55 @@
-import {defineField, defineType, StringRule} from 'sanity'
-import groq from 'groq'
-import {UserIcon} from '@sanity/icons'
+import { defineField, defineType, StringRule } from "sanity";
+import groq from "groq";
+import { UserIcon } from "@sanity/icons";
 
 export const uniqueValidation = (rule: StringRule) => {
   return rule.custom(async (value, context) => {
-    const client = context.getClient({apiVersion: '2021-03-25'})
-    const type = context.document!._type
+    const client = context.getClient({ apiVersion: "2021-03-25" });
+    const type = context.document!._type;
 
     const res = await client.fetch(
       groq`*[ _type == $type && name == $name] {_id}`,
       {
         type: type,
-        name: value,
+        name: value
       },
       {
-        perspective: 'published',
-      },
-    )
+        perspective: "published"
+      }
+    );
 
     if (res[0]?._id === context.document?._id) {
       // if the reference of document linked to the name is the same as
       // this document then that is allowed
-      return true
+      return true;
     }
     if (res.length === 0) {
-      return true
+      return true;
     }
-    return {message: 'An author already exists with that name'}
-  })
-}
+    return { message: "An author already exists with that name" };
+  });
+};
 
 export default defineType({
-  name: 'author',
-  title: 'Author',
-  type: 'document',
+  name: "author",
+  title: "Author",
+  type: "document",
   icon: UserIcon,
   fields: [
     {
-      title: 'Slug',
-      name: 'slug',
-      type: 'slug',
+      title: "Slug",
+      name: "slug",
+      type: "slug",
       options: {
-        source: 'name',
+        source: "name"
       },
-      validation: (rule) => rule.required(),
+      validation: (rule) => rule.required()
     },
     defineField({
-      name: 'name',
-      title: 'Name',
-      type: 'string',
-      validation: uniqueValidation,
-    }),
-  ],
-})
+      name: "name",
+      title: "Name",
+      type: "string",
+      validation: uniqueValidation
+    })
+  ]
+});

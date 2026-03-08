@@ -4,288 +4,288 @@
 
 ### Features
 
-* **about:** add richText ([b3a9608](https://github.com/LucasAmos/sanity-studio/commit/b3a96086cc94bc8ba0c7c60e8a2340b9c21fd177))
+- **about:** add richText ([b3a9608](https://github.com/LucasAmos/sanity-studio/commit/b3a96086cc94bc8ba0c7c60e8a2340b9c21fd177))
 
 ## [1.11.1](https://github.com/LucasAmos/sanity-studio/compare/1.11.0...1.11.1) (2026-03-08)
 
 ### Chores
 
-* **deps:** deps ([7185f68](https://github.com/LucasAmos/sanity-studio/commit/7185f684e21885d155dca429d69953b1012720c6))
+- **deps:** deps ([7185f68](https://github.com/LucasAmos/sanity-studio/commit/7185f684e21885d155dca429d69953b1012720c6))
 
 ## [1.11.0](https://github.com/LucasAmos/sanity-studio/compare/1.10.0...1.11.0) (2026-03-08)
 
 ### Features
 
-* **about:** about singleton fix ([e721a2e](https://github.com/LucasAmos/sanity-studio/commit/e721a2eee6c7d6fa0767da817523933b5aa68ed5))
+- **about:** about singleton fix ([e721a2e](https://github.com/LucasAmos/sanity-studio/commit/e721a2eee6c7d6fa0767da817523933b5aa68ed5))
 
 ## [1.10.0](https://github.com/LucasAmos/sanity-studio/compare/1.9.1...1.10.0) (2026-03-08)
 
 ### Features
 
-* **about:** change type ([e1dbf3f](https://github.com/LucasAmos/sanity-studio/commit/e1dbf3fc62c312429f279ca86e9492abbc5e23e5))
+- **about:** change type ([e1dbf3f](https://github.com/LucasAmos/sanity-studio/commit/e1dbf3fc62c312429f279ca86e9492abbc5e23e5))
 
 ## [1.9.1](https://github.com/LucasAmos/sanity-studio/compare/1.9.0...1.9.1) (2026-03-08)
 
 ### Bug Fixes
 
-* **about:** fix ([47e5826](https://github.com/LucasAmos/sanity-studio/commit/47e5826cf35e643319c8db408a0b8867345eafc5))
+- **about:** fix ([47e5826](https://github.com/LucasAmos/sanity-studio/commit/47e5826cf35e643319c8db408a0b8867345eafc5))
 
 ## [1.9.0](https://github.com/LucasAmos/sanity-studio/compare/1.8.0...1.9.0) (2026-03-08)
 
 ### Features
 
-* **about:** make editable ([cca5aab](https://github.com/LucasAmos/sanity-studio/commit/cca5aab3c3ed123b250c82c986d139b74bfb5a5b))
+- **about:** make editable ([cca5aab](https://github.com/LucasAmos/sanity-studio/commit/cca5aab3c3ed123b250c82c986d139b74bfb5a5b))
 
 ## [1.8.0](https://github.com/LucasAmos/sanity-studio/compare/1.7.1...1.8.0) (2026-03-08)
 
 ### Features
 
-* **about:** about page singleton ([7d425b6](https://github.com/LucasAmos/sanity-studio/commit/7d425b68ea6ac0d2e4bc89c57972dc09ef88cc5f))
+- **about:** about page singleton ([7d425b6](https://github.com/LucasAmos/sanity-studio/commit/7d425b68ea6ac0d2e4bc89c57972dc09ef88cc5f))
 
 ## [1.7.1](https://github.com/LucasAmos/sanity-studio/compare/1.7.0...1.7.1) (2026-03-06)
 
 ### Chores
 
-* **schema:** remove redirect ([ff23efa](https://github.com/LucasAmos/sanity-studio/commit/ff23efa1d807391bf01522b1dce5b29dbb0633eb))
+- **schema:** remove redirect ([ff23efa](https://github.com/LucasAmos/sanity-studio/commit/ff23efa1d807391bf01522b1dce5b29dbb0633eb))
 
 ## [1.7.0](https://github.com/LucasAmos/sanity-studio/compare/1.6.2...1.7.0) (2026-03-06)
 
 ### Features
 
-* **rewrite:** remove rewrite ([9792ebe](https://github.com/LucasAmos/sanity-studio/commit/9792ebe297a575f193f7961ca88ad367606ef036))
+- **rewrite:** remove rewrite ([9792ebe](https://github.com/LucasAmos/sanity-studio/commit/9792ebe297a575f193f7961ca88ad367606ef036))
 
 ## [1.6.2](https://github.com/LucasAmos/sanity-studio/compare/1.6.1...1.6.2) (2026-03-05)
 
 ### Chores
 
-* **deps:** upgrade deps ([1e9cdfc](https://github.com/LucasAmos/sanity-studio/commit/1e9cdfcb7d42b1478e6823e37e1cef386342bc1a))
+- **deps:** upgrade deps ([1e9cdfc](https://github.com/LucasAmos/sanity-studio/commit/1e9cdfcb7d42b1478e6823e37e1cef386342bc1a))
 
 ## [1.6.1](https://github.com/LucasAmos/sanity-studio/compare/1.6.0...1.6.1) (2026-02-15)
 
 ### Chores
 
-* **migration:** typing refactor ([079c783](https://github.com/LucasAmos/sanity-studio/commit/079c783b3fdaa64b15bc54cb2dcff0958efc93ac))
+- **migration:** typing refactor ([079c783](https://github.com/LucasAmos/sanity-studio/commit/079c783b3fdaa64b15bc54cb2dcff0958efc93ac))
 
 ## [1.6.0](https://github.com/LucasAmos/sanity-studio/compare/1.5.1...1.6.0) (2026-02-15)
 
 ### Features
 
-* **author:** make slug required ([7b39e53](https://github.com/LucasAmos/sanity-studio/commit/7b39e5383577814572237a0ba6f69ec7a6dd1dce))
+- **author:** make slug required ([7b39e53](https://github.com/LucasAmos/sanity-studio/commit/7b39e5383577814572237a0ba6f69ec7a6dd1dce))
 
 ## [1.5.1](https://github.com/LucasAmos/sanity-studio/compare/1.5.0...1.5.1) (2026-02-15)
 
 ### Chores
 
-* **migration:** author slug ([bb8847e](https://github.com/LucasAmos/sanity-studio/commit/bb8847ef7cd4d992f110bab1640de6b41d37d72a))
+- **migration:** author slug ([bb8847e](https://github.com/LucasAmos/sanity-studio/commit/bb8847ef7cd4d992f110bab1640de6b41d37d72a))
 
 ## [1.5.0](https://github.com/LucasAmos/sanity-studio/compare/1.4.2...1.5.0) (2026-02-15)
 
 ### Features
 
-* **author:** add slug ([d8ef1ec](https://github.com/LucasAmos/sanity-studio/commit/d8ef1ece877504b68a8a73cc9eec32f9c26263f4))
+- **author:** add slug ([d8ef1ec](https://github.com/LucasAmos/sanity-studio/commit/d8ef1ece877504b68a8a73cc9eec32f9c26263f4))
 
 ## [1.4.2](https://github.com/LucasAmos/sanity-studio/compare/1.4.1...1.4.2) (2026-02-15)
 
 ### Tests
 
-* **author:** refactor ([7a8fdc5](https://github.com/LucasAmos/sanity-studio/commit/7a8fdc52a7b66a0fcbf1911f5b47c63f7290b616))
+- **author:** refactor ([7a8fdc5](https://github.com/LucasAmos/sanity-studio/commit/7a8fdc52a7b66a0fcbf1911f5b47c63f7290b616))
 
 ### Chores
 
-* **deps:** upgrade ([a2ea102](https://github.com/LucasAmos/sanity-studio/commit/a2ea1023ee3a029adb8361dc54be54887b4e59ba))
-* **yarn:** pin yarn ([6d12f8e](https://github.com/LucasAmos/sanity-studio/commit/6d12f8ee463a1f9a0cf011b77417b50fd9725fe8))
+- **deps:** upgrade ([a2ea102](https://github.com/LucasAmos/sanity-studio/commit/a2ea1023ee3a029adb8361dc54be54887b4e59ba))
+- **yarn:** pin yarn ([6d12f8e](https://github.com/LucasAmos/sanity-studio/commit/6d12f8ee463a1f9a0cf011b77417b50fd9725fe8))
 
 ## [1.4.1](https://github.com/LucasAmos/sanity-studio/compare/1.4.0...1.4.1) (2026-02-14)
 
 ### Continuous Integration
 
-* **tests:** run tests ([6fcef35](https://github.com/LucasAmos/sanity-studio/commit/6fcef35eea2efc3b5d60cd170c607c52a52490b1))
+- **tests:** run tests ([6fcef35](https://github.com/LucasAmos/sanity-studio/commit/6fcef35eea2efc3b5d60cd170c607c52a52490b1))
 
 ## [1.4.0](https://github.com/LucasAmos/sanity-studio/compare/1.3.5...1.4.0) (2026-02-14)
 
 ### Features
 
-* **studio:** author validation ([30c20dd](https://github.com/LucasAmos/sanity-studio/commit/30c20dd4bd56f2eae67fbee8f5fbaf04325719c4))
+- **studio:** author validation ([30c20dd](https://github.com/LucasAmos/sanity-studio/commit/30c20dd4bd56f2eae67fbee8f5fbaf04325719c4))
 
 ### Chores
 
-* **yarn:** upgrade ([5f3e503](https://github.com/LucasAmos/sanity-studio/commit/5f3e503a27c335b40026aa1a5c4674af66f156a5))
+- **yarn:** upgrade ([5f3e503](https://github.com/LucasAmos/sanity-studio/commit/5f3e503a27c335b40026aa1a5c4674af66f156a5))
 
 ## [1.3.5](https://github.com/LucasAmos/sanity-studio/compare/1.3.4...1.3.5) (2026-02-14)
 
 ### Chores
 
-* **deps:** bump the all group across 1 directory with 6 updates ([64425d4](https://github.com/LucasAmos/sanity-studio/commit/64425d42dce3deb88d778bd22b77af3d40c7a925))
+- **deps:** bump the all group across 1 directory with 6 updates ([64425d4](https://github.com/LucasAmos/sanity-studio/commit/64425d42dce3deb88d778bd22b77af3d40c7a925))
 
 ## [1.3.4](https://github.com/LucasAmos/sanity-studio/compare/1.3.3...1.3.4) (2026-02-03)
 
 ### Continuous Integration
 
-* **workflows:** envs ([fe5aca7](https://github.com/LucasAmos/sanity-studio/commit/fe5aca74b34ebefa0cabc1b4465dd487e5ee2fde))
+- **workflows:** envs ([fe5aca7](https://github.com/LucasAmos/sanity-studio/commit/fe5aca74b34ebefa0cabc1b4465dd487e5ee2fde))
 
 ## [1.3.3](https://github.com/LucasAmos/sanity-studio/compare/1.3.2...1.3.3) (2026-02-03)
 
 ### Continuous Integration
 
-* **workflow:** only comment on PR ([3f3c0ed](https://github.com/LucasAmos/sanity-studio/commit/3f3c0ed051e0ba9b8defd3e31c208231e2a39275))
+- **workflow:** only comment on PR ([3f3c0ed](https://github.com/LucasAmos/sanity-studio/commit/3f3c0ed051e0ba9b8defd3e31c208231e2a39275))
 
 ## [1.3.2](https://github.com/LucasAmos/sanity-studio/compare/1.3.1...1.3.2) (2026-02-03)
 
 ### Continuous Integration
 
-* **workflows:** refactor ([841d222](https://github.com/LucasAmos/sanity-studio/commit/841d222e9cd6ee34e6e658d132e2253c59a2ba6b))
-* **workflows:** refactor ([df8cfd8](https://github.com/LucasAmos/sanity-studio/commit/df8cfd81c0fa9d1d24df78148ea733daa9035494))
+- **workflows:** refactor ([841d222](https://github.com/LucasAmos/sanity-studio/commit/841d222e9cd6ee34e6e658d132e2253c59a2ba6b))
+- **workflows:** refactor ([df8cfd8](https://github.com/LucasAmos/sanity-studio/commit/df8cfd81c0fa9d1d24df78148ea733daa9035494))
 
 ## [1.3.1](https://github.com/LucasAmos/sanity-studio/compare/1.3.0...1.3.1) (2026-02-03)
 
 ### Continuous Integration
 
-* **workflows:** refactor ([6ba06b8](https://github.com/LucasAmos/sanity-studio/commit/6ba06b848607d497a7fb82de54e866cfc7e38ab0))
+- **workflows:** refactor ([6ba06b8](https://github.com/LucasAmos/sanity-studio/commit/6ba06b848607d497a7fb82de54e866cfc7e38ab0))
 
 ## [1.3.0](https://github.com/LucasAmos/sanity-studio/compare/1.2.2...1.3.0) (2026-02-02)
 
 ### Features
 
-* **schema:** redirect ([866083b](https://github.com/LucasAmos/sanity-studio/commit/866083b640eff382edeada9bcdf6ef253fcb9d8b))
+- **schema:** redirect ([866083b](https://github.com/LucasAmos/sanity-studio/commit/866083b640eff382edeada9bcdf6ef253fcb9d8b))
 
 ## [1.2.2](https://github.com/LucasAmos/sanity-studio/compare/1.2.1...1.2.2) (2026-01-30)
 
 ### Chores
 
-* **deps:** bump the all group with 4 updates ([58fd47d](https://github.com/LucasAmos/sanity-studio/commit/58fd47d5bce6e16820df4cd749aac47aa5465d79))
+- **deps:** bump the all group with 4 updates ([58fd47d](https://github.com/LucasAmos/sanity-studio/commit/58fd47d5bce6e16820df4cd749aac47aa5465d79))
 
 ## [1.2.1](https://github.com/LucasAmos/sanity-studio/compare/1.2.0...1.2.1) (2026-01-29)
 
 ### Continuous Integration
 
-* **pr:** dependabot ([57b46d5](https://github.com/LucasAmos/sanity-studio/commit/57b46d5fd40968f60c81e18fdbaa0037d3cd50df))
+- **pr:** dependabot ([57b46d5](https://github.com/LucasAmos/sanity-studio/commit/57b46d5fd40968f60c81e18fdbaa0037d3cd50df))
 
 ## [1.2.0](https://github.com/LucasAmos/sanity-studio/compare/1.1.5...1.2.0) (2026-01-26)
 
 ### Features
 
-* **schema:** add rewrite type ([a689192](https://github.com/LucasAmos/sanity-studio/commit/a689192d4f39c330eb0189486fd958a74a2f30cf))
+- **schema:** add rewrite type ([a689192](https://github.com/LucasAmos/sanity-studio/commit/a689192d4f39c330eb0189486fd958a74a2f30cf))
 
 ### Chores
 
-* **packages:** bump ([801e856](https://github.com/LucasAmos/sanity-studio/commit/801e85618b4e6671e3955cb4912bdfabd191d4b9))
+- **packages:** bump ([801e856](https://github.com/LucasAmos/sanity-studio/commit/801e85618b4e6671e3955cb4912bdfabd191d4b9))
 
 ## [1.1.5](https://github.com/LucasAmos/sanity-studio/compare/1.1.4...1.1.5) (2026-01-25)
 
 ### Chores
 
-* **studio:** fix package number ([2172250](https://github.com/LucasAmos/sanity-studio/commit/21722502fd3df4fb3daea231daad5e209f031f8e))
+- **studio:** fix package number ([2172250](https://github.com/LucasAmos/sanity-studio/commit/21722502fd3df4fb3daea231daad5e209f031f8e))
 
 ## [1.1.4](https://github.com/LucasAmos/sanity-studio/compare/1.1.3...1.1.4) (2026-01-20)
 
 ### Chores
 
-* **dependabot:** update ([3264a55](https://github.com/LucasAmos/sanity-studio/commit/3264a556f7f44b56f58cdb383d718bbe26496b12))
+- **dependabot:** update ([3264a55](https://github.com/LucasAmos/sanity-studio/commit/3264a556f7f44b56f58cdb383d718bbe26496b12))
 
 ## [1.1.3](https://github.com/LucasAmos/sanity-studio/compare/1.1.2...1.1.3) (2026-01-20)
 
 ### Chores
 
-* **deps:** upgrade dependencies ([85e6ada](https://github.com/LucasAmos/sanity-studio/commit/85e6ada01321d0bb3ed60cae87d1e2ead7a46cc4))
+- **deps:** upgrade dependencies ([85e6ada](https://github.com/LucasAmos/sanity-studio/commit/85e6ada01321d0bb3ed60cae87d1e2ead7a46cc4))
 
 ## [1.1.2](https://github.com/LucasAmos/sanity-studio/compare/1.1.1...1.1.2) (2026-01-09)
 
 ### Chores
 
-* **deps:** upgrade deps ([28b33a1](https://github.com/LucasAmos/sanity-studio/commit/28b33a17451933277ea22589627f426dbc2d2756))
+- **deps:** upgrade deps ([28b33a1](https://github.com/LucasAmos/sanity-studio/commit/28b33a17451933277ea22589627f426dbc2d2756))
 
 ### Continuous Integration
 
-* **dependabot:** add config ([48bf9e4](https://github.com/LucasAmos/sanity-studio/commit/48bf9e4483170947922df55a51a8dbc0f8cc4a58))
+- **dependabot:** add config ([48bf9e4](https://github.com/LucasAmos/sanity-studio/commit/48bf9e4483170947922df55a51a8dbc0f8cc4a58))
 
 ## [1.1.1](https://github.com/LucasAmos/sanity-studio/compare/1.1.0...1.1.1) (2025-11-13)
 
 ### Continuous Integration
 
-* **studio:** commit linting ([8dff84a](https://github.com/LucasAmos/sanity-studio/commit/8dff84a76916a4d1ea140982c176c44369d38a8a))
+- **studio:** commit linting ([8dff84a](https://github.com/LucasAmos/sanity-studio/commit/8dff84a76916a4d1ea140982c176c44369d38a8a))
 
 ## [1.1.0](https://github.com/LucasAmos/sanity-studio/compare/1.0.1...1.1.0) (2025-11-05)
 
 ### Features
 
-* **release:** release ([d5acae4](https://github.com/LucasAmos/sanity-studio/commit/d5acae48b06d0ef576b0d132f9058e418d4ffe17))
+- **release:** release ([d5acae4](https://github.com/LucasAmos/sanity-studio/commit/d5acae48b06d0ef576b0d132f9058e418d4ffe17))
 
 ### Chores
 
-* release v1.1.0 ([7a26204](https://github.com/LucasAmos/sanity-studio/commit/7a26204f89c8f6aa7c013e9017d3878ac5c454c9))
+- release v1.1.0 ([7a26204](https://github.com/LucasAmos/sanity-studio/commit/7a26204f89c8f6aa7c013e9017d3878ac5c454c9))
 
 ### Continuous Integration
 
-* **release:** skip ci builds ([13b9b14](https://github.com/LucasAmos/sanity-studio/commit/13b9b1466c4152aa4c8fbf1b50b3767b3bf5a14a))
+- **release:** skip ci builds ([13b9b14](https://github.com/LucasAmos/sanity-studio/commit/13b9b1466c4152aa4c8fbf1b50b3767b3bf5a14a))
 
 ## [1.1.0](https://github.com/LucasAmos/sanity-studio/compare/1.0.1...1.1.0) (2025-11-04)
 
 ### Features
 
-* **release:** release ([d5acae4](https://github.com/LucasAmos/sanity-studio/commit/d5acae48b06d0ef576b0d132f9058e418d4ffe17))
+- **release:** release ([d5acae4](https://github.com/LucasAmos/sanity-studio/commit/d5acae48b06d0ef576b0d132f9058e418d4ffe17))
 
 ## [1.0.1](https://github.com/LucasAmos/sanity-studio/compare/1.0.0...1.0.1) (2025-11-04)
 
 ### Bug Fixes
 
-* **release:** release ([2b94058](https://github.com/LucasAmos/sanity-studio/commit/2b94058200de59e17e894e3ab6b99d6067112d78))
+- **release:** release ([2b94058](https://github.com/LucasAmos/sanity-studio/commit/2b94058200de59e17e894e3ab6b99d6067112d78))
 
 ### Documentation
 
-* **studio:** docs ([600f2ff](https://github.com/LucasAmos/sanity-studio/commit/600f2ff3d4b5e95b14e9ff2d9ec5438a4c7f8588))
+- **studio:** docs ([600f2ff](https://github.com/LucasAmos/sanity-studio/commit/600f2ff3d4b5e95b14e9ff2d9ec5438a4c7f8588))
 
 ## [1.0.0](https://github.com/LucasAmos/sanity-studio/compare/0.1.0...1.0.0) (2025-11-04)
 
 ### ⚠ BREAKING CHANGES
 
-* **studio:** docs
-* **yarn:** fix yarn
-* **yarn:** fix yarn
-* **yarn:** fix yarn
-* **packagemanager:** fix yarn
+- **studio:** docs
+- **yarn:** fix yarn
+- **yarn:** fix yarn
+- **yarn:** fix yarn
+- **packagemanager:** fix yarn
 
 ### Bug Fixes
 
-* **yarn:** fix yarn ([28f90df](https://github.com/LucasAmos/sanity-studio/commit/28f90df01f78a76aec80ed03cf1243c2533ef162))
-* **yarn:** fix yarn ([79fab1c](https://github.com/LucasAmos/sanity-studio/commit/79fab1c0da0c63bbcd15b04a258ee5559507dc90))
-* **yarn:** fix yarn ([32db23d](https://github.com/LucasAmos/sanity-studio/commit/32db23dddcd7e68dd3ab80a8fa87de30a4af8ed3))
+- **yarn:** fix yarn ([28f90df](https://github.com/LucasAmos/sanity-studio/commit/28f90df01f78a76aec80ed03cf1243c2533ef162))
+- **yarn:** fix yarn ([79fab1c](https://github.com/LucasAmos/sanity-studio/commit/79fab1c0da0c63bbcd15b04a258ee5559507dc90))
+- **yarn:** fix yarn ([32db23d](https://github.com/LucasAmos/sanity-studio/commit/32db23dddcd7e68dd3ab80a8fa87de30a4af8ed3))
 
 ### Chores
 
-* release v1.0.0 ([c4083cb](https://github.com/LucasAmos/sanity-studio/commit/c4083cb3bd71d1dc8325de478256c2d2d9cbfe91))
+- release v1.0.0 ([c4083cb](https://github.com/LucasAmos/sanity-studio/commit/c4083cb3bd71d1dc8325de478256c2d2d9cbfe91))
 
 ### Documentation
 
-* **studio:** docs ([b6090ae](https://github.com/LucasAmos/sanity-studio/commit/b6090aec033ba3b7ba4b43cadb62b36d0e27dfc0))
-* **studio:** update docs ([1c50e10](https://github.com/LucasAmos/sanity-studio/commit/1c50e10f1aca02efa274fd6401e0166e0506b04c))
+- **studio:** docs ([b6090ae](https://github.com/LucasAmos/sanity-studio/commit/b6090aec033ba3b7ba4b43cadb62b36d0e27dfc0))
+- **studio:** update docs ([1c50e10](https://github.com/LucasAmos/sanity-studio/commit/1c50e10f1aca02efa274fd6401e0166e0506b04c))
 
 ### Continuous Integration
 
-* **packagemanager:** fix yarn ([b8c087b](https://github.com/LucasAmos/sanity-studio/commit/b8c087b31f23afc40a1888a412701f52d2a172c7))
+- **packagemanager:** fix yarn ([b8c087b](https://github.com/LucasAmos/sanity-studio/commit/b8c087b31f23afc40a1888a412701f52d2a172c7))
 
 ## [1.0.0](https://github.com/LucasAmos/sanity-studio/compare/0.1.0...1.0.0) (2025-11-04)
 
 ### ⚠ BREAKING CHANGES
 
-* **yarn:** fix yarn
-* **yarn:** fix yarn
-* **yarn:** fix yarn
-* **packagemanager:** fix yarn
+- **yarn:** fix yarn
+- **yarn:** fix yarn
+- **yarn:** fix yarn
+- **packagemanager:** fix yarn
 
 ### Bug Fixes
 
-* **yarn:** fix yarn ([28f90df](https://github.com/LucasAmos/sanity-studio/commit/28f90df01f78a76aec80ed03cf1243c2533ef162))
-* **yarn:** fix yarn ([79fab1c](https://github.com/LucasAmos/sanity-studio/commit/79fab1c0da0c63bbcd15b04a258ee5559507dc90))
-* **yarn:** fix yarn ([32db23d](https://github.com/LucasAmos/sanity-studio/commit/32db23dddcd7e68dd3ab80a8fa87de30a4af8ed3))
+- **yarn:** fix yarn ([28f90df](https://github.com/LucasAmos/sanity-studio/commit/28f90df01f78a76aec80ed03cf1243c2533ef162))
+- **yarn:** fix yarn ([79fab1c](https://github.com/LucasAmos/sanity-studio/commit/79fab1c0da0c63bbcd15b04a258ee5559507dc90))
+- **yarn:** fix yarn ([32db23d](https://github.com/LucasAmos/sanity-studio/commit/32db23dddcd7e68dd3ab80a8fa87de30a4af8ed3))
 
 ### Continuous Integration
 
-* **packagemanager:** fix yarn ([b8c087b](https://github.com/LucasAmos/sanity-studio/commit/b8c087b31f23afc40a1888a412701f52d2a172c7))
+- **packagemanager:** fix yarn ([b8c087b](https://github.com/LucasAmos/sanity-studio/commit/b8c087b31f23afc40a1888a412701f52d2a172c7))
 
 ## 0.1.0 (2025-11-04)
 
 ### Features
 
-* **release:** release ([322ad15](https://github.com/LucasAmos/sanity-studio/commit/322ad1531026a6f8bd5b95a8c0ad3eeb4a0df643))
-* **release:** release ([62a45fe](https://github.com/LucasAmos/sanity-studio/commit/62a45fedb7860f3949f872f6fbda52655f870a21))
-* **release:** release ([f2d94af](https://github.com/LucasAmos/sanity-studio/commit/f2d94af98d6bfd73918c75cb92a2db2ce0cd690a))
+- **release:** release ([322ad15](https://github.com/LucasAmos/sanity-studio/commit/322ad1531026a6f8bd5b95a8c0ad3eeb4a0df643))
+- **release:** release ([62a45fe](https://github.com/LucasAmos/sanity-studio/commit/62a45fedb7860f3949f872f6fbda52655f870a21))
+- **release:** release ([f2d94af](https://github.com/LucasAmos/sanity-studio/commit/f2d94af98d6bfd73918c75cb92a2db2ce0cd690a))

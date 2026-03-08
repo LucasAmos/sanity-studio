@@ -1,58 +1,58 @@
-import {defineField, defineType} from 'sanity'
-import {BookIcon} from '@sanity/icons'
+import { defineField, defineType } from "sanity";
+import { BookIcon } from "@sanity/icons";
 
 export default defineType({
-  name: 'book',
-  title: 'Book',
-  type: 'document',
+  name: "book",
+  title: "Book",
+  type: "document",
   icon: BookIcon,
   fields: [
     defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-      validation: (rule) => rule.required(),
+      name: "title",
+      title: "Title",
+      type: "string",
+      validation: (rule) => rule.required()
     }),
     defineField({
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: [{type: 'author'}],
-      validation: (rule) => rule.required(),
+      name: "author",
+      title: "Author",
+      type: "reference",
+      to: [{ type: "author" }],
+      validation: (rule) => rule.required()
     }),
     defineField({
-      name: 'startDate',
-      title: 'Start date',
-      type: 'date',
-      validation: (rule) => rule.required(),
+      name: "startDate",
+      title: "Start date",
+      type: "date",
+      validation: (rule) => rule.required()
     }),
     defineField({
-      name: 'finishDate',
-      title: 'Finish date',
-      type: 'date',
+      name: "finishDate",
+      title: "Finish date",
+      type: "date"
     }),
     defineField({
-      name: 'category',
-      title: 'Category',
-      type: 'reference',
-      to: [{type: 'category'}],
+      name: "category",
+      title: "Category",
+      type: "reference",
+      to: [{ type: "category" }]
     }),
     defineField({
-      name: 'estimated',
-      title: 'Estimated date',
-      type: 'boolean',
+      name: "estimated",
+      title: "Estimated date",
+      type: "boolean",
       initialValue: false,
-      validation: (rule) => rule.required(),
+      validation: (rule) => rule.required()
     }),
     defineField({
-      name: 'url',
-      title: 'Url',
-      type: 'string',
+      name: "url",
+      title: "Url",
+      type: "string"
     }),
     defineField({
-      name: 'audiobook',
-      title: 'Audiobook?',
-      type: 'boolean',
-    }),
-  ],
-})
+      name: "audiobook",
+      title: "Audiobook?",
+      type: "boolean"
+    })
+  ]
+});
