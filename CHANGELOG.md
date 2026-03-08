@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.10.0](https://github.com/LucasAmos/sanity-studio/compare/1.9.1...1.10.0) (2026-03-08)
+
+### Features
+
+* **about:** change type ([e1dbf3f](https://github.com/LucasAmos/sanity-studio/commit/e1dbf3fc62c312429f279ca86e9492abbc5e23e5))
+
 ## [1.9.1](https://github.com/LucasAmos/sanity-studio/compare/1.9.0...1.9.1) (2026-03-08)
 
 ### Bug Fixes
