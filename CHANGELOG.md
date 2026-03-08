@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.12.0](https://github.com/LucasAmos/sanity-studio/compare/1.11.1...1.12.0) (2026-03-08)
+
+### Features
+
+* **about:** add richText ([b3a9608](https://github.com/LucasAmos/sanity-studio/commit/b3a96086cc94bc8ba0c7c60e8a2340b9c21fd177))
+
 ## [1.11.1](https://github.com/LucasAmos/sanity-studio/compare/1.11.0...1.11.1) (2026-03-08)
 
 ### Chores
