@@ -1,28 +1,29 @@
-import {defineField, defineType} from 'sanity'
-import {TagIcon} from '@sanity/icons'
+import { defineField, defineType } from "sanity";
+import { TagIcon } from "@sanity/icons";
 // Use this if no icon is required
-const NoIcon = () => null
+// oxlint-disable-next-line no-unused-vars
+const NoIcon = () => null;
 
 export default defineType({
-  name: 'category',
-  title: 'Category',
-  type: 'document',
+  name: "category",
+  title: "Category",
+  type: "document",
   icon: TagIcon,
   fields: [
     defineField({
-      name: 'name',
-      title: 'Name',
-      type: 'string',
-      validation: (rule) => rule.required(),
+      name: "name",
+      title: "Name",
+      type: "string",
+      validation: (rule) => rule.required()
     }),
     {
-      title: 'Slug',
-      name: 'slug',
-      type: 'slug',
+      title: "Slug",
+      name: "slug",
+      type: "slug",
       options: {
-        source: 'name',
+        source: "name"
       },
-      validation: (rule) => rule.required(),
-    },
-  ],
-})
+      validation: (rule) => rule.required()
+    }
+  ]
+});
