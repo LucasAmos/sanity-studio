@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.12.1](https://github.com/LucasAmos/sanity-studio/compare/1.12.0...1.12.1) (2026-03-08)
+
+### Chores
+
+* **ox:** lint and format codebase ([24a878b](https://github.com/LucasAmos/sanity-studio/commit/24a878b29b91bece55e14a11c6f96dfb618cf93e))
+
 ## [1.12.0](https://github.com/LucasAmos/sanity-studio/compare/1.11.1...1.12.0) (2026-03-08)
 
 ### Features
