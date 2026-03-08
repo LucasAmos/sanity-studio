@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.11.0](https://github.com/LucasAmos/sanity-studio/compare/1.10.0...1.11.0) (2026-03-08)
+
+### Features
+
+* **about:** about singleton fix ([e721a2e](https://github.com/LucasAmos/sanity-studio/commit/e721a2eee6c7d6fa0767da817523933b5aa68ed5))
+
 ## [1.10.0](https://github.com/LucasAmos/sanity-studio/compare/1.9.1...1.10.0) (2026-03-08)
 
 ### Features
