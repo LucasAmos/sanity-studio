@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.13.0](https://github.com/LucasAmos/sanity-studio/compare/1.12.1...1.13.0) (2026-03-08)
+
+### Features
+
+* **imagerow:** create ([c41b0ce](https://github.com/LucasAmos/sanity-studio/commit/c41b0ce5df7253c1d5d47f86aefc4adcd62aa6e8))
+
 ## [1.12.1](https://github.com/LucasAmos/sanity-studio/compare/1.12.0...1.12.1) (2026-03-08)
 
 ### Chores
