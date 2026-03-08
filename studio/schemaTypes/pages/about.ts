@@ -14,7 +14,7 @@ export default defineType({
       name: 'slug',
       type: 'slug',
       initialValue: {current: "about"},
-      readOnly: true,
+      // readOnly: true,
       validation: (rule) => rule.required(),
     },
     defineField({
