@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.9.1](https://github.com/LucasAmos/sanity-studio/compare/1.9.0...1.9.1) (2026-03-08)
+
+### Bug Fixes
+
+* **about:** fix ([47e5826](https://github.com/LucasAmos/sanity-studio/commit/47e5826cf35e643319c8db408a0b8867345eafc5))
+
 ## [1.9.0](https://github.com/LucasAmos/sanity-studio/compare/1.8.0...1.9.0) (2026-03-08)
 
 ### Features
