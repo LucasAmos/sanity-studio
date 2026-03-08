@@ -4,7 +4,7 @@ import {defineField, defineType} from 'sanity'
 import { InfoOutlineIcon } from '@sanity/icons'
 
 export default defineType({
-  name: 'aboutPage',
+  name: 'about',
   title: 'About Page',
   type: 'document',
   icon: InfoOutlineIcon,
