@@ -1,7 +1,8 @@
 import { defineField, defineType } from "sanity";
-import { richTextField } from "../fields/richTextField";
+import { richText } from "../blocks/richText";
 
 import { InfoOutlineIcon } from "@sanity/icons";
+import { imageRow } from "../blocks/imageRow";
 
 export default defineType({
   name: "about",
@@ -23,6 +24,12 @@ export default defineType({
       type: "string",
       validation: (rule) => rule.required()
     }),
-    richTextField
+    { ...richText, validation: (rule) => rule.required() },
+    defineField({
+      name: "imageRow",
+      title: "Image Row",
+      type: "reference",
+      to: [{ type: imageRow.name }]
+    })
   ]
 });
