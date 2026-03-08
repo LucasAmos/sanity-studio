@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.8.0](https://github.com/LucasAmos/sanity-studio/compare/1.7.1...1.8.0) (2026-03-08)
+
+### Features
+
+* **about:** about page singleton ([7d425b6](https://github.com/LucasAmos/sanity-studio/commit/7d425b68ea6ac0d2e4bc89c57972dc09ef88cc5f))
+
 ## [1.7.1](https://github.com/LucasAmos/sanity-studio/compare/1.7.0...1.7.1) (2026-03-06)
 
 ### Chores
