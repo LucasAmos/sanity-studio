@@ -1,6 +1,6 @@
 import { defineField, defineArrayMember } from "sanity";
 
-export const richTextField = defineField({
+export const richText = defineField({
   name: "content",
   title: "Content",
   type: "array",
@@ -8,6 +8,5 @@ export const richTextField = defineField({
     defineArrayMember({
       type: "block"
     })
-  ],
-  validation: (rule) => rule.required()
+  ]
 });
