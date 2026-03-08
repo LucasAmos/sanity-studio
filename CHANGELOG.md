@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.11.1](https://github.com/LucasAmos/sanity-studio/compare/1.11.0...1.11.1) (2026-03-08)
+
+### Chores
+
+* **deps:** deps ([7185f68](https://github.com/LucasAmos/sanity-studio/commit/7185f684e21885d155dca429d69953b1012720c6))
+
 ## [1.11.0](https://github.com/LucasAmos/sanity-studio/compare/1.10.0...1.11.0) (2026-03-08)
 
 ### Features
