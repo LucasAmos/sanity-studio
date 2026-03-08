@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.9.0](https://github.com/LucasAmos/sanity-studio/compare/1.8.0...1.9.0) (2026-03-08)
+
+### Features
+
+* **about:** make editable ([cca5aab](https://github.com/LucasAmos/sanity-studio/commit/cca5aab3c3ed123b250c82c986d139b74bfb5a5b))
+
 ## [1.8.0](https://github.com/LucasAmos/sanity-studio/compare/1.7.1...1.8.0) (2026-03-08)
 
 ### Features
