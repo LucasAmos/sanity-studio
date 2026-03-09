@@ -6,6 +6,7 @@ import aboutPage from "./pages/about";
 import { imageRow } from "./blocks/imageRow";
 
 export const singletonTypes = [aboutPage];
-export const standardTypes = [alias, author, book, category, imageRow];
+export const standardTypes = [alias, author, book, category];
+export const objectTypes = [imageRow];
 
-export const schemaTypes = [...singletonTypes, ...standardTypes];
+export const schemaTypes = [...objectTypes, ...singletonTypes, ...standardTypes];
