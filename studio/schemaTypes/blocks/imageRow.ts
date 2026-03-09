@@ -3,14 +3,8 @@ import { defineType, defineField, defineArrayMember } from "sanity";
 export const imageRow = defineType({
   name: "imageRow",
   title: "Image Row",
-  type: "document",
+  type: "object",
   fields: [
-    defineField({
-      name: "title",
-      title: "Title",
-      type: "string",
-      validation: (rule) => rule.required()
-    }),
     defineField({
       name: "images",
       title: "Images",
@@ -25,10 +19,6 @@ export const imageRow = defineType({
           fields: [
             defineField({
               name: "caption",
-              type: "string"
-            }),
-            defineField({
-              name: "attribution",
               type: "string"
             })
           ]

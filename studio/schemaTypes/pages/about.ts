@@ -27,9 +27,7 @@ export default defineType({
     { ...richText, validation: (rule) => rule.required() },
     defineField({
       name: "imageRow",
-      title: "Image Row",
-      type: "reference",
-      to: [{ type: imageRow.name }]
+      type: imageRow.name
     })
   ]
 });
