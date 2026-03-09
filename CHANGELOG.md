@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.14.0](https://github.com/LucasAmos/sanity-studio/compare/1.13.0...1.14.0) (2026-03-09)
+
+### Features
+
+* **imagerow:** convert to object type ([46e8c5f](https://github.com/LucasAmos/sanity-studio/commit/46e8c5f4a819c81f182a55a04fb3335d58baf6fd))
+
 ## [1.13.0](https://github.com/LucasAmos/sanity-studio/compare/1.12.1...1.13.0) (2026-03-08)
 
 ### Features
