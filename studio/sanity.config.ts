@@ -22,6 +22,11 @@ const getStructure = (S: StructureBuilder) => {
         // that we're editing the single instance of the document
         S.document().schemaType("about").documentId("about")
       ),
+      S.listItem()
+        .title("CV Page")
+        .id("cv")
+        .schemaType("cv")
+        .child(S.document().schemaType("cv").documentId("cv")),
       // Regular document types
       ...documentTypeList
     ]);
