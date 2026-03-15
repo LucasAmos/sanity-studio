@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.15.0](https://github.com/LucasAmos/sanity-studio/compare/1.14.0...1.15.0) (2026-03-15)
+
+### Features
+
+* **cv:** add type ([6e27b5d](https://github.com/LucasAmos/sanity-studio/commit/6e27b5d0a2c59481f7618ddd2ecb062c5021fb0a))
+
+### Bug Fixes
+
+* **sanity:** pin version ([7ea2e63](https://github.com/LucasAmos/sanity-studio/commit/7ea2e632d074b9e0d9e89d75706e240c268833f1))
+
+### Chores
+
+* **deps:** upgrade ([d835948](https://github.com/LucasAmos/sanity-studio/commit/d83594878d69d8345ac8128d18deac060a401717))
+
 ## [1.14.0](https://github.com/LucasAmos/sanity-studio/compare/1.13.0...1.14.0) (2026-03-09)
 
 ### Features
