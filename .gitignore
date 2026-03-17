@@ -36,3 +36,4 @@ studio/.yarn/install-state.gz
 studio/.yarn/install-state.gz
 /studio/.sanity
 studio/.npmrc
+/skeletons
