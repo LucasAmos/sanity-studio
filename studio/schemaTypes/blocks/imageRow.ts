@@ -14,7 +14,8 @@ export const imageRow = defineType({
           type: "image",
           name: "image",
           options: {
-            hotspot: true
+            hotspot: true,
+            metadata: ["blurhash", "lqip"]
           },
           fields: [
             defineField({
