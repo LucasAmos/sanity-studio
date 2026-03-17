@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.15.1](https://github.com/LucasAmos/sanity-studio/compare/1.15.0...1.15.1) (2026-03-17)
+
+### Chores
+
+* **actions:** upgrade ([1f42a18](https://github.com/LucasAmos/sanity-studio/commit/1f42a1816f66a89a7df023e07ec5553ad72f486e))
+* **deps:** upgrade ([d0e04b1](https://github.com/LucasAmos/sanity-studio/commit/d0e04b11b3bdc8d49b4e05f8914a6f89754ec0ef))
+* **git:** update gitignore ([4958306](https://github.com/LucasAmos/sanity-studio/commit/4958306bf483271883baebc31b52981403d48eab))
+
 ## [1.15.0](https://github.com/LucasAmos/sanity-studio/compare/1.14.0...1.15.0) (2026-03-15)
 
 ### Features
