@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.16.0](https://github.com/LucasAmos/sanity-studio/compare/1.15.1...1.16.0) (2026-03-17)
+
+### Features
+
+* **images:** add blurhash ([172b1c5](https://github.com/LucasAmos/sanity-studio/commit/172b1c5131fe37bcf375f6a0a3cd597dad8318bc))
+
 ## [1.15.1](https://github.com/LucasAmos/sanity-studio/compare/1.15.0...1.15.1) (2026-03-17)
 
 ### Chores
