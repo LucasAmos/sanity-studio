@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-22.04
     name: ${{inputs.name}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: dorny/paths-filter@v3.0.2
         id: changes
         with:
@@ -22,7 +22,7 @@ jobs:
               - '${{ inputs.directory }}/**'
       - run: corepack enable
         if: ${{ steps.changes.outputs.app == 'true' }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         if: ${{ steps.changes.outputs.app == 'true' }}
         with:
           node-version: 24

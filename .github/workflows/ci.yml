@@ -36,9 +36,9 @@ jobs:
       run:
         working-directory: ./studio
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: corepack enable
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           cache: yarn
           node-version: 24
@@ -56,9 +56,9 @@ jobs:
       run:
         working-directory: ./studio
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: corepack enable
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           cache: npm
           node-version: lts/*
@@ -106,9 +106,9 @@ jobs:
       run:
         working-directory: ./studio
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: corepack enable
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           cache: npm
           node-version: 24
@@ -176,9 +176,9 @@ jobs:
       run:
         working-directory: ./studio
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: corepack enable
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           cache: npm
           node-version: 24
