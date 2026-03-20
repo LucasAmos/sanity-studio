@@ -38,17 +38,17 @@
   ],
   "dependencies": {
     "@release-it/conventional-changelog": "^10.0.6",
-    "@sanity/vision": "^5.16.0",
+    "@sanity/vision": "^5.17.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "release-it": "^19.2.4",
-    "sanity": "^5.16.0",
-    "styled-components": "^6.3.11"
+    "sanity": "^5.17.1",
+    "styled-components": "^6.3.12"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
     "@types/react": "^19.2.14",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "prettier": "^3.8.1",
     "release-it": "^19.2.4",
     "typescript": "^5.9.3",
