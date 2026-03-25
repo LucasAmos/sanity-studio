@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   teardown:
+    if: github.actor != 'dependabot[bot]'
     name: Teardown
     runs-on: ubuntu-22.04
     defaults:
