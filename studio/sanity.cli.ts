@@ -9,6 +9,8 @@ export default defineCliConfig({
    * Enable auto-updates for studios.
    * Learn more at https://www.sanity.io/docs/cli#auto-updates
    */
-  deployment: { autoUpdates: true },
-  studioHost: process.env.SANITY_STUDIO_HOSTNAME!
+  deployment: {
+    autoUpdates: true
+  },
+  studioHost: "ephemeral-pr-119"
 });
