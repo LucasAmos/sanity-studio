@@ -21,8 +21,8 @@
   "devDependencies": {
     "@release-it-plugins/workspaces": "^5.0.3",
     "@release-it/conventional-changelog": "^10.0.6",
-    "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0",
+    "oxfmt": "^0.42.0",
+    "oxlint": "^1.57.0",
     "release-it": "^19.2.4"
   },
   "packageManager": "yarn@4.13.0"
