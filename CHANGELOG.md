@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.16.1](https://github.com/LucasAmos/sanity-studio/compare/1.16.0...1.16.1) (2026-03-25)
+
+### Continuous Integration
+
+* **undeploy:** dont run on dependabot ([cd85f61](https://github.com/LucasAmos/sanity-studio/commit/cd85f616443c7899e5c4212296a3dd9016a89cd4))
+
 ## [1.16.0](https://github.com/LucasAmos/sanity-studio/compare/1.15.1...1.16.0) (2026-03-17)
 
 ### Features
