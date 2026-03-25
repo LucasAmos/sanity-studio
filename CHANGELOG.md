@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.16.3](https://github.com/LucasAmos/sanity-studio/compare/1.16.2...1.16.3) (2026-03-25)
+
+### Build Changes
+
+* **release:** build schema ([2d1d122](https://github.com/LucasAmos/sanity-studio/commit/2d1d122d7370916d36c906d292a01ad844cc94cf))
+
 ## [1.16.2](https://github.com/LucasAmos/sanity-studio/compare/1.16.1...1.16.2) (2026-03-25)
 
 ### Chores
