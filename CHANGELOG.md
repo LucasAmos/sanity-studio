@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.17.2](https://github.com/LucasAmos/sanity-studio/compare/1.17.1...1.17.2) (2026-03-26)
+
+### Bug Fixes
+
+* **readme:** remove release notes ([7caf0de](https://github.com/LucasAmos/sanity-studio/commit/7caf0de734d976c017e24154fc5795e871781163))
+
 ## [1.17.1](https://github.com/LucasAmos/sanity-studio/compare/1.17.0...1.17.1) (2026-03-26)
 
 ### Bug Fixes
