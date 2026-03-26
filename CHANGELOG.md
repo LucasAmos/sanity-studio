@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.16.4](https://github.com/LucasAmos/sanity-studio/compare/1.16.3...1.16.4) (2026-03-26)
+
+### Build Changes
+
+* **studio:** undeploy ([c35adf4](https://github.com/LucasAmos/sanity-studio/commit/c35adf40ff1fa9d4fe85863414026922e9776ae1))
+
 ## [1.16.3](https://github.com/LucasAmos/sanity-studio/compare/1.16.2...1.16.3) (2026-03-25)
 
 ### Build Changes
