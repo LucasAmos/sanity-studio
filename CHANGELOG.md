@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.17.0](https://github.com/LucasAmos/sanity-studio/compare/1.16.4...1.17.0) (2026-03-26)
+
+### Features
+
+* **releaseit:** update releases ([5b74364](https://github.com/LucasAmos/sanity-studio/commit/5b7436414a6165a5b3d130ad761a36700755a85f))
+
 ## [1.16.4](https://github.com/LucasAmos/sanity-studio/compare/1.16.3...1.16.4) (2026-03-26)
 
 ### Build Changes
