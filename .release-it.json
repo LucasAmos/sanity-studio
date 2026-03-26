@@ -1,7 +1,7 @@
 {
   "$schema": "https://unpkg.com/release-it@19/schema/release-it.json",
   "git": {
-    "commitMessage": "chore: release v${version} [skip ci]",
+    "commitMessage": "build: release v${version} [skip ci]",
     "commitsPath": ".",
     "push": true,
     "requireCommits": true,
@@ -44,15 +44,18 @@
           },
           {
             "section": "Tests",
-            "type": "test"
+            "type": "test",
+            "hidden": "true"
           },
           {
             "section": "Chores",
-            "type": "chore"
+            "type": "chore",
+            "hidden": "true"
           },
           {
             "section": "Documentation",
-            "type": "docs"
+            "type": "docs",
+            "hidden": "true"
           },
           {
             "section": "Performance Improvements",
@@ -60,11 +63,13 @@
           },
           {
             "section": "Code Refactoring",
-            "type": "refactor"
+            "type": "refactor",
+            "hidden": "true"
           },
           {
             "section": "Code Style Changes",
-            "type": "style"
+            "type": "style",
+            "hidden": "true"
           },
           {
             "section": "Build Changes",
@@ -72,7 +77,8 @@
           },
           {
             "section": "Continuous Integration",
-            "type": "ci"
+            "type": "ci",
+            "hidden": "true"
           },
           {
             "section": "Reverts",
