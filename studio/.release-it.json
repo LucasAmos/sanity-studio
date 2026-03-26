@@ -2,7 +2,8 @@
   "$schema": "https://unpkg.com/release-it@19/schema/release-it.json",
   "git": false,
   "hooks": {
-    "before:npm:release": "echo \"# Changes in ${version}\n\n${changelog}\" > README.md"
+    "before:npm:release": "echo \"# Changes in ${version}\n\n${changelog}\" > RELEASENOTES.md",
+    "after:npm:release": "rm RELEASENOTES.md"
   },
   "npm": {
     "publish": true,
