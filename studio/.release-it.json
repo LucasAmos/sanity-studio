@@ -1,6 +1,9 @@
 {
   "$schema": "https://unpkg.com/release-it@19/schema/release-it.json",
   "git": false,
+  "hooks": {
+    "before:npm:release": "echo \"# Changes in ${version}\n\n${changelog}\" > README.md"
+  },
   "npm": {
     "publish": true,
     "publishConfig": {
@@ -23,15 +26,18 @@
           },
           {
             "section": "Tests",
-            "type": "test"
+            "type": "test",
+            "hidden": "true"
           },
           {
             "section": "Chores",
-            "type": "chore"
+            "type": "chore",
+            "hidden": "true"
           },
           {
             "section": "Documentation",
-            "type": "docs"
+            "type": "docs",
+            "hidden": "true"
           },
           {
             "section": "Performance Improvements",
