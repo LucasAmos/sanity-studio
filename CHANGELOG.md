@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.17.1](https://github.com/LucasAmos/sanity-studio/compare/1.17.0...1.17.1) (2026-03-26)
+
+### Bug Fixes
+
+* **release:** notes ([10e78fd](https://github.com/LucasAmos/sanity-studio/commit/10e78fd158df583f2a200cf3429741da119bca05))
+
 ## [1.17.0](https://github.com/LucasAmos/sanity-studio/compare/1.16.4...1.17.0) (2026-03-26)
 
 ### Features
