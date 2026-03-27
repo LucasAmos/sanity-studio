@@ -43,5 +43,5 @@ jobs:
         run: yarn undeploy
         env:
           ENVIRONMENT: Development
-          SANITY_STUDIO_HOSTNAME: lucas-amos-website
+          SANITY_STUDIO_HOSTNAME: "ephemeral-pr-${{ github.event.pull_request.number }}"
           SANITY_STUDIO_TITLE: "ephemeral-pr-${{ github.event.pull_request.number }}"
