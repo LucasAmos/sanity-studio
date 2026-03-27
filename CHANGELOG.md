@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.18.2](https://github.com/LucasAmos/sanity-studio/compare/1.18.1...1.18.2) (2026-03-27)
+
 ## [1.18.1](https://github.com/LucasAmos/sanity-studio/compare/1.18.0...1.18.1) (2026-03-27)
 
 ### Bug Fixes
