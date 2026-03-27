@@ -12,5 +12,5 @@ export default defineCliConfig({
   deployment: {
     autoUpdates: true
   },
-  studioHost: "ephemeral-pr-119"
+  studioHost: process.env.SANITY_STUDIO_HOSTNAME
 });
