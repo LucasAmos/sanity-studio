@@ -19,7 +19,7 @@ jobs:
     name: Release
     runs-on: ubuntu-22.04
     environment:
-      name: Production
+      name: Development
     steps:
       - uses: actions/checkout@v5
         with:
