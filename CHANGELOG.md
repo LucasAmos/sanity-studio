@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.19.0](https://github.com/LucasAmos/sanity-studio/compare/1.18.2...1.19.0) (2026-03-28)
+
+### Features
+
+* **isbn:** add type ([7b4e04f](https://github.com/LucasAmos/sanity-studio/commit/7b4e04fe9a8b6e1f5900d9e122de8672a40aaabe))
+
 ## [1.18.2](https://github.com/LucasAmos/sanity-studio/compare/1.18.1...1.18.2) (2026-03-27)
 
 ## [1.18.1](https://github.com/LucasAmos/sanity-studio/compare/1.18.0...1.18.1) (2026-03-27)
