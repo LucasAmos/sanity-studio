@@ -4,6 +4,7 @@ import { defineConfig } from "sanity";
 import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 
+import { MyEnhancedNavbar } from "./navbar";
 import { resolve } from "./presentation/resolve";
 import { schemaTypes } from "./schemaTypes";
 import { singletonTypes } from "./schemaTypes";
@@ -15,8 +16,7 @@ const singletonActions = new Set(["publish", "discardChanges", "restore"]);
 export default defineConfig({
   name: "default",
   title: process.env.SANITY_STUDIO_TITLE,
-  icon: RobotIcon, // <-- set your custom icon here
-
+  icon: RobotIcon,
   projectId: process.env.SANITY_STUDIO_PROJECT_ID!,
   dataset: process.env.SANITY_STUDIO_DATASET!,
 
@@ -48,5 +48,10 @@ export default defineConfig({
       singletonSet.has(context.schemaType)
         ? input.filter(({ action }) => action && singletonActions.has(action))
         : input
+  },
+  studio: {
+    components: {
+      navbar: MyEnhancedNavbar
+    }
   }
 });
