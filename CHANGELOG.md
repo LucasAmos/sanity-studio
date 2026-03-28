@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.0](https://github.com/LucasAmos/sanity-studio/compare/1.19.0...1.20.0) (2026-03-28)
+
+### Features
+
+* **layout:** pages ([28aa8aa](https://github.com/LucasAmos/sanity-studio/commit/28aa8aae7818db4d13030e97744310532b28bacb))
+* **navbar:** add logo ([b009ba7](https://github.com/LucasAmos/sanity-studio/commit/b009ba74f4cd0ffb98c66464a359f2dcc298970c))
+
 ## [1.19.0](https://github.com/LucasAmos/sanity-studio/compare/1.18.2...1.19.0) (2026-03-28)
 
 ### Features
