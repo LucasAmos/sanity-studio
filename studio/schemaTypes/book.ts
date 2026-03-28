@@ -1,5 +1,7 @@
-import { defineField, defineType } from "sanity";
 import { BookIcon } from "@sanity/icons";
+import { defineField, defineType } from "sanity";
+
+import { ISBN } from "../fields/ISBN";
 
 export default defineType({
   name: "book",
@@ -7,6 +9,12 @@ export default defineType({
   type: "document",
   icon: BookIcon,
   fields: [
+    defineField({
+      name: "ISBN",
+      title: "ISBN",
+      type: "number",
+      components: { input: ISBN }
+    }),
     defineField({
       name: "title",
       title: "Title",
