@@ -1,40 +1,21 @@
+import { RobotIcon } from "@sanity/icons";
+import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { presentationTool } from "sanity/presentation";
+import { structureTool } from "sanity/structure";
+
 import { resolve } from "./presentation/resolve";
 import { schemaTypes } from "./schemaTypes";
-import { StructureBuilder, structureTool } from "sanity/structure";
-import { visionTool } from "@sanity/vision";
-import { singletonTypes, standardTypes } from "./schemaTypes";
+import { singletonTypes } from "./schemaTypes";
+import { getStructure } from "./structure";
 
 const singletonSet: Set<string> = new Set(singletonTypes.map(({ name }) => name));
 const singletonActions = new Set(["publish", "discardChanges", "restore"]);
-const getStructure = (S: StructureBuilder) => {
-  const documentTypeList = standardTypes.map(({ name, title }) =>
-    S.documentTypeListItem(name).title(title || name)
-  );
-  return S.list()
-    .title("Content")
-    .items([
-      // The singleton type has a list item with a custom child
-      S.listItem().title("About Page").id("about").schemaType("about").child(
-        // Instead of rendering a list of documents, render a single
-        // document, specifying the `documentId` manually to ensure
-        // that we're editing the single instance of the document
-        S.document().schemaType("about").documentId("about")
-      ),
-      S.listItem()
-        .title("CV Page")
-        .id("cv")
-        .schemaType("cv")
-        .child(S.document().schemaType("cv").documentId("cv")),
-      // Regular document types
-      ...documentTypeList
-    ]);
-};
 
 export default defineConfig({
   name: "default",
   title: process.env.SANITY_STUDIO_TITLE,
+  icon: RobotIcon, // <-- set your custom icon here
 
   projectId: process.env.SANITY_STUDIO_PROJECT_ID!,
   dataset: process.env.SANITY_STUDIO_DATASET!,
@@ -55,7 +36,6 @@ export default defineConfig({
       }
     })
   ],
-
   schema: {
     types: schemaTypes,
     // Filter out singleton types from the global “New document” menu options
