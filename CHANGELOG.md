@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.21.0](https://github.com/LucasAmos/sanity-studio/compare/1.20.0...1.21.0) (2026-04-04)
+
+### Features
+
+* **cv:** add parent page ([8e9e2d6](https://github.com/LucasAmos/sanity-studio/commit/8e9e2d6af521ec30abb91870f2a830730deb706b))
+* **techstack:** add ([e964ef5](https://github.com/LucasAmos/sanity-studio/commit/e964ef54c61aaef769703e21b3aee820435fbf19))
+* **techstack:** type ([d45da58](https://github.com/LucasAmos/sanity-studio/commit/d45da58be64cc24008cdf29e5cc21900aa19b035))
+
 ## [1.20.0](https://github.com/LucasAmos/sanity-studio/compare/1.19.0...1.20.0) (2026-03-28)
 
 ### Features
