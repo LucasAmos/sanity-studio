@@ -1,7 +1,7 @@
-import { defineField, defineType } from "sanity";
-import { richText } from "../blocks/richText";
-
 import { DocumentIcon } from "@sanity/icons";
+import { defineField, defineType } from "sanity";
+
+import { richText } from "../blocks/richText";
 
 export default defineType({
   name: "cv",
@@ -9,6 +9,12 @@ export default defineType({
   type: "document",
   icon: DocumentIcon,
   fields: [
+    {
+      title: "Parent Page",
+      name: "parentPage",
+      type: "reference",
+      to: [{ type: "about" }]
+    },
     {
       title: "Slug",
       name: "slug",
