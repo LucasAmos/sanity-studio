@@ -14,8 +14,8 @@ export default defineType({
       validation: (rule) => rule.required()
     }),
     defineField({
-      name: "techStacks",
-      title: "Tech Stacks",
+      name: "techStackSection",
+      title: "Tech Stack Section",
       type: "array",
       of: [
         defineArrayMember({
