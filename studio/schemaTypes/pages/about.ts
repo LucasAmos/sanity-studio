@@ -1,8 +1,8 @@
-import { defineField, defineType } from "sanity";
-import { richText } from "../blocks/richText";
-
 import { InfoOutlineIcon } from "@sanity/icons";
+import { defineField, defineType } from "sanity";
+
 import { imageRow } from "../blocks/imageRow";
+import { richText } from "../blocks/richText";
 
 export default defineType({
   name: "about",
@@ -28,6 +28,12 @@ export default defineType({
     defineField({
       name: "imageRow",
       type: imageRow.name
+    }),
+    defineField({
+      name: "techStack",
+      title: "Tech Stack",
+      type: "reference",
+      to: [{ type: "techStackSection" }]
     })
   ]
 });
