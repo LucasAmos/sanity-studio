@@ -1,7 +1,7 @@
 import { BookIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
-import { ISBN } from "../fields/ISBN";
+import { ISBN } from "./fields/ISBN";
 
 export default defineType({
   name: "book",
