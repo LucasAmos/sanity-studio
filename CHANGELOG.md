@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.22.0](https://github.com/LucasAmos/sanity-studio/compare/1.21.0...1.22.0) (2026-04-06)
+
+### Features
+
+* **iconPicker:** craete type ([a02e55d](https://github.com/LucasAmos/sanity-studio/commit/a02e55d387ee27c29d397e8bbebd35acb477f20c))
+
 ## [1.21.0](https://github.com/LucasAmos/sanity-studio/compare/1.20.0...1.21.0) (2026-04-04)
 
 ### Features
