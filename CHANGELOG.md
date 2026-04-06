@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.23.0](https://github.com/LucasAmos/sanity-studio/compare/1.22.0...1.23.0) (2026-04-06)
+
+### Features
+
+* **icons:** add database ([5c14082](https://github.com/LucasAmos/sanity-studio/commit/5c140822fadd693acc9a6eac7701e7532d5fea3e))
+
 ## [1.22.0](https://github.com/LucasAmos/sanity-studio/compare/1.21.0...1.22.0) (2026-04-06)
 
 ### Features
