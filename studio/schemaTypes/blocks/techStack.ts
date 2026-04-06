@@ -1,6 +1,8 @@
 import { DocumentIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
+import { IconPicker } from "../../components/IconPicker";
+
 export default defineType({
   name: "techStack",
   title: "Tech Stack",
@@ -12,6 +14,14 @@ export default defineType({
       title: "Title",
       type: "string",
       validation: (rule) => rule.required()
+    }),
+    defineField({
+      name: "icon",
+      title: "Icon",
+      type: "string",
+      components: {
+        input: IconPicker
+      }
     }),
     defineField({
       title: "skills",
