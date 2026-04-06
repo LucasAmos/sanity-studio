@@ -1,7 +1,7 @@
 import { DocumentIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
-import { IconPicker } from "../../components/IconPicker";
+import { IconPicker } from "../fields/IconPicker";
 
 export default defineType({
   name: "techStack",
