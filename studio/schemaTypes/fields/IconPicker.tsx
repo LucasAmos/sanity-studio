@@ -6,14 +6,15 @@ import React from "react";
 // Filter out metadata and keep actual icon objects
 // const iconList = Object.keys(far).filter((key) => key !== "far" && key !== "prefix");
 const iconList = [
+  "faCloud",
+  "faCode",
+  "faCodeCommit",
+  "faCog",
+  "faDatabase",
   "faGear",
   "faGears",
-  "faCode",
-  "faCloud",
-  "faCog",
-  "faCodeCommit",
-  "faServer",
   "faProjectDiagram",
+  "faServer",
   "faWrench"
 ];
 
