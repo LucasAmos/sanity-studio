@@ -1,6 +1,8 @@
 import { DocumentIcon } from "@sanity/icons";
 import { defineField, defineType, defineArrayMember } from "sanity";
 
+import techStack from "../blocks/techStack";
+
 export default defineType({
   name: "techStackSection",
   title: "Tech Stack Section",
@@ -20,7 +22,7 @@ export default defineType({
       of: [
         defineArrayMember({
           type: "reference",
-          to: [{ type: "techStack" }] // Ensure "techStack" is a valid document name
+          to: [{ type: techStack.name }]
         })
       ],
       validation: (rule) => rule.required().min(1)

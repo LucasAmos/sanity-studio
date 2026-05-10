@@ -3,6 +3,7 @@ import { defineField, defineType } from "sanity";
 
 import { imageRow } from "../blocks/imageRow";
 import { richText } from "../blocks/richText";
+import techStackSection from "../sections/techStackSection";
 
 export default defineType({
   name: "about",
@@ -33,7 +34,7 @@ export default defineType({
       name: "techStack",
       title: "Tech Stack",
       type: "reference",
-      to: [{ type: "techStackSection" }]
+      to: [{ type: techStackSection.name }]
     })
   ]
 });

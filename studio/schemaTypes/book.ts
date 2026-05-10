@@ -1,6 +1,8 @@
 import { BookIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
+import author from "./author";
+import category from "./category";
 import { ISBN } from "./fields/ISBN";
 
 export default defineType({
@@ -25,7 +27,7 @@ export default defineType({
       name: "author",
       title: "Author",
       type: "reference",
-      to: [{ type: "author" }],
+      to: [{ type: author.name }],
       validation: (rule) => rule.required()
     }),
     defineField({
@@ -43,7 +45,7 @@ export default defineType({
       name: "category",
       title: "Category",
       type: "reference",
-      to: [{ type: "category" }]
+      to: [{ type: category.name }]
     }),
     defineField({
       name: "estimated",

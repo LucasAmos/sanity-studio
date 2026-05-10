@@ -2,6 +2,7 @@ import { DocumentIcon } from "@sanity/icons";
 import { defineField, defineType } from "sanity";
 
 import { richText } from "../blocks/richText";
+import about from "./about";
 
 export default defineType({
   name: "cv",
@@ -13,7 +14,7 @@ export default defineType({
       title: "Parent Page",
       name: "parentPage",
       type: "reference",
-      to: [{ type: "about" }]
+      to: [{ type: about.name }]
     },
     {
       title: "Slug",
