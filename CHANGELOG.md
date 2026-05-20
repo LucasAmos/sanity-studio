@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.23.7](https://github.com/LucasAmos/sanity-studio/compare/1.23.6...1.23.7) (2026-05-20)
+
 ## [1.23.6](https://github.com/LucasAmos/sanity-studio/compare/1.23.5...1.23.6) (2026-05-10)
 
 ## [1.23.5](https://github.com/LucasAmos/sanity-studio/compare/1.23.4...1.23.5) (2026-05-10)
