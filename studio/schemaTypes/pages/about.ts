@@ -34,7 +34,8 @@ export default defineType({
       name: "techStack",
       title: "Tech Stack",
       type: "reference",
-      to: [{ type: techStackSection.name }]
+      to: [{ type: techStackSection.name }],
+      validation: (rule) => rule.required()
     })
   ]
 });
