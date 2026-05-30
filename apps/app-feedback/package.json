@@ -26,7 +26,7 @@
     "@types/jest": "^30.0.0",
     "@types/react": "^19.2.15",
     "jest": "^30.4.2",
-    "sanity": "^5.26.0",
+    "sanity": "^5.28.0",
     "typescript": "^5.9.3"
   }
 }
