@@ -3893,7 +3893,7 @@ __metadata:
     "@sanity/eslint-config-studio": "npm:^6.0.0"
     "@sanity/vision": "npm:^5.31.1"
     "@types/react": "npm:^19.2.17"
-    eslint: "npm:^10.4.1"
+    eslint: "npm:^10.5.0"
     prettier: "npm:^3.8.4"
     react: "npm:^19.2.7"
     react-dom: "npm:^19.2.7"
@@ -5877,14 +5877,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/sdk-react@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "@sanity/sdk-react@npm:2.13.0"
+"@sanity/sdk-react@npm:^2.14.0":
+  version: 2.14.0
+  resolution: "@sanity/sdk-react@npm:2.14.0"
   dependencies:
     "@sanity/client": "npm:^7.22.0"
     "@sanity/message-protocol": "npm:^0.23.0"
-    "@sanity/sdk": "npm:2.13.0"
-    "@sanity/types": "npm:^5.26.0"
+    "@sanity/sdk": "npm:2.14.0"
+    "@sanity/types": "npm:^6.0.0"
     groq: "npm:3.88.1-typegen-experimental.0"
     react-compiler-runtime: "npm:19.1.0-rc.2"
     react-error-boundary: "npm:^6.1.2"
@@ -5892,13 +5892,13 @@ __metadata:
   peerDependencies:
     react: ^18.0.0 || ^19.0.0
     react-dom: ^18.0.0 || ^19.0.0
-  checksum: 10c0/2cd43f02a58505f89031df9626527e8900112928c3842280ea9acece13b3305feb30b6261a813475fcf1f5ba0a0ce2c7f4c211db9a9bdeeafb7a719ca65bb3e3
+  checksum: 10c0/551cf7203eee75eb7365c7704af7a9285ffbdd59ffd2a9e8a91a892edae4e20494c142654bb3195e59e5f7afe4fdcd336d59a61315bcef232436bbf2f7327ceb
   languageName: node
   linkType: hard
 
-"@sanity/sdk@npm:2.13.0, @sanity/sdk@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "@sanity/sdk@npm:2.13.0"
+"@sanity/sdk@npm:2.14.0, @sanity/sdk@npm:^2.14.0":
+  version: 2.14.0
+  resolution: "@sanity/sdk@npm:2.14.0"
   dependencies:
     "@sanity/bifur-client": "npm:^1.0.0"
     "@sanity/client": "npm:^7.22.0"
@@ -5911,13 +5911,13 @@ __metadata:
     "@sanity/message-protocol": "npm:^0.23.0"
     "@sanity/mutate": "npm:^0.18.0"
     "@sanity/telemetry": "npm:^1.1.0"
-    "@sanity/types": "npm:^5.26.0"
+    "@sanity/types": "npm:^6.0.0"
     groq: "npm:3.88.1-typegen-experimental.0"
     groq-js: "npm:^1.30.2"
     reselect: "npm:^5.1.1"
     rxjs: "npm:^7.8.2"
     zustand: "npm:^5.0.13"
-  checksum: 10c0/33321f3fe83c455c39dcd6af9f755d7ea534e98b46e7a7f2f950b47680713d7878ebeadae6b9b34186a27327f7b488149b39f9e46121296b70d567e38ead4ad3
+  checksum: 10c0/1fcb324adf96095b9d47d39d737b26da94d936a40e0eb6b4a5505dba4044b405da3b56df8bdcef32fa7097f58596a3a8a6ac3f9f2bd165e63d01df5db637b04c
   languageName: node
   linkType: hard
 
@@ -6030,6 +6030,18 @@ __metadata:
   peerDependencies:
     "@types/react": ^19.2
   checksum: 10c0/c0e7e85b81e23b4269dfce9190dda39917e1789dc4a59213cba9975cba3eb1a243f14faa32db81d1a8e51c2f645edbea539a27992fec2681e450463662b0496d
+  languageName: node
+  linkType: hard
+
+"@sanity/types@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@sanity/types@npm:6.0.0"
+  dependencies:
+    "@sanity/client": "npm:^7.22.1"
+    "@sanity/media-library-types": "npm:^1.4.0"
+  peerDependencies:
+    "@types/react": ^19.2
+  checksum: 10c0/d3a765c8cbf85ea18320d6e44e6462e69a3e8a4a2ea269bdc5ed129fd1c5ecad4216b477c7dc2e8c5ca521c53e5a55f18fce131b2b75c0ba13a789e61646df8a
   languageName: node
   linkType: hard
 
@@ -7222,8 +7234,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app-feedback@workspace:apps/app-feedback"
   dependencies:
-    "@sanity/sdk": "npm:^2.13.0"
-    "@sanity/sdk-react": "npm:^2.13.0"
+    "@sanity/sdk": "npm:^2.14.0"
+    "@sanity/sdk-react": "npm:^2.14.0"
     "@sanity/ui": "npm:^3.2.0"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
@@ -7240,8 +7252,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app-test@workspace:apps/app-test"
   dependencies:
-    "@sanity/sdk": "npm:^2.13.0"
-    "@sanity/sdk-react": "npm:^2.13.0"
+    "@sanity/sdk": "npm:^2.14.0"
+    "@sanity/sdk-react": "npm:^2.14.0"
     "@sanity/ui": "npm:^3.2.0"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
@@ -9515,9 +9527,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^10.4.1":
-  version: 10.4.1
-  resolution: "eslint@npm:10.4.1"
+"eslint@npm:^10.5.0":
+  version: 10.5.0
+  resolution: "eslint@npm:10.5.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.2"
@@ -9556,7 +9568,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/c5e6bb5158fb0d62f090c8e2671de5c98283bbb37a58b6d871bada63af3018e683483c96c1a92272fedc8f4e5279a273a0451acf0da67c487406639daa05aedb
+  checksum: 10c0/e1f7a1d442027e5478945cb07b6a382adc3f149fbfd3dbc14951a7a9fa312546b27fb35b0556897ca1d04539ad16ee85bda75ad9f724873e1153d1fbca0d6145
   languageName: node
   linkType: hard
 
