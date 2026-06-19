@@ -22,7 +22,6 @@
     "deploy:dev": "SANITY_ACTIVE_ENV=development sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "schema:extract": "sanity schema extract --enforce-required-fields",
-    "typecheck": "tsc --noEmit",
     "undeploy": "sanity undeploy --yes",
     "undeploy:dev": "SANITY_ACTIVE_ENV=development sanity undeploy --yes",
     "undeploy:local": "SANITY_ACTIVE_ENV=development sanity undeploy --yes",

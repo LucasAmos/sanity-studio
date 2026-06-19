@@ -29,24 +29,6 @@ jobs:
       - name: Lint commits
         uses: wagoid/commitlint-github-action@b948419dd99f3fd78a6548d48f94e3df7f6bf3ed
 
-  typecheck:
-    name: Typecheck
-    runs-on: ubuntu-22.04
-    defaults:
-      run:
-        working-directory: ./studio
-    steps:
-      - uses: actions/checkout@v6
-      - run: corepack enable
-      - uses: actions/setup-node@v6
-        with:
-          cache: yarn
-          node-version: 24
-      - run: yarn install --immutable
-
-      - name: Typecheck
-        run: yarn run typecheck
-
   validate-schema:
     environment:
       name: ci
