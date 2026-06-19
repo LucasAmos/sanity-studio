@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.24.0](https://github.com/LucasAmos/sanity-studio/compare/1.23.12...1.24.0) (2026-06-19)
+
+### Features
+
+* **locations:** define locations ([105beb1](https://github.com/LucasAmos/sanity-studio/commit/105beb1518429aaa706b3e5e1b7f328f0b68de70))
+
 ## [1.23.12](https://github.com/LucasAmos/sanity-studio/compare/1.23.11...1.23.12) (2026-06-18)
 
 ## [1.23.11](https://github.com/LucasAmos/sanity-studio/compare/1.23.10...1.23.11) (2026-06-12)
