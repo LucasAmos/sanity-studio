@@ -26,6 +26,7 @@ jobs:
       ENVIRONMENT: Development
       STUDIO_HOSTNAME: "${{ vars.STUDIO_HOSTNAME }}-development"
       STUDIO_TITLE: development
+      APP_ID: p3f3nu2bty1ymuyl2h4n2xz0
 
   deploy-production-studio:
     needs: [deploy-development-studio]
@@ -36,3 +37,4 @@ jobs:
       ENVIRONMENT: Production
       STUDIO_HOSTNAME: "${{ vars.STUDIO_HOSTNAME }}-production"
       STUDIO_TITLE: production
+      APP_ID: uw79iifkpgbr6m57s9qn7ecj
