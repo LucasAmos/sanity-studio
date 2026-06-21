@@ -19,7 +19,7 @@
     "release:dry-run": "yarn workspace @lucasamos/sanity-studio release:dry-run && yarn release-it --ci --dry-run"
   },
   "devDependencies": {
-    "@release-it-plugins/workspaces": "^5.0.3",
+    "@release-it-plugins/workspaces": "^6.0.0",
     "@release-it/conventional-changelog": "^11.0.1",
     "oxfmt": "^0.55.0",
     "oxlint": "^1.70.0",
