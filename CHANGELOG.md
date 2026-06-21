@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.25.0](https://github.com/LucasAmos/sanity-studio/compare/1.24.0...1.25.0) (2026-06-21)
+
+### Features
+
+* **cv:** title ([803eff6](https://github.com/LucasAmos/sanity-studio/commit/803eff6777ecf4e055dfa42b7744299d6a629671))
+
 ## [1.24.0](https://github.com/LucasAmos/sanity-studio/compare/1.23.12...1.24.0) (2026-06-19)
 
 ### Features
