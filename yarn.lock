@@ -4153,9 +4153,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@release-it-plugins/workspaces@npm:^5.0.3":
-  version: 5.0.3
-  resolution: "@release-it-plugins/workspaces@npm:5.0.3"
+"@release-it-plugins/workspaces@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@release-it-plugins/workspaces@npm:6.0.0"
   dependencies:
     detect-indent: "npm:^6.1.0"
     detect-newline: "npm:^3.1.0"
@@ -4163,11 +4163,11 @@ __metadata:
     semver: "npm:^7.7.2"
     url-join: "npm:^4.0.1"
     validate-peer-dependencies: "npm:^1.2.0"
-    walk-sync: "npm:^2.2.0"
+    walk-sync: "npm:^4.0.2"
     yaml: "npm:^2.8.0"
   peerDependencies:
     release-it: ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/d2e34ffb22383d0c7688006bb63484cf79192f8be45d5c21bca33b34a2b60164f3c8d9763e9359174fe6162479d5d23e0c3b4c18169b30b0dbc9ca0afd37d7a0
+  checksum: 10c0/7ee8aaa005abd2113a981b40fb3600f26951542e85eaf4719fb753e7c54cfb7606a1c6dc134de0a6e579a0e3433b88b4fcf017ec8c61e0dc3d78ff7c2faf27d5
   languageName: node
   linkType: hard
 
@@ -8010,7 +8010,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ensure-posix-path@npm:^1.1.0":
+"ensure-posix-path@npm:^1.1.1":
   version: 1.1.1
   resolution: "ensure-posix-path@npm:1.1.1"
   checksum: 10c0/17133fad88bac9b76e5a0690192d5c7bd6f08bdef618e2c1c0c1fcd3b0960f298a4226af5fe6401e729fc09534d0bb68b9e6f388e92d8a140a9d4a61a97e9641
@@ -11525,7 +11525,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"matcher-collection@npm:^2.0.0":
+"matcher-collection@npm:^2.0.1":
   version: 2.0.1
   resolution: "matcher-collection@npm:2.0.1"
   dependencies:
@@ -11687,7 +11687,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^10.2.2, minimatch@npm:^10.2.4, minimatch@npm:^10.2.5":
+"minimatch@npm:^10.0.3, minimatch@npm:^10.2.2, minimatch@npm:^10.2.4, minimatch@npm:^10.2.5":
   version: 10.2.5
   resolution: "minimatch@npm:10.2.5"
   dependencies:
@@ -13763,7 +13763,7 @@ __metadata:
   resolution: "sanity-studio@workspace:."
   dependencies:
     "@fortawesome/free-solid-svg-icons": "npm:^7.2.0"
-    "@release-it-plugins/workspaces": "npm:^5.0.3"
+    "@release-it-plugins/workspaces": "npm:^6.0.0"
     "@release-it/conventional-changelog": "npm:^11.0.1"
     oxfmt: "npm:^0.55.0"
     oxlint: "npm:^1.70.0"
@@ -15638,15 +15638,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"walk-sync@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "walk-sync@npm:2.2.0"
+"walk-sync@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "walk-sync@npm:4.0.2"
   dependencies:
-    "@types/minimatch": "npm:^3.0.3"
-    ensure-posix-path: "npm:^1.1.0"
-    matcher-collection: "npm:^2.0.0"
-    minimatch: "npm:^3.0.4"
-  checksum: 10c0/45fe284ffa28440f0d3d0a136b3c3fe2a0f55bf207db22c481eea9e7ab7cef6d820491485d76e9f1af9dab7489c6d7a0efbd1ebf45b43dbf871f046f0b4760bd
+    ensure-posix-path: "npm:^1.1.1"
+    matcher-collection: "npm:^2.0.1"
+    minimatch: "npm:^10.0.3"
+  checksum: 10c0/0e2192fb2eb10f30fc0ca12bfd24c6a6b86f6ffbe23f8de06d3bee5f2452c4031881b1fc78d6e14066cf794eee4769baaaceb27fc53924d085afca96c497d523
   languageName: node
   linkType: hard
 
