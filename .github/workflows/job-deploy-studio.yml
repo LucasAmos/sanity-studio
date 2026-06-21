@@ -53,6 +53,7 @@ jobs:
           SANITY_STUDIO_DATASET: ${{ vars.SANITY_STUDIO_DATASET }}
           SANITY_STUDIO_TITLE: ${{inputs.STUDIO_TITLE}}
           SANITY_STUDIO_HOSTNAME: ${{inputs.STUDIO_HOSTNAME}}
+          APP_ID: ${{inputs.APP_ID}}
 
         run: |
           yarn deploy --yes --source-maps
