@@ -12,7 +12,8 @@ on:
       ENVIRONMENT:
         required: true
         type: string
-
+      APP_ID:
+        type: string
 permissions:
   contents: read
   pull-requests: write
