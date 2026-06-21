@@ -27,7 +27,7 @@ export const resolve: PresentationPluginOptions["resolve"] = {
         title: "title"
       },
       resolve: () => ({
-        locations: [{ title: cv.title, href: "/about/cv" }]
+        locations: [{ title: "CV page", href: "/about/cv" }]
       })
     })
   }
