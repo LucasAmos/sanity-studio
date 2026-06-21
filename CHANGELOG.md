@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.25.1](https://github.com/LucasAmos/sanity-studio/compare/1.25.0...1.25.1) (2026-06-21)
+
+### Bug Fixes
+
+* **studio:** app id ([cab70c7](https://github.com/LucasAmos/sanity-studio/commit/cab70c7d3a8cf6713a3a678324c3ad6c5168ba06))
+
 ## [1.25.0](https://github.com/LucasAmos/sanity-studio/compare/1.24.0...1.25.0) (2026-06-21)
 
 ### Features
