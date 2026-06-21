@@ -10,6 +10,7 @@ export default defineCliConfig({
    * Learn more at https://www.sanity.io/docs/cli#auto-updates
    */
   deployment: {
+    appId: process.env.APP_ID,
     autoUpdates: true
   },
   studioHost: process.env.SANITY_STUDIO_HOSTNAME
