@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.25.10](https://github.com/LucasAmos/sanity-studio/compare/1.25.9...1.25.10) (2026-06-27)
+
+### Bug Fixes
+
+* **deps:** revert ([ef2bb64](https://github.com/LucasAmos/sanity-studio/commit/ef2bb644272c605f6490cc08722c4c930dcb53dd))
+* **revert:** dep ([a4b95aa](https://github.com/LucasAmos/sanity-studio/commit/a4b95aa32f190e2a80c0112914dfce6b9ed756e8))
+
 ## [1.25.9](https://github.com/LucasAmos/sanity-studio/compare/1.25.8...1.25.9) (2026-06-27)
 
 ## [1.25.8](https://github.com/LucasAmos/sanity-studio/compare/1.25.7...1.25.8) (2026-06-27)
