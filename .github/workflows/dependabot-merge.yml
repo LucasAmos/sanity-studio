@@ -1,7 +1,7 @@
 name: Dependabot auto-merge
 on: pull_request
 env:
-    SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+    GH_TOKEN: ${{ secrets.DEPENDABOT_PAT }}
 permissions:
     contents: write
     pull-requests: write
@@ -17,10 +17,10 @@ jobs:
               with:
                   github-token: "${{ secrets.GITHUB_TOKEN }}"
             - name: Enable auto-merge for Dependabot PRs
-              if: steps.metadata.outputs.update-type == 'version-update:semver-patch' || 'version-update:semver-minor'
+              if: steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'
               run: |
                   echo ${{steps.metadata.outputs.update-type }}
-                  gh pr merge --auto --merge "$PR_URL"
+                  gh pr merge "$PR_URL" --merge --admin
               env:
                   PR_URL: ${{github.event.pull_request.html_url}}
                   GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
