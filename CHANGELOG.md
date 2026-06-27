@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.25.7](https://github.com/LucasAmos/sanity-studio/compare/1.25.6...1.25.7) (2026-06-27)
+
+### Bug Fixes
+
+* **dependabot:** fix ([a677900](https://github.com/LucasAmos/sanity-studio/commit/a677900c3f127ee7e05bfbf3931353bc6cb3e877))
+
 ## [1.25.6](https://github.com/LucasAmos/sanity-studio/compare/1.25.5...1.25.6) (2026-06-27)
 
 ## [1.25.5](https://github.com/LucasAmos/sanity-studio/compare/1.25.4...1.25.5) (2026-06-23)
