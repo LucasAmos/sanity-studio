@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.25.12](https://github.com/LucasAmos/sanity-studio/compare/1.25.11...1.25.12) (2026-06-27)
+
+### Bug Fixes
+
+* **dependabot:** use pat ([3784f14](https://github.com/LucasAmos/sanity-studio/commit/3784f142aa0edf6c0f34db0fc0375f572e6ea321))
+
 ## [1.25.11](https://github.com/LucasAmos/sanity-studio/compare/1.25.10...1.25.11) (2026-06-27)
 
 ### Bug Fixes
