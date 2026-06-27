@@ -36,22 +36,22 @@
     "sanity"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.2.0",
-    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/fontawesome-svg-core": "^7.3.0",
+    "@fortawesome/free-regular-svg-icons": "^7.3.0",
     "@fortawesome/react-fontawesome": "^3.3.1",
     "@release-it/conventional-changelog": "^11.0.1",
-    "@sanity/vision": "^6.1.0",
+    "@sanity/vision": "^6.2.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "release-it": "^19.2.4",
-    "sanity": "^6.1.0",
-    "styled-components": "^6.4.2"
+    "sanity": "^6.2.0",
+    "styled-components": "^6.4.3"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
     "@types/react": "^19.2.17",
-    "eslint": "^10.5.0",
-    "prettier": "^3.8.4",
+    "eslint": "^10.6.0",
+    "prettier": "^3.9.0",
     "typescript": "^6.0.3",
     "vitest": "^4.1.9"
   },
