@@ -6,6 +6,8 @@ on:
 permissions:
   contents: read
   pull-requests: write
+  packages: write
+  id-token: write
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }} - ci
@@ -167,3 +169,40 @@ jobs:
 
       - name: Run tests
         run: yarn test
+
+  release-dry-run:
+    name: Release dry run
+    runs-on: ubuntu-24.04-arm
+    environment:
+      name: Development
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
+      - name: setup npm auth token
+        run: npm set //npm.pkg.github.com/:_authToken ${{secrets.GITHUB_TOKEN}}
+
+      - name: set npm registry
+        run: npm set @lucasamos:registry https://npm.pkg.github.com
+
+      - name: corepack enable
+        run: corepack enable
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: yarn install
+        run: yarn install --immutable
+
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+      - name: Release dry run
+        run: yarn run release:dry-run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SANITY_STUDIO_DATASET: production
