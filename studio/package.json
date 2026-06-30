@@ -40,18 +40,18 @@
     "@fortawesome/free-regular-svg-icons": "^7.3.0",
     "@fortawesome/react-fontawesome": "^3.3.1",
     "@release-it/conventional-changelog": "^11.0.1",
-    "@sanity/vision": "^6.2.0",
+    "@sanity/vision": "^6.3.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "release-it": "^19.2.4",
-    "sanity": "^6.2.0",
+    "sanity": "^6.3.0",
     "styled-components": "^6.4.3"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
     "@types/react": "^19.2.17",
     "eslint": "^10.6.0",
-    "prettier": "^3.9.3",
+    "prettier": "^3.9.4",
     "typescript": "^6.0.3",
     "vitest": "^4.1.9"
   },
