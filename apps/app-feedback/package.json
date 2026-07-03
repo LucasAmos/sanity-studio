@@ -1,7 +1,7 @@
 {
   "name": "app-feedback",
   "private": true,
-  "version": "1.25.17",
+  "version": "1.25.18",
   "main": "package.json",
   "license": "UNLICENSED",
   "scripts": {
