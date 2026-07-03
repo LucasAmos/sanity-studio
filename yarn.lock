@@ -5349,9 +5349,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/ui@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "@sanity/ui@npm:3.3.0"
+"@sanity/ui@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@sanity/ui@npm:3.3.1"
   dependencies:
     "@floating-ui/react-dom": "npm:^2.1.6"
     "@juggle/resize-observer": "npm:^3.4.0"
@@ -5367,7 +5367,7 @@ __metadata:
     react-dom: ^18 || >=19.0.0-0
     react-is: ^18 || >=19.0.0-0
     styled-components: ^5.2 || ^6
-  checksum: 10c0/1d9874ba2b7800dd1820ed3070b1f744b0c84a53fc00734720931f6298b74906f21cb717eeeb42e939388cb3d6173f6d68f6c8d9cf0e98c23e36ac6a9325f550
+  checksum: 10c0/93a3bb232795696d9274fe36d398d1a24a30ecd4ffa57ba7ce27116f19854ff6991f0dea55254c68147c581521f0a847b089fecf9a365ec1bde1a8a4140785cf
   languageName: node
   linkType: hard
 
@@ -6607,7 +6607,7 @@ __metadata:
   dependencies:
     "@sanity/sdk": "npm:^2.15.0"
     "@sanity/sdk-react": "npm:^2.15.0"
-    "@sanity/ui": "npm:^3.3.0"
+    "@sanity/ui": "npm:^3.3.1"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
     jest: "npm:^30.4.2"
@@ -6625,7 +6625,7 @@ __metadata:
   dependencies:
     "@sanity/sdk": "npm:^2.15.0"
     "@sanity/sdk-react": "npm:^2.15.0"
-    "@sanity/ui": "npm:^3.3.0"
+    "@sanity/ui": "npm:^3.3.1"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
     jest: "npm:^30.4.2"
