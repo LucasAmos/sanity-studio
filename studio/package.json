@@ -40,11 +40,11 @@
     "@fortawesome/free-regular-svg-icons": "^7.3.0",
     "@fortawesome/react-fontawesome": "^3.3.1",
     "@release-it/conventional-changelog": "^11.0.1",
-    "@sanity/vision": "^6.3.0",
+    "@sanity/vision": "^6.4.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "release-it": "^19.2.4",
-    "sanity": "^6.3.0",
+    "sanity": "^6.4.0",
     "styled-components": "^6.4.3"
   },
   "devDependencies": {
