@@ -1,5 +1,5 @@
+import { TagIcon } from "@sanity/icons/Tag";
 import { defineField, defineType } from "sanity";
-import { TagIcon } from "@sanity/icons";
 // Use this if no icon is required
 // oxlint-disable-next-line no-unused-vars
 const NoIcon = () => null;

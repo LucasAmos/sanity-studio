@@ -1,6 +1,6 @@
-import { defineField, defineType, StringRule } from "sanity";
+import { UserIcon } from "@sanity/icons/User";
 import groq from "groq";
-import { UserIcon } from "@sanity/icons";
+import { defineField, defineType, StringRule } from "sanity";
 
 export const uniqueValidation = (rule: StringRule) => {
   return rule.custom(async (value, context) => {
