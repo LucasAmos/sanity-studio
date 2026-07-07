@@ -1,4 +1,4 @@
-import { RobotIcon } from "@sanity/icons";
+import { RobotIcon } from "@sanity/icons/Robot";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { presentationTool } from "sanity/presentation";
