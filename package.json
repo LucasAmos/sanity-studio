@@ -27,6 +27,6 @@
   },
   "packageManager": "yarn@4.13.0",
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "7.3.0"
+    "@fortawesome/free-solid-svg-icons": "7.3.1"
   }
 }
