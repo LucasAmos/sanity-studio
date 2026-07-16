@@ -5252,13 +5252,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/sdk-react@npm:^2.16.0":
-  version: 2.16.0
-  resolution: "@sanity/sdk-react@npm:2.16.0"
+"@sanity/sdk-react@npm:^2.17.0":
+  version: 2.17.0
+  resolution: "@sanity/sdk-react@npm:2.17.0"
   dependencies:
     "@sanity/client": "npm:^7.23.1"
     "@sanity/message-protocol": "npm:^0.23.0"
-    "@sanity/sdk": "npm:2.16.0"
+    "@sanity/sdk": "npm:2.17.0"
     "@sanity/types": "npm:^6.2.0"
     groq: "npm:3.88.1-typegen-experimental.0"
     react-compiler-runtime: "npm:^1.0.0"
@@ -5267,13 +5267,13 @@ __metadata:
   peerDependencies:
     react: ^18.0.0 || ^19.0.0
     react-dom: ^18.0.0 || ^19.0.0
-  checksum: 10c0/1ce3915474998c7c69061df50d8b45542cf1c690fb4d49d4c32f796f825d440845956b4a403bc2703365b267d28ff0a42be9b5862d4348046064701fc7fc348c
+  checksum: 10c0/05abd04ccbca20642809aaf3f20bed6e55413ca0ff8f23620d73a63927be48349805a5c7f056b7f12b3b7d1ff2249326067c649c02c4c545f66b332acbce7b8e
   languageName: node
   linkType: hard
 
-"@sanity/sdk@npm:2.16.0, @sanity/sdk@npm:^2.16.0":
-  version: 2.16.0
-  resolution: "@sanity/sdk@npm:2.16.0"
+"@sanity/sdk@npm:2.17.0, @sanity/sdk@npm:^2.17.0":
+  version: 2.17.0
+  resolution: "@sanity/sdk@npm:2.17.0"
   dependencies:
     "@sanity/bifur-client": "npm:^1.0.0"
     "@sanity/client": "npm:^7.23.1"
@@ -5292,7 +5292,7 @@ __metadata:
     reselect: "npm:^5.1.1"
     rxjs: "npm:^7.8.2"
     zustand: "npm:^5.0.13"
-  checksum: 10c0/921f0814f865d5eb8eb4b2ff46e1d67cc30d739c3d5330627d1a99566fb82874d6bf458f4e85612107f419622ff596f645e37d48d548dcce79baf12540f4bfd4
+  checksum: 10c0/2b8ad09dd9f4146c78ec981678633963e8a8b4cc1699af6f2932df92791cbfb4ad613ab085857ab1ae42cc52270d00054dc9887fc246cc215cf5a20fb4008115
   languageName: node
   linkType: hard
 
@@ -6669,8 +6669,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app-feedback@workspace:apps/app-feedback"
   dependencies:
-    "@sanity/sdk": "npm:^2.16.0"
-    "@sanity/sdk-react": "npm:^2.16.0"
+    "@sanity/sdk": "npm:^2.17.0"
+    "@sanity/sdk-react": "npm:^2.17.0"
     "@sanity/ui": "npm:^3.3.5"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
@@ -6687,8 +6687,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app-test@workspace:apps/app-test"
   dependencies:
-    "@sanity/sdk": "npm:^2.16.0"
-    "@sanity/sdk-react": "npm:^2.16.0"
+    "@sanity/sdk": "npm:^2.17.0"
+    "@sanity/sdk-react": "npm:^2.17.0"
     "@sanity/ui": "npm:^3.3.5"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
