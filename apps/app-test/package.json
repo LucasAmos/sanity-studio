@@ -15,8 +15,8 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/sdk": "^2.16.0",
-    "@sanity/sdk-react": "^2.16.0",
+    "@sanity/sdk": "^2.17.0",
+    "@sanity/sdk-react": "^2.17.0",
     "@sanity/ui": "^3.3.5",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
