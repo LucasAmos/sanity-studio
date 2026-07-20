@@ -2325,13 +2325,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/react-fontawesome@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "@fortawesome/react-fontawesome@npm:3.4.0"
+"@fortawesome/react-fontawesome@npm:^3.5.0":
+  version: 3.5.0
+  resolution: "@fortawesome/react-fontawesome@npm:3.5.0"
   peerDependencies:
     "@fortawesome/fontawesome-svg-core": ~6 || ~7
     react: ^18.0.0 || ^19.0.0
-  checksum: 10c0/baf64306529b5cf997aadde64616724f58e286b8d3c80deb3332366f1b4cb8ddcbeb29b202672cf3f739d95e1e7d752613b5228703161558cbd984650add261e
+  checksum: 10c0/b1b854095f9cbd52fe18f02461e594452fc70e3977ceab5fd1c9206ac98f89e40500e7fb5625426fa0cc2dc7e65d3d86bd07b70171d58dc5d54b0c74878d3b44
   languageName: node
   linkType: hard
 
@@ -3279,7 +3279,7 @@ __metadata:
   dependencies:
     "@fortawesome/fontawesome-svg-core": "npm:^7.3.1"
     "@fortawesome/free-regular-svg-icons": "npm:^7.3.1"
-    "@fortawesome/react-fontawesome": "npm:^3.4.0"
+    "@fortawesome/react-fontawesome": "npm:^3.5.0"
     "@release-it/conventional-changelog": "npm:^11.0.1"
     "@sanity/eslint-config-studio": "npm:^6.0.0"
     "@sanity/vision": "npm:^6.5.0"
@@ -3290,7 +3290,7 @@ __metadata:
     react-dom: "npm:^19.2.7"
     release-it: "npm:^19.2.4"
     sanity: "npm:^6.5.0"
-    styled-components: "npm:^6.4.3"
+    styled-components: "npm:^6.4.4"
     typescript: "npm:^6.0.3"
     vitest: "npm:^4.1.10"
   languageName: unknown
@@ -5252,13 +5252,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/sdk-react@npm:^2.17.0":
-  version: 2.17.0
-  resolution: "@sanity/sdk-react@npm:2.17.0"
+"@sanity/sdk-react@npm:^2.18.0":
+  version: 2.18.0
+  resolution: "@sanity/sdk-react@npm:2.18.0"
   dependencies:
     "@sanity/client": "npm:^7.23.1"
     "@sanity/message-protocol": "npm:^0.23.0"
-    "@sanity/sdk": "npm:2.17.0"
+    "@sanity/sdk": "npm:2.18.0"
     "@sanity/types": "npm:^6.2.0"
     groq: "npm:3.88.1-typegen-experimental.0"
     react-compiler-runtime: "npm:^1.0.0"
@@ -5267,13 +5267,13 @@ __metadata:
   peerDependencies:
     react: ^18.0.0 || ^19.0.0
     react-dom: ^18.0.0 || ^19.0.0
-  checksum: 10c0/05abd04ccbca20642809aaf3f20bed6e55413ca0ff8f23620d73a63927be48349805a5c7f056b7f12b3b7d1ff2249326067c649c02c4c545f66b332acbce7b8e
+  checksum: 10c0/798c15cb678ae5db4dcfcc12858d20ba094ed711aa72477f1183ff78fbc3ffa15d917b0afed8f99ed15d0109c8b608f950180b3e5942d85c53ce3942de65d83b
   languageName: node
   linkType: hard
 
-"@sanity/sdk@npm:2.17.0, @sanity/sdk@npm:^2.17.0":
-  version: 2.17.0
-  resolution: "@sanity/sdk@npm:2.17.0"
+"@sanity/sdk@npm:2.18.0, @sanity/sdk@npm:^2.18.0":
+  version: 2.18.0
+  resolution: "@sanity/sdk@npm:2.18.0"
   dependencies:
     "@sanity/bifur-client": "npm:^1.0.0"
     "@sanity/client": "npm:^7.23.1"
@@ -5288,11 +5288,11 @@ __metadata:
     "@sanity/telemetry": "npm:^1.1.0"
     "@sanity/types": "npm:^6.2.0"
     groq: "npm:3.88.1-typegen-experimental.0"
-    groq-js: "npm:^1.30.2"
+    groq-js: "npm:^1.30.3"
     reselect: "npm:^5.1.1"
     rxjs: "npm:^7.8.2"
     zustand: "npm:^5.0.13"
-  checksum: 10c0/2b8ad09dd9f4146c78ec981678633963e8a8b4cc1699af6f2932df92791cbfb4ad613ab085857ab1ae42cc52270d00054dc9887fc246cc215cf5a20fb4008115
+  checksum: 10c0/6cd96eef83a2ae7c1cf7fe7f682305fb657f9025b49871b2c29ea4d7d8d5a3479d12e5729e690c9b14a01e2f1320d88f58a73790ab91d2f325c90c4b62b3b2ee
   languageName: node
   linkType: hard
 
@@ -6669,8 +6669,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app-feedback@workspace:apps/app-feedback"
   dependencies:
-    "@sanity/sdk": "npm:^2.17.0"
-    "@sanity/sdk-react": "npm:^2.17.0"
+    "@sanity/sdk": "npm:^2.18.0"
+    "@sanity/sdk-react": "npm:^2.18.0"
     "@sanity/ui": "npm:^3.3.5"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
@@ -6678,7 +6678,7 @@ __metadata:
     react: "npm:^19.2.7"
     react-dom: "npm:^19.2.7"
     sanity: "npm:^6.5.0"
-    styled-components: "npm:^6.4.3"
+    styled-components: "npm:^6.4.4"
     typescript: "npm:^6.0.3"
   languageName: unknown
   linkType: soft
@@ -6687,8 +6687,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app-test@workspace:apps/app-test"
   dependencies:
-    "@sanity/sdk": "npm:^2.17.0"
-    "@sanity/sdk-react": "npm:^2.17.0"
+    "@sanity/sdk": "npm:^2.18.0"
+    "@sanity/sdk-react": "npm:^2.18.0"
     "@sanity/ui": "npm:^3.3.5"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
@@ -6696,7 +6696,7 @@ __metadata:
     react: "npm:^19.2.7"
     react-dom: "npm:^19.2.7"
     sanity: "npm:^6.5.0"
-    styled-components: "npm:^6.4.3"
+    styled-components: "npm:^6.4.4"
     typescript: "npm:^6.0.3"
   languageName: unknown
   linkType: soft
@@ -14995,9 +14995,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^6.4.3":
-  version: 6.4.3
-  resolution: "styled-components@npm:6.4.3"
+"styled-components@npm:^6.4.4":
+  version: 6.4.4
+  resolution: "styled-components@npm:6.4.4"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.4.0"
     css-to-react-native: "npm:3.2.0"
@@ -15015,7 +15015,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 10c0/158514feb0a502dfa7f95610a8270faa56be2572c12902b7bf5c2855bf9fdd5d76a5909d67dcbecf627ee40511f4161f8016b23f9fef22c14f7911337359647c
+  checksum: 10c0/ed574b053a85adab543958bde7eb80ea9bf6075dc0c54f8763b2d7251c4ce940a5151513fbc7af8c5be5100c387a55d0b175c0270a829ff37ec6f88b72ac4bca
   languageName: node
   linkType: hard
 
