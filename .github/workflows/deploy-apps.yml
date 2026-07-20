@@ -31,6 +31,7 @@ jobs:
       directory: apps/app-feedback
       name: feedback
   app-test-2:
+    needs: [app-test-1]
     uses: ./.github/workflows/job-deploy-app.yml
     secrets: inherit
     with:
