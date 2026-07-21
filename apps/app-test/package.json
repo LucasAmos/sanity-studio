@@ -17,9 +17,9 @@
   "dependencies": {
     "@sanity/sdk": "^2.18.0",
     "@sanity/sdk-react": "^2.18.0",
-    "@sanity/ui": "^3.3.5",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
+    "@sanity/ui": "^3.4.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "styled-components": "^6.4.4"
   },
   "devDependencies": {
