@@ -2262,6 +2262,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@floating-ui/core@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "@floating-ui/core@npm:1.8.0"
+  dependencies:
+    "@floating-ui/utils": "npm:^0.2.12"
+  checksum: 10c0/cece958f6fab0f8cd7740cd57988c4f8bc5356dca39dd4c093433d44c91952c3a02c7a54d93d7ed6c078b6544d531a29f66621d2839c8bfbb4467dca6aed7df0
+  languageName: node
+  linkType: hard
+
 "@floating-ui/dom@npm:^1.7.6":
   version: 1.7.6
   resolution: "@floating-ui/dom@npm:1.7.6"
@@ -2269,6 +2278,16 @@ __metadata:
     "@floating-ui/core": "npm:^1.7.5"
     "@floating-ui/utils": "npm:^0.2.11"
   checksum: 10c0/5c098e0d7b58c9bc769f276cca1766994c2c9c70c92d091a61bba8b3e9be53c011e0a79a8457fc2fb2f3d91697a26eb52e0a4962ef936dc963b45f58613c212f
+  languageName: node
+  linkType: hard
+
+"@floating-ui/dom@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "@floating-ui/dom@npm:1.8.0"
+  dependencies:
+    "@floating-ui/core": "npm:^1.8.0"
+    "@floating-ui/utils": "npm:^0.2.12"
+  checksum: 10c0/c32b2de7a596b69cfffa909c7028825e14f6319be1b45da529f8943c89fe16b75a49c214e800c87ded3f172353d3b99163d50072f11410488e756961b7b629cc
   languageName: node
   linkType: hard
 
@@ -2284,10 +2303,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@floating-ui/react-dom@npm:^2.1.9":
+  version: 2.1.9
+  resolution: "@floating-ui/react-dom@npm:2.1.9"
+  dependencies:
+    "@floating-ui/dom": "npm:^1.8.0"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 10c0/9fa9851069738cb9591a1ab2da16e257f193eae5fd2d6d48ad0b1e73f3c049929b6805c5ad43d4af3c1da63c60b215b0ee4651a1fe5caeb80e66d9d423744348
+  languageName: node
+  linkType: hard
+
 "@floating-ui/utils@npm:^0.2.11":
   version: 0.2.11
   resolution: "@floating-ui/utils@npm:0.2.11"
   checksum: 10c0/f4bcea1559bdbb721ecc8e8ead423ac58d6a5b6e70b602cf0810ba6ad4ed1c77211b207faa88b278a9042f0c743133de08a203ed6741c1b6443423332884d5b3
+  languageName: node
+  linkType: hard
+
+"@floating-ui/utils@npm:^0.2.12":
+  version: 0.2.12
+  resolution: "@floating-ui/utils@npm:0.2.12"
+  checksum: 10c0/bb910b90d56991a62011afaf5f8e0c4b7fb6dab69403f4dd17fbd6eb25560b28d533dff9791f270b4f459852e9006a1077b5d73cbedb5e34d9424afc6a828314
   languageName: node
   linkType: hard
 
@@ -3285,9 +3323,9 @@ __metadata:
     "@sanity/vision": "npm:^6.5.0"
     "@types/react": "npm:^19.2.17"
     eslint: "npm:^10.7.0"
-    prettier: "npm:3.9.5"
-    react: "npm:^19.2.7"
-    react-dom: "npm:^19.2.7"
+    prettier: "npm:3.9.6"
+    react: "npm:^19.2.8"
+    react-dom: "npm:^19.2.8"
     release-it: "npm:^19.2.4"
     sanity: "npm:^6.5.0"
     styled-components: "npm:^6.4.4"
@@ -4976,6 +5014,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sanity/icons@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@sanity/icons@npm:5.2.0"
+  peerDependencies:
+    react: ^18 || ^19
+  checksum: 10c0/06f446d22f3363d05fafecfc57a8afe0204dd169427ebf1298e74eb77ef39c79ec2eb627fb812089603132e9c50e78b24727caf72b03366667905f552ad6862e
+  languageName: node
+  linkType: hard
+
 "@sanity/id-utils@npm:^1.0.0":
   version: 1.0.0
   resolution: "@sanity/id-utils@npm:1.0.0"
@@ -5418,7 +5465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/ui@npm:^3.3.0, @sanity/ui@npm:^3.3.5":
+"@sanity/ui@npm:^3.3.0":
   version: 3.3.5
   resolution: "@sanity/ui@npm:3.3.5"
   dependencies:
@@ -5437,6 +5484,28 @@ __metadata:
     react-is: ^18 || >=19.0.0-0
     styled-components: ^5.2 || ^6
   checksum: 10c0/e8fdeacaab7c8abad431ee9cdff34315d205a0ce86e95d63e6c5c042d1c3ef7f6544e98fefd33720d4cd8367a39878653ceca08df64e8ecdf211856040ff4afe
+  languageName: node
+  linkType: hard
+
+"@sanity/ui@npm:^3.4.0":
+  version: 3.4.0
+  resolution: "@sanity/ui@npm:3.4.0"
+  dependencies:
+    "@floating-ui/react-dom": "npm:^2.1.9"
+    "@juggle/resize-observer": "npm:^3.4.0"
+    "@sanity/color": "npm:^3.0.6"
+    "@sanity/icons": "npm:^5.2.0"
+    csstype: "npm:^3.2.3"
+    motion: "npm:^12.42.2"
+    react-compiler-runtime: "npm:1.0.0"
+    react-refractor: "npm:^4.0.0"
+    use-effect-event: "npm:^2.0.3"
+  peerDependencies:
+    react: ^18 || >=19.0.0-0
+    react-dom: ^18 || >=19.0.0-0
+    react-is: ^18 || >=19.0.0-0
+    styled-components: ^5.2 || ^6
+  checksum: 10c0/e52dc7752598f2db267074da95eda40586d17084a0e79325d0f12bfdf469b48d19e93251d7e32d536b83cd2dbf78f8eb5d6e0648718c00a65409567262b2a794
   languageName: node
   linkType: hard
 
@@ -6671,12 +6740,12 @@ __metadata:
   dependencies:
     "@sanity/sdk": "npm:^2.18.0"
     "@sanity/sdk-react": "npm:^2.18.0"
-    "@sanity/ui": "npm:^3.3.5"
+    "@sanity/ui": "npm:^3.4.0"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
     jest: "npm:^30.4.2"
-    react: "npm:^19.2.7"
-    react-dom: "npm:^19.2.7"
+    react: "npm:^19.2.8"
+    react-dom: "npm:^19.2.8"
     sanity: "npm:^6.5.0"
     styled-components: "npm:^6.4.4"
     typescript: "npm:^6.0.3"
@@ -6689,12 +6758,12 @@ __metadata:
   dependencies:
     "@sanity/sdk": "npm:^2.18.0"
     "@sanity/sdk-react": "npm:^2.18.0"
-    "@sanity/ui": "npm:^3.3.5"
+    "@sanity/ui": "npm:^3.4.0"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
     jest: "npm:^30.4.2"
-    react: "npm:^19.2.7"
-    react-dom: "npm:^19.2.7"
+    react: "npm:^19.2.8"
+    react-dom: "npm:^19.2.8"
     sanity: "npm:^6.5.0"
     styled-components: "npm:^6.4.4"
     typescript: "npm:^6.0.3"
@@ -13304,12 +13373,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.9.5":
-  version: 3.9.5
-  resolution: "prettier@npm:3.9.5"
+"prettier@npm:3.9.6":
+  version: 3.9.6
+  resolution: "prettier@npm:3.9.6"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/0349dd9e6d8010965de6f69e6b6ee2484b8caf78c66675afced6c75ad60ff24c3a2a4f41153fb8adeaee4d8f539641b48cebc71d283cec4d146e9962126c5ceb
+  checksum: 10c0/9f7ddae234035868f3daab3dc34e6de7e54622185afb017378029f0c09a9c023248ccf6f34def0b17a0538e18c47aa1b3188bab72965d1bf735919baa0747e99
   languageName: node
   linkType: hard
 
@@ -13537,6 +13606,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-dom@npm:^19.2.8":
+  version: 19.2.8
+  resolution: "react-dom@npm:19.2.8"
+  dependencies:
+    scheduler: "npm:^0.27.0"
+  peerDependencies:
+    react: ^19.2.8
+  checksum: 10c0/41ba2247b76f687fcfe5bbc99f514d6b851d8c8041c2f5ded36ed05bd7fdc5208cacbac9de51e3e6633e77f96f44cec9f0d4a5a55184dba4e00738f224439134
+  languageName: node
+  linkType: hard
+
 "react-error-boundary@npm:^6.1.2":
   version: 6.1.2
   resolution: "react-error-boundary@npm:6.1.2"
@@ -13647,6 +13727,13 @@ __metadata:
   version: 19.2.7
   resolution: "react@npm:19.2.7"
   checksum: 10c0/0bd0e2f1bbd4ba97561c6597bf8a5fec05e6476fe61e165c1065598d16668efc6715205599c94d3ddd49d36cb0f21cbf1b9bcc18ee840b805ce222c3e8d558ac
+  languageName: node
+  linkType: hard
+
+"react@npm:^19.2.8":
+  version: 19.2.8
+  resolution: "react@npm:19.2.8"
+  checksum: 10c0/5f86bdb56426652fd6d989d30a6f2e603c057272c47c9ca3a3fbe190a3a39ee9ccce937d63cfc039717abed1b8891d6a499134bc35311acc07eafdacd86537cd
   languageName: node
   linkType: hard
 
