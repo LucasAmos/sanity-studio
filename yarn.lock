@@ -2254,12 +2254,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/config-helpers@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "@eslint/config-helpers@npm:0.6.0"
+"@eslint/config-helpers@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@eslint/config-helpers@npm:0.7.0"
   dependencies:
     "@eslint/core": "npm:^1.2.1"
-  checksum: 10c0/f9af20e8b60b0ba27edb74b8eb40c0c5d51a9bf9baf9e053bb57833a87cb0a1c49b4dfaad88fc24d49c907ad1324c8a0b668684fa9c321351dac4bc9155ec10a
+  checksum: 10c0/fd40d57d6f1db49f7b647048b88a433dc7f6522ef3edf855a43cb526ef4fc40622ceed0dc8de2e03d254f30f8e035370570de1d4bd8e7c2b1200131451e0d331
   languageName: node
   linkType: hard
 
@@ -3351,7 +3351,7 @@ __metadata:
     "@sanity/eslint-config-studio": "npm:^6.0.0"
     "@sanity/vision": "npm:^6.6.0"
     "@types/react": "npm:^19.2.17"
-    eslint: "npm:^10.7.0"
+    eslint: "npm:^10.8.0"
     prettier: "npm:3.9.6"
     react: "npm:^19.2.8"
     react-dom: "npm:^19.2.8"
@@ -4921,10 +4921,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/color@npm:^3.0.7":
-  version: 3.0.7
-  resolution: "@sanity/color@npm:3.0.7"
-  checksum: 10c0/871343d1e1438e663fe4709703fcbed90f42da1b44edd38f5303354c71d131ef4ec82766d924eae890dbe1e26b7ffaa80c905e2b741d9a805c9928df4e67a49c
+"@sanity/color@npm:^3.0.8":
+  version: 3.0.8
+  resolution: "@sanity/color@npm:3.0.8"
+  checksum: 10c0/2f8017dc188e2447a9e570299749548683088cbf6045bcd499a4b2f1565a18cd708b04bbde84babea82d632f716f10ff85b7e477998b139b9d72e1e81161d13a
   languageName: node
   linkType: hard
 
@@ -5480,25 +5480,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/ui@npm:^3.4.3":
-  version: 3.4.3
-  resolution: "@sanity/ui@npm:3.4.3"
+"@sanity/ui@npm:^3.4.5":
+  version: 3.4.5
+  resolution: "@sanity/ui@npm:3.4.5"
   dependencies:
     "@floating-ui/react-dom": "npm:^2.1.9"
     "@juggle/resize-observer": "npm:^3.4.0"
-    "@sanity/color": "npm:^3.0.7"
+    "@sanity/color": "npm:^3.0.8"
     "@sanity/icons": "npm:^5.2.1"
     csstype: "npm:^3.2.3"
     motion: "npm:^12.42.2"
     react-compiler-runtime: "npm:1.0.0"
+    react-is: "npm:^19.2.8"
     react-refractor: "npm:^4.0.0"
     use-effect-event: "npm:^2.0.3"
   peerDependencies:
     react: ^18 || >=19.0.0-0
     react-dom: ^18 || >=19.0.0-0
-    react-is: ^18 || >=19.0.0-0
     styled-components: ^5.2 || ^6
-  checksum: 10c0/eeb86b6732b90cf7f2d9e26058b5887058c6d62ad31e16f5dc7124bdfa24ecad51e8b40a88c45afff1dd2852f1f05472c920cf7c6d1ac543cebd1c6279c1aefd
+  checksum: 10c0/e14a4c204c6379807815993f2d537c1f7ef4ac278ed8bf2b736ff2fd0e44cb6ef990919fb7fcd0a9a8e81b6a54342e6ab4ed31f3addc4f1accf54b14c797fb82
   languageName: node
   linkType: hard
 
@@ -6730,7 +6730,7 @@ __metadata:
   dependencies:
     "@sanity/sdk": "npm:^2.18.0"
     "@sanity/sdk-react": "npm:^2.18.0"
-    "@sanity/ui": "npm:^3.4.3"
+    "@sanity/ui": "npm:^3.4.5"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
     jest: "npm:^30.4.2"
@@ -6748,7 +6748,7 @@ __metadata:
   dependencies:
     "@sanity/sdk": "npm:^2.18.0"
     "@sanity/sdk-react": "npm:^2.18.0"
-    "@sanity/ui": "npm:^3.4.3"
+    "@sanity/ui": "npm:^3.4.5"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.2.17"
     jest: "npm:^30.4.2"
@@ -8915,14 +8915,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^10.7.0":
-  version: 10.7.0
-  resolution: "eslint@npm:10.7.0"
+"eslint@npm:^10.8.0":
+  version: 10.8.0
+  resolution: "eslint@npm:10.8.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.2"
     "@eslint/config-array": "npm:^0.23.5"
-    "@eslint/config-helpers": "npm:^0.6.0"
+    "@eslint/config-helpers": "npm:^0.7.0"
     "@eslint/core": "npm:^1.2.1"
     "@eslint/plugin-kit": "npm:^0.7.2"
     "@humanfs/node": "npm:^0.16.6"
@@ -8946,7 +8946,7 @@ __metadata:
     imurmurhash: "npm:^0.1.4"
     is-glob: "npm:^4.0.0"
     json-stable-stringify-without-jsonify: "npm:^1.0.1"
-    minimatch: "npm:^10.2.4"
+    minimatch: "npm:^10.2.5"
     natural-compare: "npm:^1.4.0"
     optionator: "npm:^0.9.3"
   peerDependencies:
@@ -8956,7 +8956,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/d9415f506730c098ab8897da39f5719cdf9d1026c9511c322d4a272677f904b7d43ff423d63ee941c9a03d74d1a75563ce2668886734b1f293b22e57911a6dd6
+  checksum: 10c0/2dbc523578834088615f388e08418d2620b25655f7a398f6d415765fa2a3a25d6b8b43bd3293d40f977e12752323a841d52654a2648697a00c0102c9794bb3dc
   languageName: node
   linkType: hard
 
@@ -13620,6 +13620,13 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 10c0/33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^19.2.8":
+  version: 19.2.8
+  resolution: "react-is@npm:19.2.8"
+  checksum: 10c0/ed5322c84efe035c8fc814b1614ff5ca7fb8c2872a7c045197daf99f9b1bd68f32a2c79ffcbcfcff2fc5d93924ff9f9447400898f5b1534e6302bb0736a257f0
   languageName: node
   linkType: hard
 
