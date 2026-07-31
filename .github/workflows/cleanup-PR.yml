@@ -36,7 +36,7 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --immutable
+        run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
 
       - name: Cleanup PR preview
         run: yarn undeploy
