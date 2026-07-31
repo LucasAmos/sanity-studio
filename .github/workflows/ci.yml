@@ -46,7 +46,7 @@ jobs:
         with:
           cache: npm
           node-version: lts/*
-      - run: yarn install --immutable
+      - run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
 
       - name: Validate Studio schema
         id: validate
@@ -82,60 +82,14 @@ jobs:
             });
 
   validate-dataset:
-    environment:
-      name: ci
     name: Validate dataset
-    runs-on: ubuntu-22.04
-    defaults:
-      run:
-        working-directory: ./studio
-    steps:
-      - uses: actions/checkout@v6
-      - run: corepack enable
-      - uses: actions/setup-node@v6
-        with:
-          cache: npm
-          node-version: 24
-      - run: yarn install --immutable
-
-      - name: Validate dataset
-        id: validate
-        run: |
-          npx sanity documents validate --yes --level info >> ${{ env.DATASET_VALIDATION_REPORT }}
-          exit_code=$?
-          {
-            echo "## Dataset Validation Results"
-            echo "\`\`\`"
-            cat ${{ env.DATASET_VALIDATION_REPORT }}
-            echo "\`\`\`"
-          } >> $GITHUB_STEP_SUMMARY
-          exit $exit_code
-        env:
-          ## GOTCHA: a deploy token does not have permission to read documents
-          ## and will succeed silenty as it will pull zero documents and validation
-          ## will always pass, use a separate VIEWER token
-          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN_VIEWER }}
-
-      - name: Post dataset validation report
-        if: failure() && steps.validate.outcome == 'failure'
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const fs = require('fs'); 
-            const report = fs.readFileSync('studio/${{ env.DATASET_VALIDATION_REPORT }}', 'utf8');
-            const body = [
-                '### ❌ Dataset validation failed',
-                '',
-                `\`\`\`${report}\`\`\``,
-            ].join('\n');
-
-            await github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body
-            });
-
+    strategy:
+      matrix:
+        dataset: [development, production]
+    uses: ./.github/workflows/validate-dataset.yml
+    secrets: inherit
+    with:
+      dataset: ${{matrix.dataset}}
   app-test-1:
     uses: ./.github/workflows/job-test-app.yml
     secrets: inherit
@@ -165,7 +119,7 @@ jobs:
         with:
           cache: npm
           node-version: 24
-      - run: yarn install --immutable
+      - run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
 
       - name: Run tests
         run: yarn test
@@ -194,7 +148,7 @@ jobs:
           node-version: 24
 
       - name: yarn install
-        run: yarn install --immutable
+        run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
 
       - name: git config
         run: |

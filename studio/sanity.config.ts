@@ -49,9 +49,7 @@ export default defineConfig({
         ? input.filter(({ action }) => action && singletonActions.has(action))
         : input
   },
-  studio: {
-    components: {
-      navbar: MyEnhancedNavbar
-    }
+  components: {
+    navbar: MyEnhancedNavbar
   }
 });

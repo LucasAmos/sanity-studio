@@ -1,0 +1,125 @@
+name: validate-dataset
+
+on:
+  workflow_call:
+    inputs:
+      dataset:
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
+  packages: write
+  id-token: write
+
+concurrency:
+  group: validate-dataset-${{inputs.dataset}}
+  cancel-in-progress: true
+
+env:
+  SCHEMA_VALIDATION_REPORT: schema-report.txt
+  DATASET_VALIDATION_REPORT: ./dataset-report.txt
+  SANITY_STUDIO_DATASET: ${{ inputs.dataset }}
+
+jobs:
+  validate-dataset:
+    environment:
+      name: ci
+    name: Validate ${{inputs.dataset}} dataset
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: ./studio
+    steps:
+      - uses: actions/checkout@v6
+      - run: corepack enable
+      - uses: actions/setup-node@v6
+        with:
+          cache: npm
+          node-version: 24
+      - run: YARN_ENABLE_HARDENED_MODE=0 YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
+
+      - name: export dataset
+        id: export-dataset
+        run: yarn studio:sanity datasets export ${{inputs.dataset}} ${{inputs.dataset}}-export.tar.gz --no-assets --no-drafts --raw
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN_VIEWER }}
+
+      - name: validate dataset
+        id: validate-dataset
+        run: yarn studio:sanity documents validate --dataset ${{inputs.dataset}} --file ${{inputs.dataset}}-export.tar.gz --yes --level error > ${{inputs.dataset}}-validation-report.txt 2>&1
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN_VIEWER }}
+
+      - run: ls
+      - name: ${{inputs.dataset}}
+        id: validate
+        run: |
+          yarn studio:sanity documents validate --yes --level error >> ${{ env.DATASET_VALIDATION_REPORT }} --dataset ${{inputs.dataset}}
+          exit_code=$?
+          {
+            echo "## Dataset Validation Results"
+            echo "\`\`\`"
+            cat ${{ env.DATASET_VALIDATION_REPORT }}
+            echo "\`\`\`"
+          } >> $GITHUB_STEP_SUMMARY
+          exit $exit_code
+        env:
+          ## GOTCHA: a deploy token does not have permission to read documents
+          ## and will succeed silenty as it will pull zero documents and validation
+          ## will always pass, use a separate VIEWER token
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN_VIEWER }}
+
+      - name: Post dataset validation report
+        if: steps.validate.outcome == 'success'
+
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs'); 
+            const report = fs.readFileSync('studio/${{ env.DATASET_VALIDATION_REPORT }}', 'utf8');
+            const body = [
+                '### ✅ ${{inputs.dataset}} dataset validation succeeded',
+                '',
+                `\`\`\`${report}\`\`\``,
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body
+            });
+      - name: Post dataset validation failure report
+        if: failure() && steps.validate-dataset.outcome == 'failure'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs'); 
+            const report = fs.readFileSync('studio/${{inputs.dataset}}-validation-report.txt', 'utf8');
+            const body = [
+                '### ❌ ${{inputs.dataset}} dataset validation failed',
+                '',
+                `\`\`\`${report}\`\`\``,
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body
+            });
+      - name: Upload ${{inputs.dataset}} dataset
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{inputs.dataset}} dataset
+          path: ./studio/${{inputs.dataset}}-export.tar.gz
+
+      - name: Upload ${{inputs.dataset}} validation report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{inputs.dataset}} validation report
+          path: ./studio/${{inputs.dataset}}-validation-report.txt
