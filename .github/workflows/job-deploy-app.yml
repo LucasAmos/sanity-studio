@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 24
           cache: yarn
-      - run: yarn install --immutable
+      - run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
         if: ${{ steps.changes.outputs.app == 'true' }}
       - name: Deploy ${{ inputs.name }} app
         if: ${{ steps.changes.outputs.app == 'true' }}

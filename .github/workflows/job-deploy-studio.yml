@@ -45,7 +45,7 @@ jobs:
         with:
           node-version: 24
           cache: yarn
-      - run: yarn install --immutable
+      - run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
 
       - name: Build and deploy Sanity Studio
         id: deploy

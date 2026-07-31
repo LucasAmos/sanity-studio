@@ -20,7 +20,7 @@ export function MyEnhancedNavbar(props: NavbarProps) {
         }}
       >
         <img
-          alt="bob"
+          alt="lucasamoslogo"
           src={edf}
           style={{
             width: "100%",
