@@ -73,24 +73,38 @@ jobs:
       - name: Post dataset validation report
         if: steps.validate.outcome == 'success'
 
-        uses: actions/github-script@v6
+        uses: ./post-comment.yml
         with:
           script: |
             const fs = require('fs'); 
             const report = fs.readFileSync('studio/${{ env.DATASET_VALIDATION_REPORT }}', 'utf8');
-            const body = [
+            return [
                 '### ✅ ${{inputs.dataset}} dataset validation succeeded',
                 '',
                 `\`\`\`${report}\`\`\``,
             ].join('\n');
 
-            await github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body
-            });
-      - name: Post dataset validation failure report
+        # - name: Post dataset validation report
+        #   if: steps.validate.outcome == 'success'
+
+        #   uses: actions/github-script@v6
+        #   with:
+        #     script: |
+        #       const fs = require('fs');
+        #       const report = fs.readFileSync('studio/${{ env.DATASET_VALIDATION_REPORT }}', 'utf8');
+        #       const body = [
+        #           '### ✅ ${{inputs.dataset}} dataset validation succeeded',
+        #           '',
+        #           `\`\`\`${report}\`\`\``,
+        #       ].join('\n');
+
+        #       await github.rest.issues.createComment({
+        #         issue_number: context.issue.number,
+        #         owner: context.repo.owner,
+        #         repo: context.repo.repo,
+        #         body
+        #       });
+        # - name: Post dataset validation failure report
         if: failure() && steps.validate-dataset.outcome == 'failure'
         uses: actions/github-script@v6
         with:
