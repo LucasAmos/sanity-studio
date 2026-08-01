@@ -104,7 +104,7 @@ jobs:
         #         repo: context.repo.repo,
         #         body
         #       });
-        # - name: Post dataset validation failure report
+      - name: Post dataset validation failure report
         if: failure() && steps.validate-dataset.outcome == 'failure'
         uses: actions/github-script@v6
         with:
