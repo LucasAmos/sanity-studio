@@ -50,8 +50,6 @@ jobs:
         run: yarn studio:sanity documents validate --dataset ${{inputs.dataset}} --file ${{inputs.dataset}}-export.tar.gz --yes --level error > ${{inputs.dataset}}-validation-report.txt 2>&1
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN_VIEWER }}
-
-      - run: ls
       - name: ${{inputs.dataset}}
         id: validate
         run: |
@@ -73,7 +71,7 @@ jobs:
       - name: Post dataset validation report
         if: steps.validate.outcome == 'success'
 
-        uses: ./post-comment.yml
+        uses: ./.github/workflows/post-comment.yml
         with:
           script: |
             const fs = require('fs'); 
