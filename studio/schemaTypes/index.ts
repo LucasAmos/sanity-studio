@@ -6,9 +6,10 @@ import book from "./book";
 import category from "./category";
 import aboutPage from "./pages/about";
 import cv from "./pages/cv";
+import redirect from "./redirect";
 import techStackList from "./sections/techStackSection";
 
 export const singletonTypes = [aboutPage, cv];
-export const standardTypes = [alias, author, book, category, techStack, techStackList];
+export const standardTypes = [alias, redirect, author, book, category, techStack, techStackList];
 export const objectTypes = [imageRow];
 export const schemaTypes = [...objectTypes, ...singletonTypes, ...standardTypes];
