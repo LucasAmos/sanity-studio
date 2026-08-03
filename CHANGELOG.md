@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.26.0](https://github.com/LucasAmos/sanity-studio/compare/1.25.36...1.26.0) (2026-08-03)
+
+### Features
+
+* **type:** redirect ([f0b3d43](https://github.com/LucasAmos/sanity-studio/commit/f0b3d4328bd46256f89ec7db899ac0c6969214c1))
+
+### Bug Fixes
+
+* **ci:** dataset validation job ([e8286f8](https://github.com/LucasAmos/sanity-studio/commit/e8286f869e7c2658fdb351e9798ad77f72a47821))
+
 ## [1.25.36](https://github.com/LucasAmos/sanity-studio/compare/1.25.35...1.25.36) (2026-07-31)
 
 ## [1.25.35](https://github.com/LucasAmos/sanity-studio/compare/1.25.34...1.25.35) (2026-07-28)
