@@ -41,12 +41,12 @@
     "@fortawesome/free-regular-svg-icons": "^7.3.1",
     "@fortawesome/react-fontawesome": "^3.5.0",
     "@release-it/conventional-changelog": "^11.0.1",
-    "@sanity/vision": "^6.9.1",
+    "@sanity/vision": "^6.9.2",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "release-it": "^19.2.4",
-    "sanity": "^6.9.1",
-    "styled-components": "^6.5.1"
+    "sanity": "^6.9.2",
+    "styled-components": "^6.5.2"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^6.0.0",
