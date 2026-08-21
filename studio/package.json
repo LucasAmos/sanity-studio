@@ -41,11 +41,11 @@
     "@fortawesome/free-regular-svg-icons": "^7.3.1",
     "@fortawesome/react-fontawesome": "^3.5.0",
     "@release-it/conventional-changelog": "^11.0.1",
-    "@sanity/vision": "^6.9.2",
+    "@sanity/vision": "^6.10.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "release-it": "^19.2.4",
-    "sanity": "^6.9.2",
+    "sanity": "^6.10.1",
     "styled-components": "^6.5.3"
   },
   "devDependencies": {
@@ -54,7 +54,7 @@
     "eslint": "^10.8.1",
     "prettier": "3.9.6",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "prettier": {
     "semi": false,
