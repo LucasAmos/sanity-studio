@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.26.12](https://github.com/LucasAmos/sanity-studio/compare/1.26.11...1.26.12) (2026-08-28)
+
 ## [1.26.11](https://github.com/LucasAmos/sanity-studio/compare/1.26.10...1.26.11) (2026-08-27)
 
 ## [1.26.10](https://github.com/LucasAmos/sanity-studio/compare/1.26.9...1.26.10) (2026-08-24)
