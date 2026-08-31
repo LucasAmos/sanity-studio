@@ -15,9 +15,9 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/sdk": "^2.20.1",
-    "@sanity/sdk-react": "^2.20.1",
-    "@sanity/ui": "^3.5.3",
+    "@sanity/sdk": "^2.20.2",
+    "@sanity/sdk-react": "^2.20.2",
+    "@sanity/ui": "^3.5.4",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "styled-components": "^6.5.3"
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/react": "^19.2.18",
-    "jest": "^30.4.2",
+    "jest": "^30.5.0",
     "sanity": "^6.11.0",
     "typescript": "^6.0.3"
   }
