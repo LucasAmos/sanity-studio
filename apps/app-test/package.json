@@ -18,15 +18,15 @@
     "@sanity/sdk": "^2.20.2",
     "@sanity/sdk-react": "^2.20.2",
     "@sanity/ui": "^3.5.5",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "styled-components": "^6.5.3"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
-    "@types/react": "^19.2.18",
+    "@types/react": "^19.3.0",
     "jest": "^30.5.1",
-    "sanity": "^6.13.0",
+    "sanity": "^6.13.2",
     "typescript": "^6.0.3"
   }
 }
