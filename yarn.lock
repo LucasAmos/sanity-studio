@@ -3592,7 +3592,7 @@ __metadata:
     "@fortawesome/react-fontawesome": "npm:^3.5.0"
     "@release-it/conventional-changelog": "npm:^11.0.1"
     "@sanity/eslint-config-studio": "npm:^6.0.0"
-    "@sanity/vision": "npm:^6.13.2"
+    "@sanity/vision": "npm:^6.14.0"
     "@types/react": "npm:^19.3.0"
     eslint: "npm:^10.10.0"
     prettier: "npm:3.9.6"
@@ -6510,9 +6510,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/vision@npm:^6.13.2":
-  version: 6.13.2
-  resolution: "@sanity/vision@npm:6.13.2"
+"@sanity/vision@npm:^6.14.0":
+  version: 6.14.0
+  resolution: "@sanity/vision@npm:6.14.0"
   dependencies:
     "@codemirror/autocomplete": "npm:^6.20.3"
     "@codemirror/commands": "npm:^6.11.0"
@@ -6538,14 +6538,14 @@ __metadata:
     json5: "npm:^2.2.3"
     lodash-es: "npm:^4.18.1"
     quick-lru: "npm:^7.3.0"
-    react-rx: "npm:^6.0.1"
+    react-rx: "npm:^7.0.0"
     rxjs: "npm:^7.8.2"
     ui5: "npm:@sanity/ui@5.0.0-alpha.10"
     use-effect-event: "npm:^2.0.4"
   peerDependencies:
     react: ^19.2.2
     sanity: ^6.0.0-0
-  checksum: 10c0/383aa5f908c081330123c3a7c3d963fee6176547cf1b9440417e87c321c22932332be10d119cdd9bb2f945488a81c1e7f282b6a677d1e99b7939d0cb8b9a9a47
+  checksum: 10c0/43e39e5bb7e918f0d77c36c04909935596781fad8f6f55ed8cd7e362a901d328dbe31e2e96bebf5979301ccfe02d1a12f01ca36539f55a0e77b1f1484ef12f49
   languageName: node
   linkType: hard
 
@@ -15027,6 +15027,16 @@ __metadata:
     react: ^19.2
     rxjs: ^7.2
   checksum: 10c0/54950355c956af9056a5404a6a1db6499c0f80ed7b68d1194ffa425e837ccb6a02390973bb96ec02a7b2ef0fdac803e30c96bdb1d0c6ae876b5e06b3a654312d
+  languageName: node
+  linkType: hard
+
+"react-rx@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "react-rx@npm:7.0.0"
+  peerDependencies:
+    react: ^19.2
+    rxjs: ^7.2
+  checksum: 10c0/60339d23f7259c81d0b4b55ffb10c4518cf529b62e303d92df0d524bef28c45178f476a78345b0c10d86105395f4a13572eac4eb37c525a18d755865b7a8da57
   languageName: node
   linkType: hard
 
