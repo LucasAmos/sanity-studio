@@ -1,4 +1,5 @@
-import { Button, Flex, Spinner, useToast } from "@sanity/ui";
+import { Button, Flex, Spinner } from "@sanity/ui";
+import { useToast } from "@sanity/ui/toast";
 import { useCallback, useState } from "react";
 import { useClient, useFormValue, NumberInputProps } from "sanity";
 

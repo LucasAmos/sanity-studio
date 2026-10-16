@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, reopened]
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: write
   packages: write
   id-token: write
@@ -29,4 +29,10 @@ jobs:
   ci:
     name: CI checks
     uses: "./.github/workflows/ci.yml"
+    secrets: inherit
+
+  release-dry-run:
+    uses: ./.github/workflows/release-job.yml
+    with:
+      dryrun: true
     secrets: inherit

@@ -1,0 +1,66 @@
+name: Reusable Release
+
+on:
+  workflow_call:
+    inputs:
+      dryrun:
+        description: Run release in dry-run mode
+        type: boolean
+        default: false
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  packages: write
+  id-token: write
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-24.04
+    environment:
+      name: Development
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          fetch-depth: 0
+      - name: Checkout branch
+        if: ${{ inputs.dryrun == true }}
+        run: |
+          BRANCH="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
+          git checkout -B "$BRANCH" "origin/$BRANCH" || git checkout -B "$BRANCH"
+      - name: Setup npm auth token
+        run: npm set //npm.pkg.github.com/:_authToken ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set npm registry
+        run: npm set @lucasamos:registry https://npm.pkg.github.com
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Yarn install
+        run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
+
+      - name: Git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+      - name: Release
+        run: |
+          if [ "${{ inputs.dryrun }}" = "true" ]; then
+            echo "dryrun=${{ inputs.dryrun }}" 
+            yarn run release:dry-run
+          else
+            yarn run release
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SANITY_STUDIO_DATASET: production

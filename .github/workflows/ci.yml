@@ -21,7 +21,7 @@ env:
 jobs:
   commitlint:
     name: Lint commit messages
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     environment:
       name: ci
     steps:
@@ -35,7 +35,7 @@ jobs:
     environment:
       name: ci
     name: Validate Studio schema
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: ./studio
@@ -109,7 +109,7 @@ jobs:
     environment:
       name: ci
     name: Test studio
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: ./studio
@@ -124,40 +124,3 @@ jobs:
 
       - name: Run tests
         run: yarn test
-
-  release-dry-run:
-    name: Release dry run
-    runs-on: ubuntu-24.04-arm
-    environment:
-      name: Development
-    steps:
-      - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-          ref: ${{ github.head_ref || github.ref_name }}
-      - name: setup npm auth token
-        run: npm set //npm.pkg.github.com/:_authToken ${{secrets.GITHUB_TOKEN}}
-
-      - name: set npm registry
-        run: npm set @lucasamos:registry https://npm.pkg.github.com
-
-      - name: corepack enable
-        run: corepack enable
-
-      - uses: actions/setup-node@v6
-        with:
-          node-version: 24
-
-      - name: yarn install
-        run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
-
-      - name: git config
-        run: |
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-
-      - name: Release dry run
-        run: yarn run release:dry-run
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SANITY_STUDIO_DATASET: production
