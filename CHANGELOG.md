@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.26.26](https://github.com/LucasAmos/sanity-studio/compare/1.26.25...1.26.26) (2026-10-16)
+
+### Chores
+
+* **deps:** major upgrades ([3b89266](https://github.com/LucasAmos/sanity-studio/commit/3b89266ec396ddae07029f338fe3bace173348dc))
+* **deps:** upgrade all ([e045112](https://github.com/LucasAmos/sanity-studio/commit/e0451129461a37324bf0e2ab5f5e34223a53993d))
+
+### Continuous Integration
+
+* **fix:** dry run ([d033a4c](https://github.com/LucasAmos/sanity-studio/commit/d033a4c77367d215568c257844a132c74039a8a6))
+* **release:** add dry run ([65d213f](https://github.com/LucasAmos/sanity-studio/commit/65d213fdacd14fae696a355b529f42c444d46a7c))
+
 ## [1.26.25](https://github.com/LucasAmos/sanity-studio/compare/1.26.24...1.26.25) (2026-10-01)
 
 ## [1.26.24](https://github.com/LucasAmos/sanity-studio/compare/1.26.23...1.26.24) (2026-09-28)
