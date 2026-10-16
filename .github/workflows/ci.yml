@@ -21,7 +21,7 @@ env:
 jobs:
   commitlint:
     name: Lint commit messages
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     environment:
       name: ci
     steps:
@@ -35,7 +35,7 @@ jobs:
     environment:
       name: ci
     name: Validate Studio schema
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: ./studio
@@ -109,7 +109,7 @@ jobs:
     environment:
       name: ci
     name: Test studio
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: ./studio
