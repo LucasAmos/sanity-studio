@@ -49,12 +49,19 @@
     "styled-components": "^6.5.3"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^6.0.0",
+    "@release-it/conventional-changelog": "^12.0.2",
+    "@sanity/eslint-config-studio": "^7.0.0",
+    "@sanity/vision": "^6.7.0",
     "@types/react": "^19.3.0",
     "eslint": "^10.11.0",
     "prettier": "3.9.9",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.11"
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "release-it": "^21.1.1",
+    "sanity": "^6.7.0",
+    "styled-components": "^6.4.4",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
   },
   "prettier": {
     "semi": false,
