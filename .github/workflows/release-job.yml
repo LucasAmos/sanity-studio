@@ -1,4 +1,13 @@
-name: Release
+name: Reusable Release
+
+on:
+  workflow_call:
+    inputs:
+      dryrun:
+        description: Run release in dry-run mode
+        type: boolean
+        default: false
+        required: false
 
 permissions:
   contents: write
@@ -6,49 +15,42 @@ permissions:
   packages: write
   id-token: write
 
-on:
-  push:
-    branches:
-      - master
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}-schema
-
 jobs:
   release:
     name: Release
     runs-on: ubuntu-22.04
     environment:
       name: Development
+
     steps:
       - uses: actions/checkout@v5
         with:
           ssh-key: ${{ secrets.DEPLOY_KEY }}
           fetch-depth: 0
 
-      - name: setup npm auth token
-        run: npm set //npm.pkg.github.com/:_authToken ${{secrets.GITHUB_TOKEN}}
+      - name: Setup npm auth token
+        run: npm set //npm.pkg.github.com/:_authToken ${{ secrets.GITHUB_TOKEN }}
 
-      - name: set npm registry
+      - name: Set npm registry
         run: npm set @lucasamos:registry https://npm.pkg.github.com
 
-      - name: corepack enable
+      - name: Enable corepack
         run: corepack enable
 
       - uses: actions/setup-node@v6
         with:
           node-version: 22
 
-      - name: yarn install
+      - name: Yarn install
         run: YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
 
-      - name: git config
+      - name: Git config
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
       - name: Release
-        run: yarn run release
+        run: yarn run release ${{ inputs.dryrun && '--dry-run' || '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SANITY_STUDIO_DATASET: production
