@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.26.27](https://github.com/LucasAmos/sanity-studio/compare/1.26.26...1.26.27) (2026-10-16)
+
+### Bug Fixes
+
+* **toast:** fix ([3e214d2](https://github.com/LucasAmos/sanity-studio/commit/3e214d22cf0e4306ad4050eb4276a83900e818b7))
+
 ## [1.26.26](https://github.com/LucasAmos/sanity-studio/compare/1.26.25...1.26.26) (2026-10-16)
 
 ### Chores
