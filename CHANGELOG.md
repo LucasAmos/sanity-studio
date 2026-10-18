@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.26.28](https://github.com/LucasAmos/sanity-studio/compare/1.26.27...1.26.28) (2026-10-18)
+
+### Code Refactoring
+
+* **structure:** refactor ([3a76f96](https://github.com/LucasAmos/sanity-studio/commit/3a76f96bf1b034fd53825b5a5167bccf9d3e8a6d))
+
 ## [1.26.27](https://github.com/LucasAmos/sanity-studio/compare/1.26.26...1.26.27) (2026-10-16)
 
 ### Bug Fixes
