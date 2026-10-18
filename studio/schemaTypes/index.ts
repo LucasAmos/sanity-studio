@@ -13,3 +13,4 @@ export const singletonTypes = [aboutPage, cv];
 export const standardTypes = [alias, redirect, author, book, category, techStack, techStackList];
 export const objectTypes = [imageRow];
 export const schemaTypes = [...objectTypes, ...singletonTypes, ...standardTypes];
+export const pageTypes = [aboutPage, cv];
