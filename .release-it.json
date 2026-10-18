@@ -45,17 +45,16 @@
           {
             "section": "Tests",
             "type": "test",
-            "hidden": "true"
+            "hidden": true
           },
           {
             "section": "Chores",
-            "type": "chore",
-            "hidden": "true"
+            "type": "chore"
           },
           {
             "section": "Documentation",
             "type": "docs",
-            "hidden": "true"
+            "hidden": true
           },
           {
             "section": "Performance Improvements",
@@ -64,12 +63,12 @@
           {
             "section": "Code Refactoring",
             "type": "refactor",
-            "hidden": "true"
+            "hidden": true
           },
           {
             "section": "Code Style Changes",
             "type": "style",
-            "hidden": "true"
+            "hidden": true
           },
           {
             "section": "Build Changes",
@@ -78,7 +77,7 @@
           {
             "section": "Continuous Integration",
             "type": "ci",
-            "hidden": "true"
+            "hidden": true
           },
           {
             "section": "Reverts",
