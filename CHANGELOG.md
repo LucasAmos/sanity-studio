@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.26.29](https://github.com/LucasAmos/sanity-studio/compare/1.26.28...1.26.29) (2026-10-18)
+
+### Continuous Integration
+
+* **release it:** stop hiding chores ([3eca8c6](https://github.com/LucasAmos/sanity-studio/commit/3eca8c6d52390216acc45acb972152f7b36d837e))
+
 ## [1.26.28](https://github.com/LucasAmos/sanity-studio/compare/1.26.27...1.26.28) (2026-10-18)
 
 ### Code Refactoring
