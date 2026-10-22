@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.26.30](https://github.com/LucasAmos/sanity-studio/compare/1.26.29...1.26.30) (2026-10-22)
+
+### Bug Fixes
+
+* **validators:** exclude draft id ([86681da](https://github.com/LucasAmos/sanity-studio/commit/86681da1ae778800d2d5e754d5fed944218ef7d8))
+
 ## [1.26.29](https://github.com/LucasAmos/sanity-studio/compare/1.26.28...1.26.29) (2026-10-18)
 
 ### Continuous Integration
