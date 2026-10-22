@@ -21,7 +21,8 @@ export const uniqueValidation = (rule: StringRule) => {
       }
     );
 
-    if (res[0]?._id === context.document?._id) {
+    const publishedId = context.document?._id.replace(/^drafts\./, "");
+    if (!res.some(({ _id }: { _id: string }) => _id !== publishedId)) {
       // if the reference of document linked to the name is the same as
       // this document then that is allowed
       return true;
