@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.26.32](https://github.com/LucasAmos/sanity-studio/compare/1.26.31...1.26.32) (2026-10-22)
+
+### Chores
+
+* **deps:** bump the all group with 4 updates ([cf871f1](https://github.com/LucasAmos/sanity-studio/commit/cf871f183f5fd5c5344ed8af819fb9dd405ef064))
+
 ## [1.26.31](https://github.com/LucasAmos/sanity-studio/compare/1.26.30...1.26.31) (2026-10-22)
 
 ### Bug Fixes
