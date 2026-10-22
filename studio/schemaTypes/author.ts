@@ -4,6 +4,8 @@ import { defineField, defineType, StringRule } from "sanity";
 
 export const uniqueValidation = (rule: StringRule) => {
   return rule.custom(async (value, context) => {
+    if (!value) return true;
+
     const client = context.getClient({ apiVersion: "2021-03-25" });
     const type = context.document!._type;
 
@@ -18,7 +20,8 @@ export const uniqueValidation = (rule: StringRule) => {
       }
     );
 
-    if (res[0]?._id === context.document?._id) {
+    const publishedId = context.document?._id.replace(/^drafts\./, "");
+    if (!res.some(({ _id }: { _id: string }) => _id !== publishedId)) {
       // if the reference of document linked to the name is the same as
       // this document then that is allowed
       return true;
@@ -49,7 +52,7 @@ export default defineType({
       name: "name",
       title: "Name",
       type: "string",
-      validation: uniqueValidation
+      validation: (rule) => uniqueValidation(rule.required())
     })
   ]
 });
