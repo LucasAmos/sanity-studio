@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.26.31](https://github.com/LucasAmos/sanity-studio/compare/1.26.30...1.26.31) (2026-10-22)
+
+### Bug Fixes
+
+* **deps:** peer ([893e140](https://github.com/LucasAmos/sanity-studio/commit/893e1404fdc353b71b84f366817be5f12fd5b88a))
+
 ## [1.26.30](https://github.com/LucasAmos/sanity-studio/compare/1.26.29...1.26.30) (2026-10-22)
 
 ### Bug Fixes
