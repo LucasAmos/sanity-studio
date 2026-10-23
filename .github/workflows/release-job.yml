@@ -56,7 +56,6 @@ jobs:
       - name: Release
         run: |
           if [ "${{ inputs.dryrun }}" = "true" ]; then
-            echo "dryrun=${{ inputs.dryrun }}" 
             yarn run release:dry-run
           else
             yarn run release
