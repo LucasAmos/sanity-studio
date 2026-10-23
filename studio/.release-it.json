@@ -6,7 +6,7 @@
       "echo \"Preparing schema package for ${version}\"",
       "echo \"# Changes in ${version}\\n\\n${changelog}\" > README.md",
       "node scripts/prepare-schema-package.mjs ${version}",
-      "npm pack --dry-run ./dist/schema-package"
+      "npm pack --dry-run ."
     ],
     "after:npm:release": "git checkout README.md"
   },
