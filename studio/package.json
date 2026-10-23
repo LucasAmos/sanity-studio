@@ -27,7 +27,7 @@
     "undeploy:local": "SANITY_ACTIVE_ENV=development sanity undeploy --yes",
     "validate:schema": "sanity schema validate",
     "validate:documents": "sanity documents validate --yes --level info",
-    "release": "sanity schema extract --enforce-required-fields && release-it --ci",
+    "release": "sanity schema extract --force --enforce-required-fields && release-it --ci",
     "release:dry-run": "release-it --ci --dry-run",
     "prepare-schema-package": "node scripts/prepare-schema-package.mjs \"$(node -p \"require('./package.json').version\")\"",
     "test:watch": "vitest",
