@@ -54,7 +54,7 @@ jobs:
       - name: Post dataset validation report
         if: steps.validate-dataset.outcome == 'success'
 
-        uses: actions/github-script@v6
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs'); 
@@ -73,7 +73,7 @@ jobs:
             });
       - name: Post dataset validation failure report
         if: always() && steps.validate-dataset.outcome == 'failure'
-        uses: actions/github-script@v6
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs'); 

@@ -55,6 +55,13 @@ jobs:
 
       - name: Release
         run: |
+          yarn run schema:extract
+          cd studio
+          yarn prepare-schema-package
+          cat dist/schema-package/package.json
+          test -f dist/schema-package/package.json
+          npm pack --dry-run ./dist/schema-package
+          cd ..
           if [ "${{ inputs.dryrun }}" = "true" ]; then
             yarn run release:dry-run
           else
