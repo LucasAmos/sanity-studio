@@ -7,7 +7,6 @@
   },
   "npm": {
     "publish": true,
-    "publishPath": "./dist/schema-package",
     "publishConfig": {
       "registry": "https://npm.pkg.github.com"
     }
