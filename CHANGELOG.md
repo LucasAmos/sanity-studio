@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.27.0](https://github.com/LucasAmos/sanity-studio/compare/1.26.33...1.27.0) (2026-10-23)
+
+### Features
+
+* **package:** only export schema.json ([8e46e5d](https://github.com/LucasAmos/sanity-studio/commit/8e46e5d831983646eebd6250d3eaae00e6765c40))
+
+### Bug Fixes
+
+* **release:** fix ([5fb1573](https://github.com/LucasAmos/sanity-studio/commit/5fb15734f177f4e9f2445fb5dd383e0b11b16b8f))
+* **schema:** overwrite ([146ec83](https://github.com/LucasAmos/sanity-studio/commit/146ec83640a265c50920d83201256a4d860cdb62))
+* **schema:** overwrite ([a281c5f](https://github.com/LucasAmos/sanity-studio/commit/a281c5f5b86b83c4c45091b1f4b233536fef1ff3))
+
 ## [1.26.33](https://github.com/LucasAmos/sanity-studio/compare/1.26.32...1.26.33) (2026-10-23)
 
 ### Chores
