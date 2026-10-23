@@ -1,3 +1,7 @@
+import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
 const studioDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const packagePath = path.join(studioDir, "package.json");
 
