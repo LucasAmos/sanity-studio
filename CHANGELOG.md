@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.27.1](https://github.com/LucasAmos/sanity-studio/compare/1.27.0...1.27.1) (2026-10-23)
+
+### Bug Fixes
+
+* **schema:** overwrite ([4dac0c2](https://github.com/LucasAmos/sanity-studio/commit/4dac0c2917539f8faa11e02074ebaf970c03a3c5))
+* **schema:** release ([49aafff](https://github.com/LucasAmos/sanity-studio/commit/49aafffcf287a14331fc345aa57949fd8752d280))
+
+### Continuous Integration
+
+* **release:** schema only ([43ad48b](https://github.com/LucasAmos/sanity-studio/commit/43ad48b5bcaaaf981fbe0b1ba2f7c744430ac55a))
+
 ## [1.27.0](https://github.com/LucasAmos/sanity-studio/compare/1.26.33...1.27.0) (2026-10-23)
 
 ### Features
