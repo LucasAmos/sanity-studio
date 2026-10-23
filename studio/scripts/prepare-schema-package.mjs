@@ -5,9 +5,11 @@ import { fileURLToPath } from "node:url";
 const studioDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputDir = path.join(studioDir, "dist", "schema-package");
 
-const { name, version, license, files, exports, main } = JSON.parse(
+const { name, license, files, exports, main } = JSON.parse(
   await readFile(path.join(studioDir, "package.json"), "utf8")
 );
+
+const version = process.argv[2];
 
 if (!version) {
   throw new Error("Pass the release version as the first argument");
