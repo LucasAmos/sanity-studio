@@ -15,16 +15,16 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/sdk": "^3.9.1",
-    "@sanity/sdk-react": "^3.9.1",
+    "@sanity/sdk": "^3.10.0",
+    "@sanity/sdk-react": "^3.10.0",
     "@sanity/ui": "^4.4.10",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "styled-components": "^6.6.0"
   },
   "devDependencies": {
-    "@sanity/sdk": "^3.9.1",
-    "@sanity/sdk-react": "^3.9.1",
+    "@sanity/sdk": "^3.10.0",
+    "@sanity/sdk-react": "^3.10.0",
     "@sanity/ui": "^4.4.10",
     "@types/jest": "^30.0.0",
     "@types/react": "^19.3.0",
