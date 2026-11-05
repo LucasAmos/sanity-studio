@@ -3548,7 +3548,7 @@ __metadata:
     styled-components: "npm:^6.6.0"
     typescript: "npm:^7.0.2"
     vite: "npm:^8.3.5"
-    vitest: "npm:^5.0.5"
+    vitest: "npm:^5.1.0"
   peerDependencies:
     "@types/react": ^19.3.0
   languageName: unknown
@@ -5347,7 +5347,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/client@npm:^8.13.0":
+"@sanity/client@npm:^8.13.0, @sanity/client@npm:^8.14.1":
   version: 8.14.1
   resolution: "@sanity/client@npm:8.14.1"
   dependencies:
@@ -5861,14 +5861,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/sdk-react@npm:^3.11.0":
-  version: 3.11.0
-  resolution: "@sanity/sdk-react@npm:3.11.0"
+"@sanity/sdk-react@npm:^3.12.0":
+  version: 3.12.0
+  resolution: "@sanity/sdk-react@npm:3.12.0"
   dependencies:
     "@module-federation/runtime": "npm:^2.9.2"
-    "@sanity/client": "npm:^8.13.0"
+    "@sanity/client": "npm:^8.14.1"
     "@sanity/message-protocol": "npm:^0.24.0"
-    "@sanity/sdk": "npm:3.11.0"
+    "@sanity/sdk": "npm:3.12.0"
     "@sanity/types": "npm:^6.21.0"
     react-compiler-runtime: "npm:^1.0.0"
     react-error-boundary: "npm:^6.1.6"
@@ -5876,7 +5876,7 @@ __metadata:
   peerDependencies:
     react: ^19.2.0
     react-dom: ^19.2.0
-  checksum: 10c0/315f02bfc676dfcece95e5567c1874b977b04a87a7639ee9329fc808107a4a6dc69e0daaaaff2618fd56e5a2d309546d1c1cf70bc4cce40eb0af452ff24f015b
+  checksum: 10c0/014d55f0e0a98ffd9ca6563822115c5ada960ecf651a7882fa51ab0053c03c05b2ea89c051348b895baff700f886503cef9603dbb7bd5929b943c7b4b42b0ae7
   languageName: node
   linkType: hard
 
@@ -5905,12 +5905,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sanity/sdk@npm:3.11.0, @sanity/sdk@npm:^3.11.0":
-  version: 3.11.0
-  resolution: "@sanity/sdk@npm:3.11.0"
+"@sanity/sdk@npm:3.12.0, @sanity/sdk@npm:^3.12.0":
+  version: 3.12.0
+  resolution: "@sanity/sdk@npm:3.12.0"
   dependencies:
     "@sanity/bifur-client": "npm:^2.0.2"
-    "@sanity/client": "npm:^8.13.0"
+    "@sanity/client": "npm:^8.14.1"
     "@sanity/comlink": "npm:^4.0.3"
     "@sanity/diff-match-patch": "npm:^3.2.1"
     "@sanity/diff-patch": "npm:^7.0.0"
@@ -5921,12 +5921,12 @@ __metadata:
     "@sanity/mutate": "npm:^0.18.2"
     "@sanity/telemetry": "npm:^1.1.0"
     "@sanity/types": "npm:^6.21.0"
-    groq: "npm:^6.20.0"
+    groq: "npm:^6.21.0"
     groq-js: "npm:^2.0.1"
     reselect: "npm:^5.3.0"
     rxjs: "npm:^7.8.2"
     zustand: "npm:^5.0.16"
-  checksum: 10c0/6e2b03953f292899826822996c2a084cba72c01e3d816980404bf07aa97481adbb748ff9dce424c5304637525ab78b7703fc300c26085e7ad8dc77b8275f9760
+  checksum: 10c0/bf5c062748dbecfc5434a9af4c114aecc60318904b91ebac0c0a03844479e2b577669feb1721849fa20f844cfc6fff4b95266f3728fa5238bc45c8919758f0d1
   languageName: node
   linkType: hard
 
@@ -7363,12 +7363,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/mocker@npm:5.0.5":
-  version: 5.0.5
-  resolution: "@vitest/mocker@npm:5.0.5"
+"@vitest/mocker@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@vitest/mocker@npm:5.1.0"
   dependencies:
     "@jridgewell/trace-mapping": "npm:0.3.31"
-    "@vitest/spy": "npm:5.0.5"
+    "@vitest/spy": "npm:5.1.0"
     estree-walker: "npm:^3.0.3"
     magic-string: "npm:^1.4.3"
   peerDependencies:
@@ -7379,14 +7379,14 @@ __metadata:
       optional: true
     vite:
       optional: true
-  checksum: 10c0/5d5573d6015ef948d6cb193feb025874b6776f35964745c6beb3e556467b6dbfcbb103c4ce01d2d50b7fb43b83f56172c5074e0dd3da4dc5673ea1870b69a722
+  checksum: 10c0/b180d01dfcd6fe7065c1415814890bf062f73af2f7de41b1d0c97f22437b6722b39d96567b54081037b04a1e16dc96512aeaa1cff1fe9de94d8b7d2f75001f64
   languageName: node
   linkType: hard
 
-"@vitest/spy@npm:5.0.5":
-  version: 5.0.5
-  resolution: "@vitest/spy@npm:5.0.5"
-  checksum: 10c0/a48d92e38497e587cbb17b0ddb85604abaddf367e1cd4e373000ab080198511253fd35bf6a0e9a973e052e728c3235070a0b33ba6f2da1998aa5d65b64299783
+"@vitest/spy@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@vitest/spy@npm:5.1.0"
+  checksum: 10c0/6f57b9b0cf8fcf65f89cbe7f7688ee87b2bd64d8678d888c6ea5542b66efe041a0c2be6268de89ced0ee29c685b13d4e925b2e791be435e84236cc6d0394feb6
   languageName: node
   linkType: hard
 
@@ -7558,8 +7558,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app-feedback@workspace:apps/app-feedback"
   dependencies:
-    "@sanity/sdk": "npm:^3.11.0"
-    "@sanity/sdk-react": "npm:^3.11.0"
+    "@sanity/sdk": "npm:^3.12.0"
+    "@sanity/sdk-react": "npm:^3.12.0"
     "@sanity/ui": "npm:^4.4.10"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.3.0"
@@ -7576,8 +7576,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app-test@workspace:apps/app-test"
   dependencies:
-    "@sanity/sdk": "npm:^3.11.0"
-    "@sanity/sdk-react": "npm:^3.11.0"
+    "@sanity/sdk": "npm:^3.12.0"
+    "@sanity/sdk-react": "npm:^3.12.0"
     "@sanity/ui": "npm:^4.4.10"
     "@types/jest": "npm:^30.0.0"
     "@types/react": "npm:^19.3.0"
@@ -10609,6 +10609,13 @@ __metadata:
   version: 6.16.0
   resolution: "groq@npm:6.16.0"
   checksum: 10c0/7f26dd6522140adaa6eb7e754a925e5ee2f2e09da54ff9d3242b512adc1356462b217b2ca209495288644cb9f7d22fe46f0ce8b32c10362debea462b746fc5e6
+  languageName: node
+  linkType: hard
+
+"groq@npm:^6.21.0":
+  version: 6.21.0
+  resolution: "groq@npm:6.21.0"
+  checksum: 10c0/e9d1ea28cfed2a7120cd2df6eabeaff2dfef7ea5434c70a92c1581a97488c6018a72ca50ed2914e75cafe70011735a0da870b6bf2a35a0d9bca851b92d2eb173
   languageName: node
   linkType: hard
 
@@ -16500,12 +16507,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest@npm:^5.0.5":
-  version: 5.0.5
-  resolution: "vitest@npm:5.0.5"
+"vitest@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "vitest@npm:5.1.0"
   dependencies:
     "@types/chai": "npm:^5.2.2"
-    "@vitest/mocker": "npm:5.0.5"
+    "@vitest/mocker": "npm:5.1.0"
     chai: "npm:^6.3.0"
     es-module-lexer: "npm:^2.3.2"
     expect-type: "npm:^1.4.0"
@@ -16521,12 +16528,12 @@ __metadata:
     "@edge-runtime/vm": "*"
     "@opentelemetry/api": ^1.9.0
     "@types/node": ^22.0.0 || >=24.0.0
-    "@vitest/browser-playwright": 5.0.5
-    "@vitest/browser-preview": 5.0.5
+    "@vitest/browser-playwright": 5.1.0
+    "@vitest/browser-preview": 5.1.0
     "@vitest/browser-webdriverio": ^5.0.0-beta.5 || >=5.0.0
-    "@vitest/coverage-istanbul": 5.0.5
-    "@vitest/coverage-v8": 5.0.5
-    "@vitest/ui": 5.0.5
+    "@vitest/coverage-istanbul": 5.1.0
+    "@vitest/coverage-v8": 5.1.0
+    "@vitest/ui": 5.1.0
     happy-dom: "*"
     jsdom: "*"
     vite: ^6.4.0 || ^7.0.0 || ^8.0.0
@@ -16557,7 +16564,7 @@ __metadata:
       optional: false
   bin:
     vitest: ./vitest.mjs
-  checksum: 10c0/b6e38164490c4ca0c2bbc4e74ec8f9052a344caab3f3bf0e8c4485b6493af0f789d7aafd41f4128f66d576f50d3c860f0674322add2b4d348b6ea250ec8c77c8
+  checksum: 10c0/c1be6065fe9fa73ceef69b4fbd245938c4654ba429066b9283e09527ada3e1c91aa03c2b8520b444af4027e1a8a1ca388dbb6b7b3c973582d053b67ffeeac11c
   languageName: node
   linkType: hard
 
