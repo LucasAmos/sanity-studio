@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.27.13](https://github.com/LucasAmos/sanity-studio/compare/1.27.12...1.27.13) (2026-11-19)
+
+### Chores
+
+* **deps:** bump the all group with 4 updates ([e02d38f](https://github.com/LucasAmos/sanity-studio/commit/e02d38ff448f0330759c58cbd0ef1f6742f2cc6a))
+
 ## [1.27.12](https://github.com/LucasAmos/sanity-studio/compare/1.27.11...1.27.12) (2026-11-16)
 
 ### Chores
